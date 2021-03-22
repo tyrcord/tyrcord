@@ -1,6 +1,6 @@
 [
   {
-    "id": "fx_calculators",
+    "id": "fx-calculators",
     "name": "FX Calculators",
     "subtitle": "APPS.SUBTILES.FX_CALCULATORS",
     "description": "APPS.DESCRIPTIONS.FX_CALCULATORS",
@@ -14,7 +14,7 @@
     "supportEmail": "contact@tyrcord.com"
   },
   {
-    "id": "pip_calculator",
+    "id": "pip-calculator",
     "name": "Pip Calculator",
     "subtitle": "APPS.SUBTILES.PIP_CALCULATOR",
     "description": "APPS.DESCRIPTIONS.PIP_CALCULATOR",
@@ -28,7 +28,7 @@
     "supportEmail": "contact@tyrcord.com"
   },
   {
-    "id": "expressions_quebecoises",
+    "id": "expressions-quebecoises",
     "name": "Expressions Québécoises",
     "subtitle": "APPS.SUBTILES.EXPRESSIONS_QUEBECOISES",
     "description": "APPS.DESCRIPTIONS.EXPRESSIONS_QUEBECOISES",
