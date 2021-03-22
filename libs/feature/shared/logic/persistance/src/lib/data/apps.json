@@ -11,7 +11,7 @@
     "iosUrl": "https://apple.co/2QqYHy6",
     "preview": "assets/pngs/apps/fx-calculators/preview.png",
     "author": "Tyrcord, Inc",
-    "supportEmail": "support@tyrcord.com"
+    "supportEmail": "contact@tyrcord.com"
   },
   {
     "id": "pip_calculator",
@@ -25,7 +25,7 @@
     "iosUrl": "https://apple.co/3tM0LPk",
     "preview": "assets/pngs/apps/pip-calculator/preview.png",
     "author": "Tyrcord, Inc",
-    "supportEmail": "support@tyrcord.com"
+    "supportEmail": "contact@tyrcord.com"
   },
   {
     "id": "expressions_quebecoises",
@@ -39,6 +39,6 @@
     "iosUrl": "https://apple.co/2OYWTvE",
     "preview": "assets/pngs/apps/expressions-quebecoises/preview.png",
     "author": "Tyrcord, Inc",
-    "supportEmail": "support@tyrcord.com"
+    "supportEmail": "contact@tyrcord.com"
   }
 ]
