@@ -1,0 +1,39 @@
+:host {
+  background-color: var(--layout-app-content-background-color);
+  color: var(--layout-app-content-text-color);
+  font-family: 'Roboto Condensed', 'San Francisco', 'Helvetica Neue',
+    'Helvetica', 'Roboto', 'Arial', sans-serif;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 320px;
+
+  .app-layout-header {
+    background-color: var(--layout-app-header-background-color);
+    color: var(--layout-app-header-text-color);
+    min-height: var(--app-bar-height);
+    display: flex;
+    box-shadow: 0px 2px 2px var(--layout-app-header-shadow-color);
+    padding-left: env(safe-area-inset-left);
+    padding-right: env(safe-area-inset-right);
+  }
+
+  .app-layout-content {
+    color: var(--layout-app-content-text-color);
+    display: flex;
+    align-self: center;
+    flex: 1;
+    width: 100%;
+    max-width: 880px;
+  }
+
+  .app-layout-footer {
+    background-color: var(--layout-app-footer-background-color);
+    color: var(--layout-app-footer-text-color);
+    display: flex;
+    min-height: var(--app-footer-height);
+    padding-left: env(safe-area-inset-left);
+    padding-right: env(safe-area-inset-right);
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+}

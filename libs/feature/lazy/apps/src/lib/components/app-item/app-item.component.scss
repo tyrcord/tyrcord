@@ -1,0 +1,18 @@
+:host {
+  padding: var(--app-padding-medium) 0;
+  display: flex;
+  flex: 1;
+  cursor: pointer;
+
+  .logo {
+    display: flex;
+    flex: 1;
+
+    img {
+      box-shadow: 0 0 3px var(--layout-app-header-shadow-color);
+      height: var(--app-icon-size-xxl);
+      width: var(--app-icon-size-xxl);
+      border-radius: 8px;
+    }
+  }
+}

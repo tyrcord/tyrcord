@@ -1,0 +1,17 @@
+:host {
+  display: flex;
+  align-items: center;
+  flex: 1;
+
+  .app-bar-layout-leading {
+    display: flex;
+    min-width: var(--app-min-touch-width);
+    height: 100%;
+  }
+
+  .app-bar-layout-actions {
+    display: flex;
+    margin-left: auto;
+    height: 100%;
+  }
+}

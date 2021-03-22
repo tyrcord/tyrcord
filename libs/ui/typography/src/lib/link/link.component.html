@@ -1,0 +1,11 @@
+<ng-template [ngIf]="isExternal" [ngIfElse]="internal">
+  <a [href]="href" target="_blank">
+    {{ text }}
+  </a>
+</ng-template>
+
+<ng-template #internal>
+  <a>
+    <ng-content></ng-content>
+  </a>
+</ng-template>

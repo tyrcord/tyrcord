@@ -1,0 +1,8 @@
+<tyrcord-ui-layout-page headline="TITLES.APPS">
+  <ul class="app-items">
+    <li *ngFor="let app of apps;" class="app-item"  title="{{app.name}}">
+      <tyrcord-feature-lazy-app-item [app]="app">
+      </tyrcord-feature-lazy-app-item>
+    </li>
+  </ul>
+</tyrcord-ui-layout-page>

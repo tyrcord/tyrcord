@@ -1,0 +1,20 @@
+@import 'variables';
+
+:host {
+  display: flex;
+  flex: 1;
+  padding: 0 var(--app-padding-large);
+  align-items: center;
+
+  @media all and (max-width: $app-mobile-max-width) {
+    .app-footer-layout-copyright {
+      margin: auto;
+    }
+  }
+
+  @media all and (min-width: $app-desktop-min-width) {
+    .app-footer-layout-copyright {
+      margin-left: auto;
+    }
+  }
+}

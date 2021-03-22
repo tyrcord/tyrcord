@@ -47,11 +47,15 @@
             "polyfills": "apps/website/src/polyfills.ts",
             "tsConfig": "apps/website/tsconfig.app.json",
             "aot": true,
+            "stylePreprocessorOptions": {
+              "includePaths": ["libs/ui/core/styles"]
+            },
+            "extractCss": true,
             "assets": [
               "apps/website/src/favicon.ico",
               "apps/website/src/assets"
             ],
-            "styles": ["apps/website/src/styles.scss"],
+            "styles": ["libs/ui/core/styles/core.scss"],
             "scripts": []
           },
           "configurations": {
@@ -142,6 +146,487 @@
           "builder": "@nrwl/linter:eslint",
           "options": {
             "lintFilePatterns": ["apps/website-e2e/**/*.{js,ts}"]
+          }
+        }
+      }
+    },
+    "feature-lazy-contact": {
+      "projectType": "library",
+      "root": "libs/feature/lazy/contact",
+      "sourceRoot": "libs/feature/lazy/contact/src",
+      "prefix": "tyrcord-feature-lazy",
+      "architect": {
+        "build": {
+          "builder": "@nrwl/angular:ng-packagr-lite",
+          "options": {
+            "tsConfig": "libs/feature/lazy/contact/tsconfig.lib.json",
+            "project": "libs/feature/lazy/contact/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "libs/feature/lazy/contact/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/feature/lazy/contact/src/**/*.ts",
+              "libs/feature/lazy/contact/src/**/*.html"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/feature/lazy/contact"],
+          "options": {
+            "jestConfig": "libs/feature/lazy/contact/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "feature-lazy-apps": {
+      "projectType": "library",
+      "root": "libs/feature/lazy/apps",
+      "sourceRoot": "libs/feature/lazy/apps/src",
+      "prefix": "tyrcord-feature-lazy",
+      "architect": {
+        "build": {
+          "builder": "@nrwl/angular:ng-packagr-lite",
+          "options": {
+            "tsConfig": "libs/feature/lazy/apps/tsconfig.lib.json",
+            "project": "libs/feature/lazy/apps/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "libs/feature/lazy/apps/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/feature/lazy/apps/src/**/*.ts",
+              "libs/feature/lazy/apps/src/**/*.html"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/feature/lazy/apps"],
+          "options": {
+            "jestConfig": "libs/feature/lazy/apps/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "feature-lazy-about": {
+      "projectType": "library",
+      "root": "libs/feature/lazy/about",
+      "sourceRoot": "libs/feature/lazy/about/src",
+      "prefix": "tyrcord-feature-lazy",
+      "architect": {
+        "build": {
+          "builder": "@nrwl/angular:ng-packagr-lite",
+          "options": {
+            "tsConfig": "libs/feature/lazy/about/tsconfig.lib.json",
+            "project": "libs/feature/lazy/about/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "libs/feature/lazy/about/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/feature/lazy/about/src/**/*.ts",
+              "libs/feature/lazy/about/src/**/*.html"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/feature/lazy/about"],
+          "options": {
+            "jestConfig": "libs/feature/lazy/about/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "feature-lazy-home": {
+      "projectType": "library",
+      "root": "libs/feature/lazy/home",
+      "sourceRoot": "libs/feature/lazy/home/src",
+      "prefix": "tyrcord-feature-lazy",
+      "architect": {
+        "build": {
+          "builder": "@nrwl/angular:ng-packagr-lite",
+          "options": {
+            "tsConfig": "libs/feature/lazy/home/tsconfig.lib.json",
+            "project": "libs/feature/lazy/home/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "libs/feature/lazy/home/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/feature/lazy/home/src/**/*.ts",
+              "libs/feature/lazy/home/src/**/*.html"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/feature/lazy/home"],
+          "options": {
+            "jestConfig": "libs/feature/lazy/home/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "ui-layout": {
+      "projectType": "library",
+      "root": "libs/ui/layout",
+      "sourceRoot": "libs/ui/layout/src",
+      "prefix": "tyrcord-ui-layout",
+      "architect": {
+        "build": {
+          "builder": "@nrwl/angular:ng-packagr-lite",
+          "options": {
+            "tsConfig": "libs/ui/layout/tsconfig.lib.json",
+            "project": "libs/ui/layout/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "libs/ui/layout/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/ui/layout/src/**/*.ts",
+              "libs/ui/layout/src/**/*.html"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/ui/layout"],
+          "options": {
+            "jestConfig": "libs/ui/layout/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "ui-core": {
+      "projectType": "library",
+      "root": "libs/ui/core",
+      "sourceRoot": "libs/ui/core/src",
+      "prefix": "tyrcord-ui-core",
+      "architect": {
+        "build": {
+          "builder": "@nrwl/angular:ng-packagr-lite",
+          "options": {
+            "tsConfig": "libs/ui/core/tsconfig.lib.json",
+            "project": "libs/ui/core/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "libs/ui/core/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/ui/core/src/**/*.ts",
+              "libs/ui/core/src/**/*.html"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/ui/core"],
+          "options": {
+            "jestConfig": "libs/ui/core/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "ui-typography": {
+      "projectType": "library",
+      "root": "libs/ui/typography",
+      "sourceRoot": "libs/ui/typography/src",
+      "prefix": "tyrcord-ui-typography",
+      "architect": {
+        "build": {
+          "builder": "@nrwl/angular:ng-packagr-lite",
+          "options": {
+            "tsConfig": "libs/ui/typography/tsconfig.lib.json",
+            "project": "libs/ui/typography/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "libs/ui/typography/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/ui/typography/src/**/*.ts",
+              "libs/ui/typography/src/**/*.html"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/ui/typography"],
+          "options": {
+            "jestConfig": "libs/ui/typography/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "feature-shared-localization": {
+      "projectType": "library",
+      "root": "libs/feature/shared/localization",
+      "sourceRoot": "libs/feature/shared/localization/src",
+      "prefix": "feature-shared",
+      "architect": {
+        "build": {
+          "builder": "@nrwl/angular:ng-packagr-lite",
+          "options": {
+            "tsConfig": "libs/feature/shared/localization/tsconfig.lib.json",
+            "project": "libs/feature/shared/localization/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "libs/feature/shared/localization/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/feature/shared/localization/src/**/*.ts",
+              "libs/feature/shared/localization/src/**/*.html"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/feature/shared/localization"],
+          "options": {
+            "jestConfig": "libs/feature/shared/localization/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "feature-lazy-app-detail": {
+      "projectType": "library",
+      "root": "libs/feature/lazy/app-detail",
+      "sourceRoot": "libs/feature/lazy/app-detail/src",
+      "prefix": "feature-lazy",
+      "architect": {
+        "build": {
+          "builder": "@nrwl/angular:ng-packagr-lite",
+          "options": {
+            "tsConfig": "libs/feature/lazy/app-detail/tsconfig.lib.json",
+            "project": "libs/feature/lazy/app-detail/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "libs/feature/lazy/app-detail/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/feature/lazy/app-detail/src/**/*.ts",
+              "libs/feature/lazy/app-detail/src/**/*.html"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/feature/lazy/app-detail"],
+          "options": {
+            "jestConfig": "libs/feature/lazy/app-detail/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "feature-lazy-app-terms-of-service": {
+      "projectType": "library",
+      "root": "libs/feature/lazy/app-terms-of-service",
+      "sourceRoot": "libs/feature/lazy/app-terms-of-service/src",
+      "prefix": "feature-lazy",
+      "architect": {
+        "build": {
+          "builder": "@nrwl/angular:ng-packagr-lite",
+          "options": {
+            "tsConfig": "libs/feature/lazy/app-terms-of-service/tsconfig.lib.json",
+            "project": "libs/feature/lazy/app-terms-of-service/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "libs/feature/lazy/app-terms-of-service/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/feature/lazy/app-terms-of-service/src/**/*.ts",
+              "libs/feature/lazy/app-terms-of-service/src/**/*.html"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/feature/lazy/app-terms-of-service"],
+          "options": {
+            "jestConfig": "libs/feature/lazy/app-terms-of-service/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "feature-lazy-app-privacy-policy": {
+      "projectType": "library",
+      "root": "libs/feature/lazy/app-privacy-policy",
+      "sourceRoot": "libs/feature/lazy/app-privacy-policy/src",
+      "prefix": "feature-lazy",
+      "architect": {
+        "build": {
+          "builder": "@nrwl/angular:ng-packagr-lite",
+          "options": {
+            "tsConfig": "libs/feature/lazy/app-privacy-policy/tsconfig.lib.json",
+            "project": "libs/feature/lazy/app-privacy-policy/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "libs/feature/lazy/app-privacy-policy/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/feature/lazy/app-privacy-policy/src/**/*.ts",
+              "libs/feature/lazy/app-privacy-policy/src/**/*.html"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/feature/lazy/app-privacy-policy"],
+          "options": {
+            "jestConfig": "libs/feature/lazy/app-privacy-policy/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "feature-shared-logic-models": {
+      "projectType": "library",
+      "root": "libs/feature/shared/logic/models",
+      "sourceRoot": "libs/feature/shared/logic/models/src",
+      "prefix": "feature-shared-logic-model",
+      "architect": {
+        "build": {
+          "builder": "@nrwl/angular:ng-packagr-lite",
+          "options": {
+            "tsConfig": "libs/feature/shared/logic/models/tsconfig.lib.json",
+            "project": "libs/feature/shared/logic/models/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "libs/feature/shared/logic/models/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/feature/shared/logic/models/src/**/*.ts",
+              "libs/feature/shared/logic/models/src/**/*.html"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/feature/shared/logic/models"],
+          "options": {
+            "jestConfig": "libs/feature/shared/logic/models/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "feature-shared-logic-persistance": {
+      "projectType": "library",
+      "root": "libs/feature/shared/logic/persistance",
+      "sourceRoot": "libs/feature/shared/logic/persistance/src",
+      "prefix": "feature-shared-logic-persistance",
+      "architect": {
+        "build": {
+          "builder": "@nrwl/angular:ng-packagr-lite",
+          "options": {
+            "tsConfig": "libs/feature/shared/logic/persistance/tsconfig.lib.json",
+            "project": "libs/feature/shared/logic/persistance/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "libs/feature/shared/logic/persistance/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/feature/shared/logic/persistance/src/**/*.ts",
+              "libs/feature/shared/logic/persistance/src/**/*.html"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/feature/shared/logic/persistance"],
+          "options": {
+            "jestConfig": "libs/feature/shared/logic/persistance/jest.config.js",
+            "passWithNoTests": true
           }
         }
       }

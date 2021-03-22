@@ -1,0 +1,11 @@
+:host {
+  display: flex;
+
+  a {
+    color: var(--app-text-color);
+  }
+
+  .caption {
+    margin-bottom: var(--app-padding-xxl);
+  }
+}

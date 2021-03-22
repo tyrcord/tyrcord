@@ -1,0 +1,23 @@
+@import 'variables';
+
+:host {
+  display: flex;
+  flex-direction: column;
+  color: var(--app-text-color);
+
+  @media all and (max-width: $app-mobile-max-width) {
+    padding-top: var(--app-padding-small);
+
+    .article-title {
+      padding-bottom: var(--app-padding-small);
+    }
+  }
+
+  @media all and (min-width: $app-desktop-min-width) {
+    padding-top: var(--app-padding-medium);
+
+    .article-title {
+      padding-bottom: var(--app-padding-medium);
+    }
+  }
+}

@@ -1,0 +1,51 @@
+@import 'variables';
+
+:host {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: var(--app-padding-large);
+
+  .page-layout-header {
+    display: flex;
+
+    .page-layout-header-leading {
+      position: relative;
+      font-size: var(--app-icon-size-large);
+      color: var(--app-text-color);
+      padding-right: var(--app-padding-large);
+      cursor: pointer;
+
+      &::before {
+        position: absolute;
+        top: -9px;
+        left: -16px;
+        bottom: -9px;
+        right: 0;
+        content: '';
+      }
+    }
+  }
+
+  .page-layout-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+
+  .page-layout-header,
+  .page-layout-content {
+    margin: var(--app-padding-large) 0px;
+  }
+
+  @supports (padding: max(0px)) {
+    padding-left: max(var(--app-padding-large), env(safe-area-inset-left));
+    padding-right: max(var(--app-padding-large), env(safe-area-inset-right));
+  }
+
+  @media all and (min-width: $app-desktop-min-width) {
+    .page-layout-header {
+      align-items: center;
+    }
+  }
+}

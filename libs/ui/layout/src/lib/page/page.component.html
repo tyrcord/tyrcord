@@ -1,0 +1,8 @@
+<div class="page-layout-header">
+  <span *ngIf="showBackButton" class="page-layout-header-leading" (click)="onBack()"><i class="fal fa-chevron-left"></i></span>
+  <tyrcord-ui-typography-subhead>{{ headline | translate }}</tyrcord-ui-typography-subhead>
+</div>
+
+<div class="page-layout-content">
+  <ng-content></ng-content>
+</div>

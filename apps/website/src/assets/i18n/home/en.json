@@ -1,0 +1,20 @@
+{
+  "TITLES": {
+    "WHY_US": "Why Us?"
+  },
+  "HOME_CARDS": {
+    "TITLES": {
+      "PERFORMANCE": "Performance",
+      "RELEVANCE": "Relevance",
+      "DESIGN": "Design"
+    },
+    "DESCRIPTION": {
+      "PERFORMANCE": "Our understanding of web services, architecture and technologies allow us to improve and optimize the performance of any application.",
+      "RELEVANCE": "We will perform a business analysis personalized to your specific needs in order to help you to achieve your goals faster.",
+      "DESIGN": "We make sure your users find your application as intuitive as possible without compromising the ease of finding information easily."
+    }
+  },
+  "LINKS": {
+    "DISCOVER_OUR_APPS": "Discover our apps..."
+  }
+}

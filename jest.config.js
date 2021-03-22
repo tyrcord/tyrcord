@@ -1,3 +1,20 @@
 module.exports = {
-  projects: ['<rootDir>/apps/website'],
+  projects: [
+    '<rootDir>/apps/website',
+    '<rootDir>/libs/feature/lazy/contact',
+    '<rootDir>/libs/feature/lazy/apps',
+    '<rootDir>/libs/feature/lazy/about',
+    '<rootDir>/libs/feature/lazy/home',
+    '<rootDir>/libs/ui/layout',
+    '<rootDir>/libs/ui/core',
+    '<rootDir>/libs/ui/typography',
+    '<rootDir>/libs/logic/services',
+    '<rootDir>/libs/feature/shared',
+    '<rootDir>/libs/feature/shared/localization',
+    '<rootDir>/libs/feature/lazy/app-detail',
+    '<rootDir>/libs/feature/lazy/app-terms-of-service',
+    '<rootDir>/libs/feature/lazy/app-privacy-policy',
+    '<rootDir>/libs/feature/shared/logic/models',
+    '<rootDir>/libs/feature/shared/logic/persistance',
+  ],
 };

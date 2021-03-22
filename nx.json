@@ -1,34 +1,42 @@
 {
   "implicitDependencies": {
     "angular.json": "*",
-    "package.json": {
-      "dependencies": "*",
-      "devDependencies": "*"
-    },
+    "package.json": { "dependencies": "*", "devDependencies": "*" },
     "tsconfig.base.json": "*",
     "tslint.json": "*",
     ".eslintrc.json": "*",
     "nx.json": "*"
   },
-  "affected": {
-    "defaultBase": "master"
-  },
+  "affected": { "defaultBase": "master" },
   "npmScope": "tyrcord",
   "tasksRunnerOptions": {
     "default": {
-      "runner": "@nrwl/workspace/tasks-runners/default",
+      "runner": "@nrwl/nx-cloud",
       "options": {
-        "cacheableOperations": ["build", "lint", "test", "e2e"]
+        "cacheableOperations": ["build", "lint", "test", "e2e"],
+        "accessToken": "MTAxY2MxZDktNzQ0MC00Y2M4LWE4YTQtZDQxZTBhZjUyNmIxfHJlYWQtd3JpdGU=",
+        "canTrackAnalytics": false,
+        "showUsageWarnings": true
       }
     }
   },
   "projects": {
-    "website": {
-      "tags": []
-    },
-    "website-e2e": {
-      "tags": [],
-      "implicitDependencies": ["website"]
+    "website": { "tags": [] },
+    "website-e2e": { "tags": [], "implicitDependencies": ["website"] },
+    "feature-lazy-contact": { "tags": ["feature-lazy"] },
+    "feature-lazy-apps": { "tags": ["feature-lazy"] },
+    "feature-lazy-about": { "tags": ["feature-lazy"] },
+    "feature-lazy-home": { "tags": ["feature-lazy"] },
+    "ui-layout": { "tags": ["ui-layout"] },
+    "ui-core": { "tags": ["ui-core"] },
+    "ui-typography": { "tags": ["ui-typography"] },
+    "feature-shared-localization": { "tags": ["feature-shared"] },
+    "feature-lazy-app-detail": { "tags": ["feature-lazy"] },
+    "feature-lazy-app-terms-of-service": { "tags": ["feature-lazy"] },
+    "feature-lazy-app-privacy-policy": { "tags": ["feature-lazy"] },
+    "feature-shared-logic-models": { "tags": ["feature-shared-logic-models"] },
+    "feature-shared-logic-persistance": {
+      "tags": ["feature-shared-logic-persistance"]
     }
   }
 }

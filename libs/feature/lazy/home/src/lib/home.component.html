@@ -1,0 +1,44 @@
+<tyrcord-ui-layout-page headline="TITLES.WHY_US">
+  <div class="cards">
+    <tyrcord-ui-layout-home-card class="purple">
+      <i class="fad fa-bullseye-arrow" slot-logo></i>
+      <ng-container slot-content>
+        <tyrcord-ui-typography-subtitle>
+          {{ 'HOME_CARDS.TITLES.RELEVANCE' | translate}}
+        </tyrcord-ui-typography-subtitle>
+        <tyrcord-ui-typography-caption>
+          {{ 'HOME_CARDS.DESCRIPTION.RELEVANCE' | translate }}
+        </tyrcord-ui-typography-caption>
+      </ng-container>
+    </tyrcord-ui-layout-home-card>
+
+    <tyrcord-ui-layout-home-card class="green">
+      <i class="fad fa-magic" slot-logo></i>
+      <ng-container slot-content>
+        <tyrcord-ui-typography-subtitle>
+          {{ 'HOME_CARDS.TITLES.DESIGN' | translate }}
+        </tyrcord-ui-typography-subtitle>
+        <tyrcord-ui-typography-caption>
+          {{ 'HOME_CARDS.DESCRIPTION.DESIGN' | translate }}
+        </tyrcord-ui-typography-caption>
+      </ng-container>
+
+    </tyrcord-ui-layout-home-card>
+
+    <tyrcord-ui-layout-home-card class="blue">
+      <i class="fad fa-rocket-launch" slot-logo></i>
+      <ng-container slot-content>
+        <tyrcord-ui-typography-subtitle>
+          {{ 'HOME_CARDS.TITLES.PERFORMANCE' | translate }}
+        </tyrcord-ui-typography-subtitle>
+        <tyrcord-ui-typography-caption>
+          {{ 'HOME_CARDS.DESCRIPTION.PERFORMANCE' | translate }}
+        </tyrcord-ui-typography-caption>
+      </ng-container>
+    </tyrcord-ui-layout-home-card>
+  </div>
+
+  <tyrcord-ui-typography-link routerLink="/apps">
+    {{ 'LINKS.DISCOVER_OUR_APPS' | translate }}
+  </tyrcord-ui-typography-link>
+</tyrcord-ui-layout-page>

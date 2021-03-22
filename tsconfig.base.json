@@ -13,8 +13,39 @@
     "lib": ["es2017", "dom"],
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
+    "resolveJsonModule": true,
+    "esModuleInterop":true,
+    "noImplicitAny": false,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@tyrcord/feature/lazy/contact": [
+        "libs/feature/lazy/contact/src/index.ts"
+      ],
+      "@tyrcord/feature/lazy/apps": ["libs/feature/lazy/apps/src/index.ts"],
+      "@tyrcord/feature/lazy/about": ["libs/feature/lazy/about/src/index.ts"],
+      "@tyrcord/feature/lazy/home": ["libs/feature/lazy/home/src/index.ts"],
+      "@tyrcord/ui/layout": ["libs/ui/layout/src/index.ts"],
+      "@tyrcord/ui/core": ["libs/ui/core/src/index.ts"],
+      "@tyrcord/ui/typography": ["libs/ui/typography/src/index.ts"],
+      "@tyrcord/feature/shared/localization": [
+        "libs/feature/shared/localization/src/index.ts"
+      ],
+      "@tyrcord/feature/lazy/app-detail": [
+        "libs/feature/lazy/app-detail/src/index.ts"
+      ],
+      "@tyrcord/feature/lazy/app-terms-of-service": [
+        "libs/feature/lazy/app-terms-of-service/src/index.ts"
+      ],
+      "@tyrcord/feature/lazy/app-privacy-policy": [
+        "libs/feature/lazy/app-privacy-policy/src/index.ts"
+      ],
+      "@tyrcord/feature/shared/logic/models": [
+        "libs/feature/shared/logic/models/src/index.ts"
+      ],
+      "@tyrcord/feature/shared/logic/persistance": [
+        "libs/feature/shared/logic/persistance/src/index.ts"
+      ]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

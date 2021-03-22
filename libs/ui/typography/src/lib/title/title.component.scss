@@ -1,0 +1,14 @@
+@import 'variables';
+
+:host {
+  color: var(--app-text-color);
+  font-weight: 700;
+
+  @media all and (max-width: $app-mobile-max-width) {
+    font-size: 22px;
+  }
+
+  @media all and (min-width: $app-desktop-min-width) {
+    font-size: 34px;
+  }
+}

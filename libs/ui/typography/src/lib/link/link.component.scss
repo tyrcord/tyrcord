@@ -1,0 +1,23 @@
+@import 'variables';
+
+:host {
+  outline: none;
+
+  a {
+    color: var(--app-blue-color);
+    outline: none;
+    cursor: pointer;
+  }
+
+  @media all and (max-width: $app-mobile-max-width) {
+    a {
+      font-size: 18px;
+    }
+  }
+
+  @media all and (min-width: $app-desktop-min-width) {
+    a {
+      font-size: 22px;
+    }
+  }
+}

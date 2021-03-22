@@ -1,0 +1,206 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+a {
+  text-decoration: none;
+
+  &:visited {
+    color: inherit;
+  }
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1.2;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html,
+body {
+  min-height: 100%;
+  width: 100%;
+  display: flex;
+  -webkit-tap-highlight-color: transparent;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  @media (prefers-color-scheme: light) {
+    --app-text-color: #424242;
+    --app-secondary-text-color: #676767;
+    --app-shadow-color: #94949433;
+    --app-white-color: #fafafa;
+    --app-divider-color: #e0e0e044;
+    --app-indigo-color: #7573e6;
+    --app-purple-color: #c95eff;
+    --app-blue-color: #4094e3;
+    --app-green-color: #3ca469;
+    --app-background-color: #fafafa;
+    --app-background-secondary-color: #fff;
+    --app-background-tertiary-color: #949494;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    --app-text-color: #fff;
+    --app-secondary-text-color: #ebebf599;
+    --app-shadow-color: #09090d;
+    --app-white-color: #fff;
+    --app-divider-color: #54545866;
+    --app-indigo-color: #8a93ff;
+    --app-purple-color: #b37dff;
+    --app-blue-color: #6bc3fe;
+    --app-green-color: #6ddb63;
+    --app-background-color: #111219;
+    --app-background-secondary-color: #1e2026;
+    --app-background-tertiary-color: #2c2c2e;
+  }
+
+  --app-primary-color: var(--app-indigo-color);
+  --app-secondary-color: var(--app-purple-color);
+
+  --app-icon-size-small: 18px;
+  --app-icon-size-medium: 24px;
+  --app-icon-size-large: 32px;
+  --app-icon-size-xl: 48px;
+  --app-icon-size-xxl: 64px;
+
+  --app-padding-xs: 4px;
+  --app-padding-small: 8px;
+  --app-padding-medium: 16px;
+  --app-padding-large: 24px;
+  --app-padding-xl: 32px;
+  --app-padding-xxl: 48px;
+
+  --app-min-touch-width: 56px;
+  --app-bar-height: 56px;
+  --app-footer-height: 64px;
+
+  --layout-app-header-background-color: var(--app-background-secondary-color);
+  --layout-app-header-shadow-color: var(--app-shadow-color);
+  --layout-app-content-background-color: var(--app-background-color);
+  --layout-app-content-text-color: var(--app-text-color);
+  --layout-app-footer-background-color: var(--app-primary-color);
+}

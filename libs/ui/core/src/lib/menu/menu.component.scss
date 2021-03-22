@@ -1,0 +1,89 @@
+@import 'variables';
+
+:host {
+  display: flex;
+
+  nav,
+  .menu-options {
+    display: flex;
+  }
+
+  .menu-option {
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    min-width: var(--app-min-touch-width);
+
+    > tyrcord-ui-layout-list-item {
+      justify-content: center;
+    }
+  }
+
+  @media all and (max-width: $app-mobile-max-width) {
+    .menu-options {
+      flex-direction: column;
+    }
+
+    nav {
+      box-shadow: 0px 2px 2px var(--layout-app-header-shadow-color);
+      background-color: var(--app-background-tertiary-color);
+      transform: translate3d(0, 0, 0);
+      position: absolute;
+      z-index: 9999;
+      top: var(--app-bar-height);
+      right: 0;
+      left: 0;
+    }
+
+    .menu-options {
+      display: none;
+      align-items: stretch;
+      flex: 1;
+    }
+
+    .menu-option:not(:first-child) {
+      border-top: 1px solid var(--app-divider-color);
+    }
+
+    .menu-toggle {
+      font-size: var(--app-icon-size-medium);
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+
+      i {
+        padding: 0 var(--app-padding-large);
+      }
+    }
+  }
+
+  @media all and (min-width: $app-desktop-min-width) {
+    .menu-options,
+    .menu-option > tyrcord-ui-layout-list-item {
+      padding: 0 calc(var(--app-padding-medium) / 2);
+    }
+
+    .menu-toggle {
+      display: none;
+    }
+  }
+}
+
+:host(.has-menu-opened) {
+  @media (prefers-color-scheme: light) and (max-width: $app-mobile-max-width) {
+    nav {
+      background-color: var(--app-background-secondary-color);
+    }
+  }
+
+  @media all and (max-width: $app-mobile-max-width) {
+    .menu-options {
+      display: flex;
+    }
+
+    .menu-toggle {
+      color: var(--app-white-color);
+      background-color: var(--app-primary-color);
+    }
+  }
+}

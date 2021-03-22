@@ -1,0 +1,12 @@
+<div class="menu-toggle" (click)="onToggleMenu()">
+  <i class="fa fa-bars menu-icon"></i>
+</div>
+<nav>
+  <ul class="menu-options">
+    <li *ngFor="let option of options;" class="menu-option" (click)="onOptionChange(option)" title="{{option.labelText}}">
+      <tyrcord-ui-layout-list-item>
+        {{ option.label | translate }}
+      </tyrcord-ui-layout-list-item>
+    </li>
+  </ul>
+</nav>

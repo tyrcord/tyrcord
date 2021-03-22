@@ -1,0 +1,20 @@
+{
+  "TITLES": {
+    "WHY_US": "Pourquoi nous choisir\u00a0?"
+  },
+  "HOME_CARDS": {
+    "TITLES": {
+      "RELEVANCE": "Pertinence",
+      "DESIGN": "Design",
+      "PERFORMANCE": "Performance"
+    },
+    "DESCRIPTION": {
+      "RELEVANCE": "Nous effectuerons une analyse commerciale personnalisée à vos besoins spécifiques afin de vous aider à atteindre vos objectifs plus rapidement.",
+      "DESIGN": "Nous nous assurons que vos utilisateurs trouvent votre application aussi intuitive que possible et ce, sans compromettre la facilité de trouver facilement des informations.",
+      "PERFORMANCE": "Notre compréhension des services, de l'architecture et des technologies Web nous permet d'améliorer et d'optimiser les performances de n'importe quelle application."
+    }
+  },
+  "LINKS": {
+    "DISCOVER_OUR_APPS": "Découvrez nos applications..."
+  }
+}

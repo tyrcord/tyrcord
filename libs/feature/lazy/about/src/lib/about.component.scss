@@ -1,0 +1,16 @@
+:host {
+  display: flex;
+  align-items: flex-start;
+  flex: 1;
+
+  .logo {
+    padding-bottom: var(--app-padding-xxl);
+    fill: var(--app-text-color);
+    max-width: 55%;
+    margin: auto;
+  }
+
+  tyrcord-ui-typography-body {
+    padding-bottom: var(--app-padding-medium);
+  }
+}

@@ -1,0 +1,12 @@
+<tyrcord-ui-layout-list-item [routerLink]="['detail', app.id]">
+  <picture class="logo" slot-leading>
+    <source srcset="{{ thumbnails }}">
+    <img src="{{ app.thumbnail }}" alt="app-thumbnail">
+  </picture>
+  <tyrcord-ui-typography-body>
+    {{ app.name | translate }}
+  </tyrcord-ui-typography-body>
+  <tyrcord-ui-typography-caption slot-description>
+    {{ app.subtitle | translate }}
+  </tyrcord-ui-typography-caption>
+</tyrcord-ui-layout-list-item>

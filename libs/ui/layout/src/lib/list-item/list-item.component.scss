@@ -1,0 +1,52 @@
+@import 'variables';
+
+:host {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  outline: none;
+
+  .item-leading {
+    color: var(--app-primary-color);
+    display: flex;
+    align-items: center;
+    flex: none;
+    height: 100%;
+    padding-right: var(--app-padding-medium);
+
+    &:empty {
+      display: none;
+    }
+  }
+
+  .item-content {
+    display: flex;
+    flex-direction: column;
+
+    .item-description {
+      padding-top: var(--app-padding-xs);
+
+      &:empty {
+        display: none;
+      }
+    }
+  }
+
+  @media all and (max-width: $app-mobile-max-width) {
+    min-height: 48px;
+
+    .item-leading {
+      font-size: var(--app-icon-size-small);
+      min-width: var(--app-icon-size-small);
+    }
+  }
+
+  @media all and (min-width: $app-desktop-min-width) {
+    min-height: 56px;
+
+    .item-leading {
+      font-size: var(--app-icon-size-medium);
+      min-width: var(--app-icon-size-medium);
+    }
+  }
+}
