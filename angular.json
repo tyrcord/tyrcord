@@ -52,6 +52,17 @@
             },
             "extractCss": true,
             "assets": [
+              "apps/website/src/app-ads.txt",
+              "apps/website/src/android-chrome-192x192.png",
+              "apps/website/src/android-chrome-512x512.png",
+              "apps/website/src/apple-touch-icon.png",
+              "apps/website/src/apple-touch-icon.png",
+              "apps/website/src/favicon-16x16.png",
+              "apps/website/src/favicon-32x32.png",
+              "apps/website/src/browserconfig.xml",
+              "apps/website/src/mstile-150x150.png",
+              "apps/website/src/safari-pinned-tab.svg",
+              "apps/website/src/site.webmanifest",
               "apps/website/src/favicon.ico",
               "apps/website/src/assets"
             ],
