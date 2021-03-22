@@ -1,7 +1,9 @@
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
+import { AngularFireAnalyticsModule } from '@angular/fire/analytics';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { BrowserModule } from '@angular/platform-browser';
+import { AngularFireModule } from '@angular/fire';
 import { NgModule } from '@angular/core';
 
 import { LocalizationModule } from '@tyrcord/feature/shared/localization';
@@ -12,6 +14,7 @@ import { UICoreModule } from '@tyrcord/ui/core';
 import { kDefaultLanguage, kSupportedLanguages } from './constants';
 import { AppRoutingModule } from './app.routing';
 import { AppComponent } from './app.component';
+import { environment } from '../environments/environment';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -37,6 +40,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     UICoreModule,
     LayoutModule,
     TypographyModule,
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFireAnalyticsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
