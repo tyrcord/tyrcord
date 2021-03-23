@@ -43,9 +43,16 @@
     padding-right: max(var(--app-padding-large), env(safe-area-inset-right));
   }
 
+  @media all and (max-width: $app-mobile-max-width) {
+    .page-layout-header {
+      min-height: 40px;
+    }
+  }
+
   @media all and (min-width: $app-desktop-min-width) {
     .page-layout-header {
       align-items: center;
+      min-height: 57px;
     }
   }
 }

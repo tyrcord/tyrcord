@@ -11,11 +11,11 @@
     ],
     "headers": [
       {
-        "source": "**/*.@(jpg|jpeg|gif|png|webp|js)",
+        "source": "**/*.@(jpg|jpeg|gif|png|webp|js|css)",
         "headers": [
           {
             "key": "Cache-Control",
-            "value": "max-age=86400"
+            "value": "max-age=2592000"
           }
         ]
       }

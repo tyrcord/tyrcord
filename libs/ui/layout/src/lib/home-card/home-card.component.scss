@@ -28,7 +28,7 @@
     border-radius: 16px;
     padding: var(--app-padding-medium);
 
-    .card-logo:not(:empty) {
+    .card-logo {
       display: flex;
       justify-content: center;
       font-size: var(--app-icon-size-xxl);
