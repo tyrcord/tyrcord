@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://tyrcord.com/sitemap.xml

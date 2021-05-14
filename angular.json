@@ -65,7 +65,9 @@
               "apps/website/src/safari-pinned-tab.svg",
               "apps/website/src/site.webmanifest",
               "apps/website/src/favicon.ico",
-              "apps/website/src/assets"
+              "apps/website/src/assets",
+              "apps/website/src/robots.txt",
+              "apps/website/src/sitemap.xml"
             ],
             "styles": ["libs/ui/core/styles/core.scss"],
             "scripts": []
