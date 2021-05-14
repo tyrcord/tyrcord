@@ -26,8 +26,8 @@
     "workspace-generator": "nx workspace-generator",
     "dep-graph": "nx dep-graph",
     "help": "nx help",
-    "build:website": "nx run website:build",
-    "deploy:website": "nx run website:build && firebase deploy --only hosting"
+    "build:website:prod": "nx run website:build:production",
+    "deploy:website": "npm run build:website:prod && firebase deploy --only hosting"
   },
   "private": true,
   "dependencies": {
