@@ -14,6 +14,6 @@ export class AppsComponent implements OnInit {
   constructor(private appDataProvider: AppDataProvider) {}
 
   ngOnInit(): void {
-    this.apps = this.appDataProvider.list();
+    this.apps = this.appDataProvider.listAndSort();
   }
 }

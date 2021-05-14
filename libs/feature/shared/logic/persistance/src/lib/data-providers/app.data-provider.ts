@@ -14,6 +14,10 @@ export class AppDataProvider {
     return applicationDetails;
   }
 
+  listAndSort(): IAppModel[] {
+    return this.list().sort((a, b) => a.name.localeCompare(b.name));
+  }
+
   retreive(id: string): IAppModel {
     return applicationDetails.find((app: IAppModel) => app.id === id);
   }
