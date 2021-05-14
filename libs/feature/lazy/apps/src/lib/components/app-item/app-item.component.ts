@@ -11,7 +11,8 @@ export class AppItemComponent implements OnInit {
   @Input()
   app: IAppModel;
 
-  thumbnails: string[];
+  pngThumbnails: string[];
+  webpThumbnails: string[];
 
   ngOnInit(): void {
     this.buildAppThumbnails();
@@ -19,12 +20,15 @@ export class AppItemComponent implements OnInit {
 
   private buildAppThumbnails(): void {
     const thumbnail = this.app.thumbnail;
-    const thumbnails = [];
+    const pngThumbnails = [];
+    const webpThumbnails = [];
 
     for (let i = 2; i < 4; i++) {
-      thumbnails.push(thumbnail.replace('.png', `@${i}x.png ${i}x`));
+      pngThumbnails.push(thumbnail.replace('.png', `@${i}x.png ${i}x`));
+      webpThumbnails.push(thumbnail.replace('.png', `@${i}x.webp ${i}x`));
     }
 
-    this.thumbnails = thumbnails;
+    this.pngThumbnails = pngThumbnails;
+    this.webpThumbnails = webpThumbnails;
   }
 }

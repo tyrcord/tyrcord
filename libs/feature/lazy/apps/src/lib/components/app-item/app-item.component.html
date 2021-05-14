@@ -1,6 +1,7 @@
 <tyrcord-ui-layout-list-item [routerLink]="['detail', app.id]">
   <picture class="logo" slot-leading>
-    <source srcset="{{ thumbnails }}">
+    <source srcset="{{ webpThumbnails }}">
+    <source srcset="{{ pngThumbnails }}">
     <img src="{{ app.thumbnail }}" alt="app-thumbnail">
   </picture>
   <tyrcord-ui-typography-body>

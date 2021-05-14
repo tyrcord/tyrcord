@@ -10,7 +10,8 @@ import { ActivatedRoute, Router } from '@angular/router';
   styleUrls: ['./app-detail.component.scss'],
 })
 export class AppDetailComponent implements OnInit {
-  previews: string[];
+  webpPreviews: string[];
+  pngPreviews: string[];
   app: IAppModel;
 
   constructor(
@@ -31,12 +32,15 @@ export class AppDetailComponent implements OnInit {
 
   private buildAppPreviews(): void {
     const preview = this.app.preview;
-    const previews = [];
+    const pngPreviews = [];
+    const webpPreviews = [];
 
     for (let i = 2; i < 4; i++) {
-      previews.push(preview.replace('.png', `@${i}x.png ${i}x`));
+      pngPreviews.push(preview.replace('.png', `@${i}x.png ${i}x`));
+      webpPreviews.push(preview.replace('.png', `@${i}x.webp ${i}x`));
     }
 
-    this.previews = previews;
+    this.pngPreviews = pngPreviews;
+    this.webpPreviews = webpPreviews;
   }
 }
