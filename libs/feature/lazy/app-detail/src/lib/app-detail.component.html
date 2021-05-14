@@ -7,16 +7,16 @@
       <picture>
         <source srcset="{{ webpPreviews }}">
         <source srcset="{{ pngPreviews }}">
-        <img src="{{app.preview}}"/>
+        <img src="{{app.preview}}" alt="App Preview"/>
       </picture>
     </div>
   </div>
   <div class="app-detail-actions">
-    <a *ngIf="app.ios" class="app-detail-download" target="_blank" [href]="app.iosUrl">
+    <a *ngIf="app.ios" class="app-detail-download" target="_blank" [href]="app.iosUrl" rel="noopener">
       <i class="fab fa-apple"></i>
       {{ 'DOWNLOAD' | translate }}
     </a>
-    <a *ngIf="app.android" class="app-detail-download" target="_blank" [href]="app.androidUrl">
+    <a *ngIf="app.android" class="app-detail-download" target="_blank" [href]="app.androidUrl" rel="noopener">
     <i class="fab fa-google-play"></i>
       {{ 'DOWNLOAD' | translate }}
     </a>
