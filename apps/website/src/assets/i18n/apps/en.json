@@ -5,14 +5,14 @@
       "EXPRESSIONS_QUEBECOISES": "<p>If you are a native French speaker who has just arrived in Quebec or if you simply want to improve your knowledge of the Quebec language, this application is made for you!</p><p>More than 500 Quebecois Slang Words and Phrases are waiting for you!</p>",
       "FX_CALCULATORS": "<p>Risk management in financial markets is one of the keys to success. Therefore, it is important to set up a trading strategy of your own.</p><p>It is for this purpose that the FX Calculators application has been created. It will help you in your risk management and your decision making by providing you a suite of simple and effective tools.</p> <p>Forex calculators available:</p><ul><li>• Fibonacci Levels: A simple tool to identify strategic places for transactions, stop losses or target prices within a trend.</li><li>• Pip Value: The fastest way to determine the value per pip in your account currency.</li><li>• Pivots Points: A simple way to determine resistances and supports levels.</li><li>• Position Size: Calculate the proper size that meets your risk management.</li><li>• Margin: Calculate the margin needed to open and hold positions.</li><li>• Stop Loss/Take Profit: Determine how much you stand to lose or gain if your stop-loss or take-profit levels have been reached.</li></ul>",
       "PIP_CALCULATOR": "<p>In order to manage risk with more accuracy, it is important for you to know the pip value of each of your trades.</p><p>The Pip Calculator app does this for you. All you have to do is enter your account currency, the currency pair you are trading on, and the trade size. Then the Pip Calculator app will automatically determine how much each pip is worth.</p>",
-      "PROFIT_AND_LOSS_CALCULATORS": "<p>This application is a simple tool that allows you to calculate the profit or loss when selling something.</p>"
+      "PROFIT_AND_LOSS_CALCULATORS": "<p>Our app will help you quickly find out if your income is able to cover your costs.</p>"
     },
     "SUBTILES": {
-      "DIVIDEND_CALCULATORS": "A suite of dividend investment tools.",
+      "DIVIDEND_CALCULATORS": "A collection of tools to help you choose your dividend-paying stocks.",
       "EXPRESSIONS_QUEBECOISES": "500+ Quebecois Slang Words and Phrases",
       "FX_CALCULATORS": "Using Forex tools has never been easier!",
       "PIP_CALCULATOR": "Determining the value per pip in your account currency has never been easier!",
-      "PROFIT_AND_LOSS_CALCULATORS": "Simple profit and loss calculator."
+      "PROFIT_AND_LOSS_CALCULATORS": "A simple profit and loss calculator."
     }
   },
   "DOWNLOAD": "Download",
