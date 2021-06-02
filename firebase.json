@@ -3,7 +3,9 @@
     "site": "tyrcord-816d7",
     "public": "dist/apps/website",
     "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+    "appAssociation": "AUTO",
     "rewrites": [
+      { "source": "/promo/**", "dynamicLinks": true },
       {
         "source": "**",
         "destination": "/index.html"
