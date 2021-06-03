@@ -42,8 +42,8 @@
     "thumbnail": "assets/pngs/apps/pip-calculator/icon.png"
   },
   {
-    "android": false,
-    "androidUrl": "",
+    "android": true,
+    "androidUrl": "https://tyrcord.com/promo/BnhH",
     "author": "Tyrcord, Inc",
     "description": "APPS.DESCRIPTIONS.PROFIT_AND_LOSS_CALCULATORS",
     "id": "profit-and-loss-calculator",
