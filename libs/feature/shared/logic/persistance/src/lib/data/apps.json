@@ -14,12 +14,12 @@
     "thumbnail": "assets/pngs/apps/fx-calculators/icon.png"
   },
   {
-    "android": false,
-    "androidUrl": "",
+    "android": true,
+    "androidUrl": "https://tyrcord.com/promo/kPAc",
     "author": "Tyrcord, Inc",
     "description": "APPS.DESCRIPTIONS.DIVIDEND_CALCULATORS",
     "id": "dividend-calculators",
-    "ios": false,
+    "ios": true,
     "iosUrl": "https://tyrcord.com/promo/6SuK",
     "name": "Dividend Calculators",
     "preview": "assets/pngs/apps/dividend-calculators/preview.png",
