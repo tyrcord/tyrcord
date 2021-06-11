@@ -7,10 +7,10 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
 })
 export class PageComponent {
   @Input()
-  headline: string;
+  showBackButton = false;
 
   @Input()
-  showBackButton = false;
+  headline?: string;
 
   @Output()
   back = new EventEmitter();

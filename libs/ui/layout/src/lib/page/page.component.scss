@@ -9,6 +9,10 @@
   .page-layout-header {
     display: flex;
 
+    &:empty {
+      display: none;
+    }
+
     .page-layout-header-leading {
       position: relative;
       font-size: var(--app-icon-size-large);
