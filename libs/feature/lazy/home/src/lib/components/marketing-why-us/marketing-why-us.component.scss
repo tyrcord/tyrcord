@@ -1,0 +1,41 @@
+@import 'variables';
+
+:host {
+  display: flex;
+  flex-direction: column;
+
+  .cards {
+    display: flex;
+    flex: 1;
+
+    tyrcord-ui-typography-subtitle,
+    tyrcord-ui-typography-caption {
+      text-align: center;
+    }
+
+    tyrcord-ui-typography-subtitle {
+      margin-bottom: var(--app-padding-medium);
+    }
+  }
+
+  @media all and (max-width: $app-mobile-max-width) {
+    .cards {
+      flex-direction: column;
+      align-items: center;
+
+      tyrcord-ui-layout-home-card:not(:last-of-type) {
+        margin-bottom: var(--app-padding-xl);
+      }
+    }
+  }
+
+  @media all and (min-width: $app-desktop-min-width) {
+    .cards {
+      justify-content: space-between;
+    }
+
+    tyrcord-ui-layout-home-card:not(:last-of-type) {
+      margin-right: var(--app-padding-large);
+    }
+  }
+}

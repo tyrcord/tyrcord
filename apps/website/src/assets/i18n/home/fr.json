@@ -1,6 +1,25 @@
 {
   "TITLES": {
-    "WHY_US": "Pourquoi nous choisir\u00a0?"
+    "WHY_US": "Pourquoi nous choisir\u00a0?",
+    "WHAT_WE_OFFER": "Ce que nous offrons"
+  },
+  "PRODUCTS": {
+    "MOBILE": {
+      "TITLE": "Applications mobiles",
+      "DESCRIPTION": "IOS & Android"
+    },
+    "WEB": {
+      "TITLE": "Applications Web",
+      "DESCRIPTION": "PWA"
+    },
+    "DESKTOP": {
+      "TITLE": "Applications de bureau",
+      "DESCRIPTION": "Mac & Windows"
+    },
+    "DEVELOPMENT": {
+      "TITLE": "Développement de logiciels",
+      "DESCRIPTION": "Besoin d'aide pour un projet\u00a0?"
+    }
   },
   "HOME_CARDS": {
     "TITLES": {

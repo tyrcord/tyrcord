@@ -1,0 +1,12 @@
+<tyrcord-ui-layout-list-item>
+  <div slot-leading class="product-icon">
+    <ng-content select="[slot-icon]"></ng-content>
+  </div>
+  <tyrcord-ui-typography-body>
+    {{ title | translate }}
+  </tyrcord-ui-typography-body>
+  <tyrcord-ui-typography-caption slot-description>
+    {{ description | translate }}
+  </tyrcord-ui-typography-caption>
+</tyrcord-ui-layout-list-item>
+

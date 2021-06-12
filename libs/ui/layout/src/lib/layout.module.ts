@@ -12,6 +12,8 @@ import { PageComponent } from './page/page.component';
 import { HomeCardComponent } from './home-card/home-card.component';
 import { ParagraphComponent } from './paragraph/paragraph.component';
 import { ArticleComponent } from './article/article.component';
+import { ListViewComponent } from './list-view/list-view.component';
+import { MenuOptionComponent } from './menu-option/menu-option.component';
 
 @NgModule({
   imports: [CommonModule, TypographyModule, TranslateModule],
@@ -24,6 +26,8 @@ import { ArticleComponent } from './article/article.component';
     HomeCardComponent,
     ParagraphComponent,
     ArticleComponent,
+    ListViewComponent,
+    MenuOptionComponent,
   ],
   exports: [
     LayoutAppComponent,
@@ -34,6 +38,8 @@ import { ArticleComponent } from './article/article.component';
     HomeCardComponent,
     ParagraphComponent,
     ArticleComponent,
+    ListViewComponent,
+    MenuOptionComponent,
   ],
 })
 export class LayoutModule {}

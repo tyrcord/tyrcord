@@ -1,0 +1,66 @@
+@import 'variables';
+
+:host {
+  display: flex;
+  flex: 1;
+
+  .product-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(var(--app-indigo-color-rgb), 0.15);
+    height: var(--app-icon-size-xxl);
+    width: var(--app-icon-size-xxl);
+    border-radius: var(--app-icon-size-xxl);
+    font-size: 32px;
+  }
+}
+
+:host(.purple) {
+  .product-icon {
+    background-color: rgba(var(--app-purple-color-rgb), 0.15);
+    color: var(--app-purple-color);
+  }
+}
+
+:host(.green) {
+  .product-icon {
+    background-color: rgba(var(--app-green-color-rgb), 0.15);
+    color: var(--app-green-color);
+  }
+}
+
+:host(.blue) {
+  .product-icon {
+    background-color: rgba(var(--app-blue-color-rgb), 0.15);
+    color: var(--app-blue-color);
+  }
+}
+
+:host(.orange) {
+  .product-icon {
+    background-color: rgba(var(--app-orange-color-rgb), 0.15);
+    color: var(--app-orange-color);
+  }
+}
+
+:host(.yellow) {
+  .product-icon {
+    background-color: rgba(var(--app-yellow-color-rgb), 0.15);
+    color: var(--app-yellow-color);
+  }
+}
+
+:host(.teal) {
+  .product-icon {
+    background-color: rgba(var(--app-teal-color-rgb), 0.15);
+    color: var(--app-teal-color);
+  }
+}
+
+:host(.pink) {
+  .product-icon {
+    background-color: rgba(var(--app-pink-color-rgb), 0.15);
+    color: var(--app-pink-color);
+  }
+}

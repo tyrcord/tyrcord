@@ -4,42 +4,20 @@
   display: flex;
   flex: 1;
 
-  .cards {
-    display: flex;
-    margin-bottom: var(--app-padding-xxl);
-
-    tyrcord-ui-typography-subtitle,
-    tyrcord-ui-typography-caption {
-      text-align: center;
-    }
-
-    tyrcord-ui-typography-subtitle {
-      margin-bottom: var(--app-padding-medium);
-    }
-  }
-
   tyrcord-ui-typography-link {
-    text-align: end;
+    display: inline-flex;
+    margin-top: var(--app-padding-large);
   }
 
   @media all and (max-width: $app-mobile-max-width) {
-    .cards {
-      flex-direction: column;
-      align-items: center;
-
-      tyrcord-ui-layout-home-card:not(:last-of-type) {
-        margin-bottom: var(--app-padding-xl);
-      }
+    tyrcord-ui-typography-link {
+      align-self: center;
     }
   }
 
   @media all and (min-width: $app-desktop-min-width) {
-    .cards {
-      justify-content: space-between;
-    }
-
-    tyrcord-ui-layout-home-card:not(:last-of-type) {
-      margin-right: var(--app-padding-large);
+    tyrcord-ui-typography-link {
+      align-self: flex-end;
     }
   }
 }

@@ -1,6 +1,25 @@
 {
   "TITLES": {
-    "WHY_US": "Why Us?"
+    "WHY_US": "Why us?",
+    "WHAT_WE_OFFER": "What we offer"
+  },
+  "PRODUCTS": {
+    "MOBILE": {
+      "TITLE": "Mobile Apps",
+      "DESCRIPTION": "IOS & Android"
+    },
+    "WEB": {
+      "TITLE": "Web Apps",
+      "DESCRIPTION": "PWA"
+    },
+    "DESKTOP": {
+      "TITLE": "Desktop Apps",
+      "DESCRIPTION": "Mac & Windows"
+    },
+    "DEVELOPMENT": {
+      "TITLE": "Software development",
+      "DESCRIPTION": "Need help with a project?"
+    }
   },
   "HOME_CARDS": {
     "TITLES": {

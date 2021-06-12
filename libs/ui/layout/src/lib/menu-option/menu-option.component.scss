@@ -1,0 +1,16 @@
+@import 'variables';
+
+:host {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+  @media all and (max-width: $app-mobile-max-width) {
+    min-height: var(--app-item-min-height-small);
+  }
+
+  @media all and (min-width: $app-desktop-min-width) {
+    min-height: var(--app-item-min-height-medium);
+  }
+}

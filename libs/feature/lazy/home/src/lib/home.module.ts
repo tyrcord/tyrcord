@@ -11,6 +11,8 @@ import { LayoutModule } from '@tyrcord/ui/layout';
 import { UICoreModule } from '@tyrcord/ui/core';
 
 import { HomeComponent } from './home.component';
+import { MarketingWhyUsComponent } from './components/marketing-why-us/marketing-why-us.component';
+import { MarketingSectionComponent } from './layouts/marketing-section/marketing-section.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/home/', '.json');
@@ -38,6 +40,10 @@ export function HttpLoaderFactory(http: HttpClient) {
       { path: '', pathMatch: 'full', component: HomeComponent },
     ]),
   ],
-  declarations: [HomeComponent],
+  declarations: [
+    HomeComponent,
+    MarketingWhyUsComponent,
+    MarketingSectionComponent,
+  ],
 })
 export class HomeModule {}

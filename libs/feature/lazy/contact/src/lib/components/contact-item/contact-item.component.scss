@@ -3,12 +3,6 @@
 :host {
   display: flex;
   flex: 1;
-  min-width: 256px;
-  box-shadow: 0px 3px 6px var(--layout-app-header-shadow-color);
-  background-color: var(--app-background-secondary-color);
-  padding: var(--app-padding-medium);
-  margin-bottom: var(--app-padding-large);
-  border-radius: 8px;
   outline: none;
 
   .item-leading {
@@ -27,14 +21,6 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-
-    .item-description {
-      padding-top: var(--app-padding-xs);
-
-      &:empty {
-        display: none;
-      }
-    }
   }
 
   @media all and (max-width: $app-mobile-max-width) {
@@ -48,7 +34,6 @@
 
   @media all and (min-width: $app-desktop-min-width) {
     min-height: var(--app-item-min-height-medium);
-    margin-right: var(--app-padding-large);
 
     .item-leading {
       font-size: var(--app-icon-size-medium);

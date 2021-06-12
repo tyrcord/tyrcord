@@ -4,9 +4,9 @@
 <nav>
   <ul class="menu-options">
     <li *ngFor="let option of options;" class="menu-option" (click)="onOptionChange(option)" title="{{option.labelText}}">
-      <tyrcord-ui-layout-list-item>
+      <tyrcord-ui-layout-menu-option>
         {{ option.label | translate }}
-      </tyrcord-ui-layout-list-item>
+      </tyrcord-ui-layout-menu-option>
     </li>
   </ul>
 </nav>

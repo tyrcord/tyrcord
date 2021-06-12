@@ -82,3 +82,43 @@
     color: var(--app-blue-color);
   }
 }
+
+:host(.orange) {
+  &::before {
+    background-color: var(--app-orange-color);
+  }
+
+  .card-logo:not(:empty) {
+    color: var(--app-orange-color);
+  }
+}
+
+:host(.yellow) {
+  &::before {
+    background-color: var(--app-yellow-color);
+  }
+
+  .card-logo:not(:empty) {
+    color: var(--app-yellow-color);
+  }
+}
+
+:host(.teal) {
+  &::before {
+    background-color: var(--app-teal-color);
+  }
+
+  .card-logo:not(:empty) {
+    color: var(--app-teal-color);
+  }
+}
+
+:host(.pink) {
+  &::before {
+    background-color: var(--app-pink-color);
+  }
+
+  .card-logo:not(:empty) {
+    color: var(--app-pink-color);
+  }
+}

@@ -7,15 +7,16 @@
     </div>
     <div slot-actions class="app-menu">
       <a href="https://github.com/tyrcord" target="_blank" class="app-menu-github-option" aria-label="Github" rel="noopener">
-        <tyrcord-ui-layout-list-item>
+        <tyrcord-ui-layout-menu-option>
           <i class="fab fa-github"></i>
-        </tyrcord-ui-layout-list-item>
+        </tyrcord-ui-layout-menu-option>
       </a>
       <tyrcord-ui-core-menu [options]="menuOptions" (optionChange)="onOptionChange($event)"></tyrcord-ui-core-menu>
     </div>
   </tyrcord-ui-layout-app-bar>
 
   <router-outlet slot-content></router-outlet>
+
   <tyrcord-ui-layout-app-footer slot-footer>
     <tyrcord-ui-typography-caption slot-copyright class="app-copyright">
       Copyright © 2016 Tyrcord, Inc. All rights reserved.

@@ -12,6 +12,7 @@ import { LayoutModule } from '@tyrcord/ui/layout';
 import { UICoreModule } from '@tyrcord/ui/core';
 
 import { ContactComponent } from './contact.component';
+import { ContactItemComponent } from './components/contact-item/contact-item.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/contact/', '.json');
@@ -40,6 +41,6 @@ export function HttpLoaderFactory(http: HttpClient) {
       { path: '', pathMatch: 'full', component: ContactComponent },
     ]),
   ],
-  declarations: [ContactComponent],
+  declarations: [ContactComponent, ContactItemComponent],
 })
 export class ContactModule {}
