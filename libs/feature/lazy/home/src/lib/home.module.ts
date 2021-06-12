@@ -12,7 +12,9 @@ import { UICoreModule } from '@tyrcord/ui/core';
 
 import { HomeComponent } from './home.component';
 import { MarketingWhyUsComponent } from './components/marketing-why-us/marketing-why-us.component';
+import { MarketingProductsComponent } from './components/marketing-products/marketing-products.component';
 import { MarketingSectionComponent } from './layouts/marketing-section/marketing-section.component';
+import { ProductItemComponent } from './components/product-item/product-item.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/home/', '.json');
@@ -43,7 +45,9 @@ export function HttpLoaderFactory(http: HttpClient) {
   declarations: [
     HomeComponent,
     MarketingWhyUsComponent,
+    MarketingProductsComponent,
     MarketingSectionComponent,
+    ProductItemComponent,
   ],
 })
 export class HomeModule {}
