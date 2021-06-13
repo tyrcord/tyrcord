@@ -5,6 +5,10 @@
   flex-direction: column;
   margin-top: var(--app-padding-large);
 
+  .marketing-section-title {
+    width: 50%;
+  }
+
   .marketing-section-content {
     display: flex;
     margin-bottom: var(--app-padding-large);
@@ -15,13 +19,14 @@
   }
 
   @media all and (max-width: $app-mobile-max-width) {
+    .marketing-section-title {
+      width: 100%;
+      text-align: center;
+    }
+
     .marketing-section-content {
       flex-direction: column;
       align-items: center;
-    }
-
-    .marketing-section-title {
-      text-align: center;
     }
   }
 }

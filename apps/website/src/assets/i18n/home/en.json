@@ -1,7 +1,15 @@
 {
   "TITLES": {
     "WHY_US": "Why us?",
-    "WHAT_WE_OFFER": "What we offer"
+    "WHAT_WE_OFFER": "What we offer",
+    "INTRO": "Software development that exceeds your expectations"
+  },
+  "PARAGRAPHS": {
+    "INTRO_1": "Create awesome solutions for growing startups and established businesses.",
+    "INTRO_2": "Tyrcord is a reliable partner for custom software development. Your ideas are in good hands!"
+  },
+  "MESSAGES": {
+    "COUNT_APPS": "Products delivered and counting"
   },
   "PRODUCTS": {
     "MOBILE": {
@@ -34,6 +42,7 @@
     }
   },
   "LINKS": {
-    "DISCOVER_OUR_APPS": "Discover our apps..."
+    "DISCOVER_OUR_APPS": "Discover our apps...",
+    "GET_QUOTE": "Get a quote..."
   }
 }
