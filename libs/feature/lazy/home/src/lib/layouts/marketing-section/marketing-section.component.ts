@@ -7,5 +7,5 @@ import { Component, Input } from '@angular/core';
 })
 export class MarketingSectionComponent {
   @Input()
-  title? : string;
+  sectionTitle? : string;
 }

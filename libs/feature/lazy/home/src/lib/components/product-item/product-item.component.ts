@@ -7,7 +7,7 @@ import { Component, Input } from '@angular/core';
 })
 export class ProductItemComponent {
   @Input()
-  title?: string;
+  label?: string;
 
   @Input()
   description?: string;
