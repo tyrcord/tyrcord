@@ -7,9 +7,7 @@
       {{ 'PARAGRAPHS.INTRO_2' | translate }}
     </tyrcord-ui-layout-paragraph>
     <div class="intro-description-caption">
-      <tyrcord-ui-typography-body class="intro-description-caption-counter">
-        5
-      </tyrcord-ui-typography-body>
+      <tyrcord-ui-core-counter [value]="projectCounter" routerLink="/apps"></tyrcord-ui-core-counter>
       <tyrcord-ui-typography-caption>
         {{ 'MESSAGES.COUNT_APPS' | translate }}
       </tyrcord-ui-typography-caption>
@@ -20,25 +18,6 @@
     </tyrcord-ui-typography-link>
   </div>
   <div class="intro-graphic">
-    <div class="intro-graphic-container">
-      <div class="box phone-laptop">
-        <i class="fal fa-phone-laptop"></i>
-      </div>
-      <div class="box server">
-        <i class="fal fa-server"></i>
-      </div>
-      <div class="box sitemap">
-        <i class="fal fa-sitemap"></i>
-      </div>
-      <div class="box code">
-        <i class="fal fa-code"></i>
-      </div>
-      <div class="box code-branch">
-        <i class="fal fa-code-branch"></i>
-      </div>
-      <span class="circle small"></span>
-      <span class="circle medium"></span>
-      <span class="circle large"></span>
-    </div>
+    <tyrcord-feature-lazy-marketing-intro-graphic></tyrcord-feature-lazy-marketing-intro-graphic>
   </div>
 </tyrcord-feature-lazy-marketing-section>

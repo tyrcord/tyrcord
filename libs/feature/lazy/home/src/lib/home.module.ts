@@ -16,6 +16,7 @@ import { MarketingProductsComponent } from './components/marketing-products/mark
 import { MarketingSectionComponent } from './layouts/marketing-section/marketing-section.component';
 import { ProductItemComponent } from './components/product-item/product-item.component';
 import { MarketingIntroComponent } from './components/marketing-intro/marketing-intro.component';
+import { MarketingIntroGraphicComponent } from './components/marketing-intro-graphic/marketing-intro-graphic.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/home/', '.json');
@@ -50,6 +51,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     MarketingSectionComponent,
     ProductItemComponent,
     MarketingIntroComponent,
+    MarketingIntroGraphicComponent,
   ],
 })
 export class HomeModule {}
