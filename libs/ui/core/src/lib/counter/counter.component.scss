@@ -1,0 +1,11 @@
+:host {
+  border: 2px solid var(--app-primary-color);
+  border-radius: var(--app-padding-small);
+  margin-right: var(--app-padding-small);
+  padding: var(--app-padding-small) var(--app-padding-medium);
+  font-weight: 700;
+
+  > tyrcord-ui-typography-body {
+    color: var(--app-primary-color);
+  }
+}
