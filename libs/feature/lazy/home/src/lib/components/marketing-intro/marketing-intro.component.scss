@@ -4,11 +4,12 @@
   .intro-description,
   .intro-graphic {
     display: flex;
-    flex: 1;
   }
+  
 
   .intro-graphic {
     padding-right: var(--app-padding-medium);
+    flex: 2;
 
     > .graphic {
       > svg {
@@ -24,6 +25,7 @@
 
   .intro-description {
     flex-direction: column;
+    flex: 1;
 
     > .catchphrase {
       margin-top: var(--app-padding-large);
