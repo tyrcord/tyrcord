@@ -1,48 +1,54 @@
 {
-  "TITLES": {
-    "WHY_US": "Pourquoi nous choisir\u00a0?",
-    "WHAT_WE_OFFER": "Ce que nous offrons",
-    "INTRO": "Développement de logiciels qui dépasse vos attentes"
-  },
-  "PARAGRAPHS": {
-    "INTRO_1": "Créer des solutions impressionnantes pour les startups et les entreprises établies.",
-    "INTRO_2": "Tyrcord est un partenaire fiable pour le développement de logiciels personnalisés. Vos idées sont entre de bonnes mains \u00a0!"
-  },
-  "MESSAGES": {
-    "COUNT_APPS": "Produits livrés et ce n’est pas fini"
-  },
-  "PRODUCTS": {
-    "MOBILE": {
-      "TITLE": "Applications mobiles",
-      "DESCRIPTION": "IOS & Android"
-    },
-    "WEB": {
-      "TITLE": "Applications Web",
-      "DESCRIPTION": "PWA"
-    },
-    "DESKTOP": {
-      "TITLE": "Applications de bureau",
-      "DESCRIPTION": "Mac & Windows"
-    },
-    "DEVELOPMENT": {
-      "TITLE": "Développement de logiciels",
-      "DESCRIPTION": "Besoin d'aide pour un projet\u00a0?"
-    }
-  },
   "HOME_CARDS": {
-    "TITLES": {
-      "RELEVANCE": "Pertinence",
-      "DESIGN": "Design",
-      "PERFORMANCE": "Performance"
-    },
     "DESCRIPTION": {
-      "RELEVANCE": "Nous effectuerons une analyse commerciale personnalisée à vos besoins spécifiques afin de vous aider à atteindre vos objectifs plus rapidement.",
       "DESIGN": "Nous nous assurons que vos utilisateurs trouvent votre application aussi intuitive que possible et ce, sans compromettre la facilité de trouver facilement des informations.",
-      "PERFORMANCE": "Notre compréhension des services, de l'architecture et des technologies Web nous permet d'améliorer et d'optimiser les performances de n'importe quelle application."
+      "PERFORMANCE": "Notre compréhension des technologies nous permet d'améliorer et d'optimiser les performances de n'importe quelle application.",
+      "RELEVANCE": "Nous effectuerons une analyse commerciale personnalisée à vos besoins spécifiques afin de vous aider à atteindre vos objectifs plus rapidement."
+    },
+    "TITLES": {
+      "DESIGN": "Design",
+      "PERFORMANCE": "Performance",
+      "RELEVANCE": "Pertinence"
     }
   },
   "LINKS": {
     "DISCOVER_OUR_APPS": "Découvrez nos applications...",
     "GET_QUOTE": "Obtenir un devis..."
+  },
+  "MESSAGES": {
+    "COUNT_APPS": "Produits livrés et ce n’est pas fini"
+  },
+  "PARAGRAPHS": {
+    "DEVELOPMENT_1": "Nous créons des solutions impressionnantes pour les startups et les entreprises établies.",
+    "DEVELOPMENT_2": "Pour assurer un haut niveau de sécurité et de performance, notre équipe travaille uniquement avec des technologies éprouvées et fiables.",
+    "DEVELOPMENT_3": "Tyrcord est un partenaire fiable pour le développement de logiciels personnalisés.",
+    "DEVELOPMENT_4": "Vos idées sont entre de bonnes mains !",
+    "INTRO_1": "De nos jours, les entreprises ont besoin d'un site Web et d'une application mobile pour attirer de nouveaux clients ou engager des clients existants.",
+    "INTRO_2": "Cependant, le monde change rapidement. Aujourd'hui, Internet - Demain, l'Internet des objets ?",
+    "INTRO_3": "Préparez-vous pour le futur !"
+  },
+  "PRODUCTS": {
+    "DESKTOP": {
+      "DESCRIPTION": "Mac & Windows",
+      "TITLE": "Applications de bureau"
+    },
+    "DEVELOPMENT": {
+      "DESCRIPTION": "Besoin d'aide pour un projet ?",
+      "TITLE": "Développement de logiciels"
+    },
+    "MOBILE": {
+      "DESCRIPTION": "IOS & Android",
+      "TITLE": "Applications mobiles"
+    },
+    "WEB": {
+      "DESCRIPTION": "PWA",
+      "TITLE": "Applications Web"
+    }
+  },
+  "TITLES": {
+    "DEVELOPMENT": "Développement de logiciels qui dépasse vos attentes",
+    "INTRO": "Une Application pour les gouverner tous !",
+    "WHAT_WE_OFFER": "Ce que nous offrons",
+    "WHY_US": "Pourquoi nous choisir ?"
   }
 }

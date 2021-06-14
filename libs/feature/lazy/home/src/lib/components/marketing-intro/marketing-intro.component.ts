@@ -5,6 +5,4 @@ import { Component } from '@angular/core';
   templateUrl: './marketing-intro.component.html',
   styleUrls: ['./marketing-intro.component.scss'],
 })
-export class MarketingIntroComponent  {
-  projectCounter = 5;
-}
+export class MarketingIntroComponent {}

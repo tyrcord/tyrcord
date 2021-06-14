@@ -7,48 +7,31 @@
     flex: 1;
   }
 
-  .intro-description {
-    display: flex;
-    flex-direction: column;
+  .intro-graphic {
     padding-right: var(--app-padding-medium);
 
-    .intro-description-caption {
-      display: flex;
-      align-items: center;
-      margin: var(--app-padding-xxl) 0;
-
-      > tyrcord-ui-core-counter {
-        cursor: pointer;
-        outline: none;
-      }
-
-      > i {
-        color: var(--app-secondary-text-color);
-        margin-left: var(--app-padding-small);
-      }
-    }
-
-    > tyrcord-ui-typography-link {
-      align-self: flex-start;
+    .graphic {
+      width: 100%;
+      height: 100%;
+      background-image: url(/assets/svgs/desk.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
     }
   }
 
-  .intro-graphic {
-    position: relative;
-    margin-bottom: -92px;
-    padding: 0 var(--app-padding-medium);
-    justify-content: center;
-    align-items: center;
-
-    tyrcord-feature-lazy-marketing-intro-graphic {
-      position: relative;
-      top: -92px;
-    }
+  .intro-description {
+    flex-direction: column;
   }
 
   @media all and (max-width: $app-mobile-max-width) {
     .intro-graphic {
-      display: none;
+      width: 100%;
+      padding-right: 0;
+
+      .graphic {
+        height: 256px;
+      }
     }
   }
 }

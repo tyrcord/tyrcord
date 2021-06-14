@@ -1,48 +1,54 @@
 {
-  "TITLES": {
-    "WHY_US": "Why us?",
-    "WHAT_WE_OFFER": "What we offer",
-    "INTRO": "Software development that exceeds your expectations"
-  },
-  "PARAGRAPHS": {
-    "INTRO_1": "Create awesome solutions for growing startups and established businesses.",
-    "INTRO_2": "Tyrcord is a reliable partner for custom software development. Your ideas are in good hands!"
-  },
-  "MESSAGES": {
-    "COUNT_APPS": "Products delivered and counting"
-  },
-  "PRODUCTS": {
-    "MOBILE": {
-      "TITLE": "Mobile Apps",
-      "DESCRIPTION": "IOS & Android"
-    },
-    "WEB": {
-      "TITLE": "Web Apps",
-      "DESCRIPTION": "PWA"
-    },
-    "DESKTOP": {
-      "TITLE": "Desktop Apps",
-      "DESCRIPTION": "Mac & Windows"
-    },
-    "DEVELOPMENT": {
-      "TITLE": "Software development",
-      "DESCRIPTION": "Need help with a project?"
-    }
-  },
   "HOME_CARDS": {
-    "TITLES": {
-      "PERFORMANCE": "Performance",
-      "RELEVANCE": "Relevance",
-      "DESIGN": "Design"
-    },
     "DESCRIPTION": {
-      "PERFORMANCE": "Our understanding of web services, architecture and technologies allow us to improve and optimize the performance of any application.",
-      "RELEVANCE": "We will perform a business analysis personalized to your specific needs in order to help you to achieve your goals faster.",
-      "DESIGN": "We make sure your users find your application as intuitive as possible without compromising the ease of finding information easily."
+      "DESIGN": "We make sure your users find your application as intuitive as possible without compromising the ease of finding information easily.",
+      "PERFORMANCE": "Our understanding of technologies allow us to improve and optimize the performance of any application.",
+      "RELEVANCE": "We will perform a business analysis personalized to your specific needs in order to help you to achieve your goals faster."
+    },
+    "TITLES": {
+      "DESIGN": "Design",
+      "PERFORMANCE": "Performance",
+      "RELEVANCE": "Relevance"
     }
   },
   "LINKS": {
     "DISCOVER_OUR_APPS": "Discover our apps...",
     "GET_QUOTE": "Get a quote..."
+  },
+  "MESSAGES": {
+    "COUNT_APPS": "Products delivered and counting"
+  },
+  "PARAGRAPHS": {
+    "DEVELOPMENT_1": "We create awesome solutions for growing startups and established businesses.",
+    "DEVELOPMENT_2": "To ensure a high level of security and performance, our team works only with proven and reliable technologies.",
+    "DEVELOPMENT_3": "Tyrcord is a reliable partner for custom software development.",
+    "DEVELOPMENT_4": "Your ideas are in good hands!",
+    "INTRO_1": "Nowadays, businesses need a website and mobile App for attracting new customers or engaging with existing customers.",
+    "INTRO_2": "But, the world is changing fast. Today, the Internet -- Tomorrow, the Internet of Things?",
+    "INTRO_3": "Be ready for what's next!"
+  },
+  "PRODUCTS": {
+    "DESKTOP": {
+      "DESCRIPTION": "Mac & Windows",
+      "TITLE": "Desktop Apps"
+    },
+    "DEVELOPMENT": {
+      "DESCRIPTION": "Need help with a project?",
+      "TITLE": "Software development"
+    },
+    "MOBILE": {
+      "DESCRIPTION": "IOS & Android",
+      "TITLE": "Mobile Apps"
+    },
+    "WEB": {
+      "DESCRIPTION": "PWA",
+      "TITLE": "Web Apps"
+    }
+  },
+  "TITLES": {
+    "DEVELOPMENT": "Software development that exceeds your expectations",
+    "INTRO": "One App to rule them all!",
+    "WHAT_WE_OFFER": "What we offer",
+    "WHY_US": "Why us?"
   }
 }

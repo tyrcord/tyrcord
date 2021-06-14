@@ -1,0 +1,32 @@
+<tyrcord-feature-lazy-marketing-section sectionTitle="TITLES.DEVELOPMENT">
+  <div class="development-description">
+    <tyrcord-ui-layout-paragraph>
+      {{ 'PARAGRAPHS.DEVELOPMENT_1' | translate }}
+    </tyrcord-ui-layout-paragraph>
+    <tyrcord-ui-layout-paragraph>
+      {{ 'PARAGRAPHS.DEVELOPMENT_2' | translate }}
+    </tyrcord-ui-layout-paragraph>
+    <tyrcord-ui-layout-paragraph>
+      {{ 'PARAGRAPHS.DEVELOPMENT_3' | translate }}
+    </tyrcord-ui-layout-paragraph>
+    <tyrcord-ui-layout-paragraph class="primary-color">
+      {{ 'PARAGRAPHS.DEVELOPMENT_4' | translate }}
+    </tyrcord-ui-layout-paragraph>
+    <div class="development-description-caption">
+      <tyrcord-ui-core-counter
+        [value]="projectCounter"
+        routerLink="/apps"
+      ></tyrcord-ui-core-counter>
+      <tyrcord-ui-typography-caption>
+        {{ 'MESSAGES.COUNT_APPS' | translate }}
+      </tyrcord-ui-typography-caption>
+      <i class="fas fa-rocket-launch"></i>
+    </div>
+    <tyrcord-ui-typography-link routerLink="/contact">
+      {{ 'LINKS.GET_QUOTE' | translate }}
+    </tyrcord-ui-typography-link>
+  </div>
+  <div class="development-graphic">
+    <tyrcord-feature-lazy-marketing-development-graphic></tyrcord-feature-lazy-marketing-development-graphic>
+  </div>
+</tyrcord-feature-lazy-marketing-section>

@@ -1,4 +1,10 @@
-<tyrcord-feature-lazy-marketing-section sectionTitle="TITLES.INTRO">
+<tyrcord-feature-lazy-marketing-section
+  sectionTitle="TITLES.INTRO"
+  class="title-center"
+>
+  <div class="intro-graphic">
+    <div class="graphic"></div>
+  </div>
   <div class="intro-description">
     <tyrcord-ui-layout-paragraph>
       {{ 'PARAGRAPHS.INTRO_1' | translate }}
@@ -6,18 +12,8 @@
     <tyrcord-ui-layout-paragraph>
       {{ 'PARAGRAPHS.INTRO_2' | translate }}
     </tyrcord-ui-layout-paragraph>
-    <div class="intro-description-caption">
-      <tyrcord-ui-core-counter [value]="projectCounter" routerLink="/apps"></tyrcord-ui-core-counter>
-      <tyrcord-ui-typography-caption>
-        {{ 'MESSAGES.COUNT_APPS' | translate }}
-      </tyrcord-ui-typography-caption>
-      <i class="fas fa-rocket-launch"></i>
-    </div>
-    <tyrcord-ui-typography-link routerLink="/contact">
-      {{ 'LINKS.GET_QUOTE' | translate }}
-    </tyrcord-ui-typography-link>
-  </div>
-  <div class="intro-graphic">
-    <tyrcord-feature-lazy-marketing-intro-graphic></tyrcord-feature-lazy-marketing-intro-graphic>
+    <tyrcord-ui-layout-paragraph class="primary-color">
+      {{ 'PARAGRAPHS.INTRO_3' | translate }}
+    </tyrcord-ui-layout-paragraph>
   </div>
 </tyrcord-feature-lazy-marketing-section>

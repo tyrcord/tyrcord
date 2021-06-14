@@ -234,4 +234,12 @@ body {
   --layout-app-content-background-color: var(--app-background-color);
   --layout-app-content-text-color: var(--app-text-color);
   --layout-app-footer-background-color: var(--app-primary-color);
+
+  .primary-color {
+    color: var(--app-primary-color);
+  }
+
+  .secondary-color {
+    color: var(--app-secondary-color);
+  }
 }

@@ -3,7 +3,14 @@
 :host {
   display: flex;
   flex-direction: column;
-  margin-top: var(--app-padding-large);
+  margin: var(--app-padding-large) 0;
+
+  &.title-center {
+    .marketing-section-title {
+      width: 100%;
+      text-align: center;
+    }
+  }
 
   .marketing-section-title {
     width: 50%;

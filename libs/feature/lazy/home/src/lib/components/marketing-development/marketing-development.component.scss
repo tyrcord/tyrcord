@@ -1,0 +1,57 @@
+@import 'variables';
+
+:host {
+  .development-description,
+  .development-graphic {
+    display: flex;
+    flex: 1;
+  }
+
+  .development-description {
+    flex-direction: column;
+    padding-right: var(--app-padding-medium);
+
+    .development-description-caption {
+      display: flex;
+      align-items: center;
+      margin: var(--app-padding-xxl) 0;
+
+      > tyrcord-ui-core-counter {
+        cursor: pointer;
+        outline: none;
+      }
+
+      > i {
+        color: var(--app-secondary-text-color);
+        margin-left: var(--app-padding-small);
+      }
+    }
+
+    > tyrcord-ui-typography-link {
+      align-self: flex-start;
+    }
+  }
+
+  .development-graphic {
+    position: relative;
+    margin-bottom: -92px;
+    padding: 0 var(--app-padding-medium);
+    justify-content: center;
+    align-items: center;
+
+    tyrcord-feature-lazy-marketing-development-graphic {
+      position: relative;
+      top: -92px;
+    }
+  }
+
+  @media all and (max-width: $app-mobile-max-width) {
+    .development-graphic {
+      display: none;
+    }
+
+    .development-description {
+      padding-right: 0;
+    }
+  }
+}
