@@ -10,13 +10,15 @@
   .intro-graphic {
     padding-right: var(--app-padding-medium);
 
-    .graphic {
-      width: 100%;
-      height: 100%;
-      background-image: url(/assets/svgs/desk.svg);
-      background-repeat: no-repeat;
-      background-size: contain;
-      background-position: center;
+    > .graphic {
+      > svg {
+        width: 100%;
+        height: 100%;
+
+        *[id^=background_theme] {
+          fill: var(--app-background-secondary-color);
+        }
+      }
     }
   }
 
