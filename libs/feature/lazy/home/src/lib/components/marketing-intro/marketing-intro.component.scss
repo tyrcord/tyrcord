@@ -24,6 +24,10 @@
 
   .intro-description {
     flex-direction: column;
+
+    > .catchphrase {
+      margin-top: var(--app-padding-large);
+    }
   }
 
   @media all and (max-width: $app-mobile-max-width) {
