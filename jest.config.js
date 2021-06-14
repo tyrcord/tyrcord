@@ -16,5 +16,7 @@ module.exports = {
     '<rootDir>/libs/feature/lazy/app-privacy-policy',
     '<rootDir>/libs/feature/shared/logic/models',
     '<rootDir>/libs/feature/shared/logic/persistance',
+    '<rootDir>/libs/feature/shared/services',
+    '<rootDir>/libs/feature/lazy/secret',
   ],
 };

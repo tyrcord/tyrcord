@@ -1,7 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
 import { LocalizationService } from '@tyrcord/feature/shared/localization';
+import { EasterEggService } from '@tyrcord/feature/shared/services';
 import { IMenuOption } from '@tyrcord/ui/core';
 
 import {
@@ -49,6 +50,7 @@ export class AppComponent implements OnInit {
 
   constructor(
     private localizationService: LocalizationService,
+    private easterEggService: EasterEggService,
     private router: Router
   ) {}
 
@@ -62,6 +64,11 @@ export class AppComponent implements OnInit {
     } else if (option.value === kLanguageText) {
       this.toggleLanguage();
     }
+  }
+
+  @HostListener('window:keyup', ['$event'])
+  keyEvent(event: KeyboardEvent): void {
+     this.easterEggService.registerKeyEvent(event);
   }
 
   private toggleLanguage(): void {

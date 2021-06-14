@@ -6,6 +6,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AngularFireModule } from '@angular/fire';
 import { NgModule } from '@angular/core';
 
+import { FeatureSharedServicesModule } from '@tyrcord/feature/shared/services';
 import { LocalizationModule } from '@tyrcord/feature/shared/localization';
 import { TypographyModule } from '@tyrcord/ui/typography';
 import { LayoutModule } from '@tyrcord/ui/layout';
@@ -42,6 +43,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     TypographyModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireAnalyticsModule,
+    FeatureSharedServicesModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

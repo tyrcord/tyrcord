@@ -14,7 +14,7 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "resolveJsonModule": true,
-    "esModuleInterop":true,
+    "esModuleInterop": true,
     "noImplicitAny": false,
     "baseUrl": ".",
     "paths": {
@@ -44,7 +44,11 @@
       ],
       "@tyrcord/feature/shared/logic/persistance": [
         "libs/feature/shared/logic/persistance/src/index.ts"
-      ]
+      ],
+      "@tyrcord/feature/shared/services": [
+        "libs/feature/shared/services/src/index.ts"
+      ],
+      "@tyrcord/feature/lazy/secret": ["libs/feature/lazy/secret/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

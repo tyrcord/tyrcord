@@ -1,13 +1,18 @@
 {
   "implicitDependencies": {
     "angular.json": "*",
-    "package.json": { "dependencies": "*", "devDependencies": "*" },
+    "package.json": {
+      "dependencies": "*",
+      "devDependencies": "*"
+    },
     "tsconfig.base.json": "*",
     "tslint.json": "*",
     ".eslintrc.json": "*",
     "nx.json": "*"
   },
-  "affected": { "defaultBase": "master" },
+  "affected": {
+    "defaultBase": "master"
+  },
   "npmScope": "tyrcord",
   "tasksRunnerOptions": {
     "default": {
@@ -21,22 +26,57 @@
     }
   },
   "projects": {
-    "website": { "tags": [] },
-    "website-e2e": { "tags": [], "implicitDependencies": ["website"] },
-    "feature-lazy-contact": { "tags": ["feature-lazy"] },
-    "feature-lazy-apps": { "tags": ["feature-lazy"] },
-    "feature-lazy-about": { "tags": ["feature-lazy"] },
-    "feature-lazy-home": { "tags": ["feature-lazy"] },
-    "ui-layout": { "tags": ["ui-layout"] },
-    "ui-core": { "tags": ["ui-core"] },
-    "ui-typography": { "tags": ["ui-typography"] },
-    "feature-shared-localization": { "tags": ["feature-shared"] },
-    "feature-lazy-app-detail": { "tags": ["feature-lazy"] },
-    "feature-lazy-app-terms-of-service": { "tags": ["feature-lazy"] },
-    "feature-lazy-app-privacy-policy": { "tags": ["feature-lazy"] },
-    "feature-shared-logic-models": { "tags": ["feature-shared-logic-models"] },
+    "website": {
+      "tags": []
+    },
+    "website-e2e": {
+      "tags": [],
+      "implicitDependencies": ["website"]
+    },
+    "feature-lazy-contact": {
+      "tags": ["feature-lazy"]
+    },
+    "feature-lazy-apps": {
+      "tags": ["feature-lazy"]
+    },
+    "feature-lazy-about": {
+      "tags": ["feature-lazy"]
+    },
+    "feature-lazy-home": {
+      "tags": ["feature-lazy"]
+    },
+    "ui-layout": {
+      "tags": ["ui-layout"]
+    },
+    "ui-core": {
+      "tags": ["ui-core"]
+    },
+    "ui-typography": {
+      "tags": ["ui-typography"]
+    },
+    "feature-shared-localization": {
+      "tags": ["feature-shared"]
+    },
+    "feature-lazy-app-detail": {
+      "tags": ["feature-lazy"]
+    },
+    "feature-lazy-app-terms-of-service": {
+      "tags": ["feature-lazy"]
+    },
+    "feature-lazy-app-privacy-policy": {
+      "tags": ["feature-lazy"]
+    },
+    "feature-shared-logic-models": {
+      "tags": ["feature-shared-logic-models"]
+    },
     "feature-shared-logic-persistance": {
       "tags": ["feature-shared-logic-persistance"]
+    },
+    "feature-shared-services": {
+      "tags": []
+    },
+    "feature-lazy-secret": {
+      "tags": []
     }
   }
 }

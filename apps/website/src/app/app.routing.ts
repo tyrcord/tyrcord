@@ -28,6 +28,11 @@ const routes: Routes = [
       import('@tyrcord/feature/lazy/contact').then((m) => m.ContactModule),
   },
   {
+    path: 'secret',
+    loadChildren: () =>
+      import('@tyrcord/feature/lazy/secret').then((m) => m.SecretModule),
+  },
+  {
     path: '**',
     redirectTo: 'home',
   },

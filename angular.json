@@ -644,6 +644,86 @@
           }
         }
       }
+    },
+    "feature-shared-services": {
+      "projectType": "library",
+      "root": "libs/feature/shared/services",
+      "sourceRoot": "libs/feature/shared/services/src",
+      "prefix": "tyrcord",
+      "architect": {
+        "build": {
+          "builder": "@nrwl/angular:ng-packagr-lite",
+          "options": {
+            "project": "libs/feature/shared/services/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "libs/feature/shared/services/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "libs/feature/shared/services/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/feature/shared/services"],
+          "options": {
+            "jestConfig": "libs/feature/shared/services/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/feature/shared/services/src/**/*.ts",
+              "libs/feature/shared/services/src/**/*.html"
+            ]
+          }
+        }
+      }
+    },
+    "feature-lazy-secret": {
+      "projectType": "library",
+      "root": "libs/feature/lazy/secret",
+      "sourceRoot": "libs/feature/lazy/secret/src",
+      "prefix": "tyrcord",
+      "architect": {
+        "build": {
+          "builder": "@nrwl/angular:ng-packagr-lite",
+          "options": {
+            "project": "libs/feature/lazy/secret/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "libs/feature/lazy/secret/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "libs/feature/lazy/secret/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/feature/lazy/secret"],
+          "options": {
+            "jestConfig": "libs/feature/lazy/secret/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/feature/lazy/secret/src/**/*.ts",
+              "libs/feature/lazy/secret/src/**/*.html"
+            ]
+          }
+        }
+      }
     }
   }
 }

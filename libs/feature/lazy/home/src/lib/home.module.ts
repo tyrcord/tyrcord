@@ -13,7 +13,6 @@ import { UICoreModule } from '@tyrcord/ui/core';
 import { HomeComponent } from './home.component';
 import { MarketingWhyUsComponent } from './components/marketing-why-us/marketing-why-us.component';
 import { MarketingProductsComponent } from './components/marketing-products/marketing-products.component';
-import { MarketingSectionComponent } from './layouts/marketing-section/marketing-section.component';
 import { ProductItemComponent } from './components/product-item/product-item.component';
 import { MarketingIntroComponent } from './components/marketing-intro/marketing-intro.component';
 import { MarketingDevelopmentGraphicComponent } from './components/marketing-development-graphic/marketing-development-graphic.component';
@@ -49,7 +48,6 @@ export function HttpLoaderFactory(http: HttpClient) {
     HomeComponent,
     MarketingWhyUsComponent,
     MarketingProductsComponent,
-    MarketingSectionComponent,
     ProductItemComponent,
     MarketingIntroComponent,
     MarketingDevelopmentGraphicComponent,
