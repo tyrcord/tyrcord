@@ -1,16 +1,97 @@
+@import 'variables';
+
 :host {
   display: flex;
   align-items: flex-start;
   flex: 1;
 
-  .logo {
+  .tyrcord-logo {
     padding-bottom: var(--app-padding-xxl);
     fill: var(--app-text-color);
-    max-width: 55%;
     margin: auto;
   }
 
-  tyrcord-ui-typography-body {
-    padding-bottom: var(--app-padding-medium);
+  .profile-description {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    flex: 1;
+
+    .profile-description-name {
+      font-size: 32px;
+      font-weight: 700;
+    }
+
+    .profile-description-job {
+      font-size: 24px;
+    }
+
+    .profile-description-experience {
+      display: flex;
+      align-items: center;
+      margin-top: var(--app-padding-large);
+      color: var(--app-primary-color);
+
+      > .profile-description-experience-years {
+        font-size: 48px;
+        font-weight: 700;
+      }
+
+      > .profile-description-experience-info {
+        margin-left: var(--app-padding-large);
+        font-size: 32px;
+      }
+    }
+  }
+
+  .profile-graphic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+
+    > .graphic {
+      width: 192px;
+      height: 192px;
+
+      > img {
+        clip-path: circle(50%);
+      }
+    }
+  }
+
+  @media all and (max-width: $app-mobile-max-width) {
+    .tyrcord-logo {
+      max-width: 75%;
+    }
+
+    .profile-graphic {
+      margin-bottom: var(--app-padding-large);
+      order: 1;
+    }
+
+    .profile-description {
+      order: 2;
+
+      .profile-description-job,
+      .profile-description-name {
+        display: flex;
+        justify-content: center;
+      }
+    }
+  }
+
+  @media all and (min-width: $app-desktop-min-width) {
+    .tyrcord-logo {
+      max-width: 55%;
+    }
+
+    .profile-graphic {
+      order: 2;
+    }
+
+    .profile-description {
+      order: 1;
+    }
   }
 }

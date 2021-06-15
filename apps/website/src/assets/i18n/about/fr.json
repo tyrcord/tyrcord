@@ -1,11 +1,18 @@
 {
   "TITLES": {
-    "ABOUT_US": "À Propos de"
+    "WHO_ARE_WE": "Qui sommes-nous\u00a0?",
+    "MEET_OUR_TEAM": "Rencontrez notre équipe"
   },
   "STORY": {
     "ABOUT_PART_1": "Située dans la région du Grand Genève et établi en 2016, Tyrcord, Inc est une agence numérique spécialisée dans le développement d'applications bureautiques, Web et mobiles.",
     "ABOUT_PART_2": "Nous concevons des créations de haute qualité et facile à utiliser et belles à regarder, sans compromettre les besoins de nos clients.",
     "ABOUT_PART_3": "Nous sommes fiers de travailler en collaboration avec nos clients pour les aider à réussir.",
-    "ABOUT_PART_4": "N'hésitez pas à nous contacter pour en savoir plus sur nos activités. Réussissons ensemble\u00a0!"
+    "ABOUT_PART_4": "N'hésitez pas à nous contacter pour en savoir plus sur nos activités.",
+    "ABOUT_PART_5": "Réussissons ensemble\u00a0!"
+  },
+  "PROFILE": {
+    "JOB": "Software Engineer",
+    "YEARS_OF": "Années",
+    "EXPERIENCE": "d'expérience"
   }
 }

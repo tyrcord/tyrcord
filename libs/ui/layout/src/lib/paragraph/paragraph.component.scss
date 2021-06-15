@@ -14,3 +14,17 @@
     padding: var(--app-padding-medium) 0;
   }
 }
+
+:host(.emphasis) {
+  color: var(--app-primary-color);
+
+  @media all and (max-width: $app-mobile-max-width) {
+    padding: var(--app-padding-medium) 0;
+    font-size: 22px;
+  }
+
+  @media all and (min-width: $app-desktop-min-width) {
+    padding: var(--app-padding-large) 0;
+    font-size: 28px;
+  }
+}
