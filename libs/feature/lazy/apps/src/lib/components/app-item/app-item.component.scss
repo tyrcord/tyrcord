@@ -1,3 +1,5 @@
+@import 'mixins';
+
 :host {
   display: flex;
   flex: 1;
@@ -5,7 +7,7 @@
 
   .app-icon {   
     > img {
-      box-shadow: 0 0 3px var(--layout-app-header-shadow-color);
+      @include defaultShadow;
       height: var(--app-icon-size-xxl);
       width: var(--app-icon-size-xxl);
       border-radius: 8px;

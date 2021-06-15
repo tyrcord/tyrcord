@@ -1,0 +1,14 @@
+@mixin defaultShadow {
+  box-shadow: 0px 3px 6px var(--layout-app-header-shadow-color);
+}
+
+@mixin containerShadow {
+  @include defaultShadow;
+  background-color: var(--app-background-secondary-color);
+}
+
+@mixin boxShadow($radius: 8px, $padding: var(--app-padding-medium)) {
+ @include containerShadow;
+  padding: $padding;
+  border-radius: $radius;
+}

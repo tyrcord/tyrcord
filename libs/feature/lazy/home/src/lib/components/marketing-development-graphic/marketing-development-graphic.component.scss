@@ -1,3 +1,5 @@
+@import 'mixins';
+
 @mixin wave($color) {
   color: var(--app-#{$color}-color);
 
@@ -20,15 +22,13 @@
   width: 336px;
 
   > .box {
+    @include boxShadow(8px, 0);
     position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
     width: var(--app-icon-size-xxl);
     height: var(--app-icon-size-xxl);
-    box-shadow: 0px 3px 6px var(--layout-app-header-shadow-color);
-    background-color: var(--app-background-secondary-color);
-    border-radius: 8px;
     font-size: 32px;
 
     &:hover {
