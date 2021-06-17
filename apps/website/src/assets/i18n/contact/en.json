@@ -1,8 +1,34 @@
 {
   "TITLES": {
-    "CONTACT_US": "Contact Us"
+    "CONTACT_US": "Contact Us",
+    "JOURNEY_NOT_OVER": "Our journey is not over!",
+    "WRITE_US_MESSAGE": "Write us a message"
   },
   "SUBTITLES": {
-    "QUESTIONS_REMARKS": "Any questions or suggestions? Just write us a message!"
+    "OTHER_WAY_TO_REACH_US": "Other ways to reach us"
+  },
+  "PARAGRAPHS": {
+    "CONTACT_US": "Contact us for a quote, suggestion or help through this form."
+  },
+  "LABELS": {
+    "NAME": "Name:",
+    "EMAIL": "Email:",
+    "MESSAGE": "Message:"
+  },
+  "LINKS": {
+    "SEND": "Send"
+  },
+  "MESSAGES": {
+    "HOORAY": "Hooray!",
+    "GET_BACK_TO_YOU": "We'll get back to you in a while."
+  },
+  "ERRORS": {
+    "FIELD": {
+      "MIN_LENGTH": "Must be at least {{ min }} characters long.",
+      "MAX_LENGTH": "Cannot be longer than {{ max }} characters.",
+      "EMAIL_INVALID": "Invalid email address.",
+      "REQUIRED": "Field is required.",
+      "UNKNOWN": "Error unknown."
+    }
   }
 }

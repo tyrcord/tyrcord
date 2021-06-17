@@ -1,0 +1,12 @@
+:host {
+  visibility: hidden;
+  margin-top: var(--app-padding-small);
+
+  &.visible {
+    visibility: visible;
+  }
+
+  tyrcord-ui-typography-caption {
+    color: var(--app-pink-color);
+  }
+}

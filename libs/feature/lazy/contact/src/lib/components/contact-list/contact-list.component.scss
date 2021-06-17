@@ -1,0 +1,8 @@
+:host {
+  display: flex;
+  flex-direction: column;
+
+  tyrcord-ui-typography-subtitle {
+    margin: var(--app-padding-xl) 0;
+  }
+}

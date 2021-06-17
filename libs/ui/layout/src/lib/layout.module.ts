@@ -3,6 +3,8 @@ import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 
 import { TypographyModule } from '@tyrcord/ui/typography';
+import { ReactiveFormsModule } from '@angular/forms';
+
 
 import { AppFooterComponent } from './app-footer/app-footer.component';
 import { ListItemComponent } from './list-item/list-item.component';
@@ -15,9 +17,16 @@ import { ArticleComponent } from './article/article.component';
 import { ListViewComponent } from './list-view/list-view.component';
 import { MenuOptionComponent } from './menu-option/menu-option.component';
 import { SectionComponent } from './section/section.component';
+import { FormFieldComponent } from './form-field/form-field.component';
+import { FormErrorComponent } from './form-error/form-error.component';
 
 @NgModule({
-  imports: [CommonModule, TypographyModule, TranslateModule],
+  imports: [
+    CommonModule,
+    TypographyModule,
+    TranslateModule,
+    ReactiveFormsModule,
+  ],
   declarations: [
     LayoutAppComponent,
     PageComponent,
@@ -30,6 +39,8 @@ import { SectionComponent } from './section/section.component';
     ListViewComponent,
     MenuOptionComponent,
     SectionComponent,
+    FormFieldComponent,
+    FormErrorComponent,
   ],
   exports: [
     LayoutAppComponent,
@@ -43,6 +54,8 @@ import { SectionComponent } from './section/section.component';
     ListViewComponent,
     MenuOptionComponent,
     SectionComponent,
+    FormFieldComponent,
+    FormErrorComponent,
   ],
 })
 export class LayoutModule {}

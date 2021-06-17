@@ -1,0 +1,22 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+
+  > .graphic {
+    background-image: url('/assets/svgs/message-sent.min.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: var(--app-icon-size-xxxxl);
+    width: var(--app-icon-size-xxxxl);
+    margin-top: calc(var(--app-padding-xxxxl) * -1);
+    margin-bottom: var(--app-padding-xxxl);
+  }
+
+  > tyrcord-ui-typography-body {
+    margin-bottom: var(--app-padding-large);
+  }
+}

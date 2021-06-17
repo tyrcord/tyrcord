@@ -69,7 +69,10 @@
               "apps/website/src/robots.txt",
               "apps/website/src/sitemap.xml"
             ],
-            "styles": ["libs/ui/core/styles/core.scss"],
+            "styles": [
+              "libs/ui/core/styles/core.scss",
+              "libs/ui/core/styles/input.scss"
+            ],
             "scripts": []
           },
           "configurations": {

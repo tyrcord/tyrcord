@@ -1,8 +1,34 @@
 {
   "TITLES": {
-    "CONTACT_US": "Nous contacter"
+    "CONTACT_US": "Nous contacter",
+    "JOURNEY_NOT_OVER": "Notre aventure n'est pas finie\u00a0!",
+    "WRITE_US_MESSAGE": "Écrivez-nous un message"
   },
   "SUBTITLES": {
-    "QUESTIONS_REMARKS": "Des questions ou des suggestions\u00a0? Ècrivez-nous\u00a0!"
+    "OTHER_WAY_TO_REACH_US": "Autres moyens de nous joindre"
+  },
+  "PARAGRAPHS": {
+    "CONTACT_US": "Contactez-nous pour un devis, une suggestion ou de l'aide par le biais de ce formulaire."
+  },
+  "LABELS": {
+    "NAME": "Nom :",
+    "EMAIL": "Courriel :",
+    "MESSAGE": "Message :"
+  },
+  "LINKS": {
+    "SEND": "Envoyer"
+  },
+  "MESSAGES": {
+    "HOORAY": "Hourra\u00a0!",
+    "GET_BACK_TO_YOU": "Nous vous répondrons dans quelques instants."
+  },
+  "ERRORS": {
+    "FIELD": {
+      "MIN_LENGTH": "Doit comporter au moins {{ min }} caractères.",
+      "MAX_LENGTH": "Ne peut pas comporter plus de {{ max }} caractères.",
+      "EMAIL_INVALID": "Adresse e-mail invalide.",
+      "REQUIRED": "Champ requis.",
+      "UNKNOWN": "Erreur inconnue."
+    }
   }
 }

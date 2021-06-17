@@ -1,9 +1,60 @@
+@import 'variables';
+
 :host {
-  a {
-    color: var(--app-text-color);
+  flex: 1;
+
+  .contact-form,
+  .contact-description {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
   }
 
-  .caption {
-    margin-bottom: var(--app-padding-xxl);
+  .contact-form {
+    width: 100%;
+
+    > tyrcord-feature-lazy-contact-form {
+      position: relative;
+      left: 0;
+      right: 0;
+    }
+  }
+
+  @media all and (max-width: $app-mobile-max-width) {
+    .contact-description {
+      margin-top: var(--app-padding-xl);
+      order: 2;
+    }
+
+    .contact-message {
+      margin-bottom: var(--app-padding-xxl);
+      text-align: center;
+    }
+
+    .contact-form {
+      padding: 0;
+      order: 1;
+
+      > tyrcord-feature-lazy-contact-form {
+        top: 0;
+      }
+    }
+  }
+
+  @media all and (min-width: $app-desktop-min-width) {
+    .contact-description {
+      padding-right: var(--app-padding-medium);
+      order: 1;
+    }
+
+    .contact-form {
+      margin-bottom: calc(var(--app-padding-xxxxl) * -1);
+      padding: 0 var(--app-padding-medium);
+      order: 2;
+
+      > tyrcord-feature-lazy-contact-form {
+        top: calc(var(--app-padding-xxxxl) * -1);
+      }
+    }
   }
 }

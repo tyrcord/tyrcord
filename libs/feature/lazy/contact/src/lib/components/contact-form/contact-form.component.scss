@@ -1,0 +1,68 @@
+@import 'variables';
+@import 'mixins';
+
+$mobileFormHeight: 640px;
+$desktopFormHeight: 728px;
+
+:host {
+  @include boxShadow(8px, var(--app-padding-large));
+
+  > form {
+    display: flex;
+    flex-direction: column;
+
+    .form-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: var(--app-padding-xl);
+
+      > tyrcord-ui-typography-body,
+      > i {
+        color: var(--app-primary-color);
+        font-size: 28px;
+      }
+
+      > i {
+        &:not(.disabled) {
+          cursor: pointer;
+        }
+
+        &.disabled {
+          color: var(--app-tertiary-text-color);
+        }
+      }
+    }
+
+    tyrcord-ui-typography-link {
+      margin-top: var(--app-padding-small);
+      align-self: flex-end;
+    }
+  }
+
+  @media all and (max-width: $app-mobile-max-width) {
+    > tyrcord-feature-lazy-contact-form-confirm,
+    > form {
+      min-height: $mobileFormHeight;
+    }
+
+    > form {
+      textarea {
+        height: 192px;
+      }
+    }
+  }
+
+  @media all and (min-width: $app-desktop-min-width) {
+    > tyrcord-feature-lazy-contact-form-confirm,
+    > form {
+      min-height: $desktopFormHeight;
+    }
+
+    > form {
+      textarea {
+        height: 256px;
+      }
+    }
+  }
+}

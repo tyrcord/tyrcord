@@ -7,10 +7,11 @@ import { LayoutModule } from '@tyrcord/ui/layout';
 
 import { MenuComponent } from './menu/menu.component';
 import { CounterComponent } from './counter/counter.component';
+import { FormFieldDirective } from './directives/form-field.directive';
 
 @NgModule({
   imports: [CommonModule, TypographyModule, LayoutModule, TranslateModule],
-  exports: [MenuComponent, CounterComponent],
-  declarations: [MenuComponent, CounterComponent],
+  exports: [MenuComponent, CounterComponent, FormFieldDirective],
+  declarations: [MenuComponent, CounterComponent, FormFieldDirective],
 })
 export class UICoreModule {}

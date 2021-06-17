@@ -3,10 +3,21 @@
 :host {
   outline: none;
 
+  &:hover:not(.disabled) {
+    text-decoration: underline;
+  }
+
+  &.disabled {
+    a {
+      color: var(--app-tertiary-text-color);
+      cursor: default;
+    }
+  }
+
   a {
     color: var(--app-blue-color);
-    outline: none;
     cursor: pointer;
+    outline: none;
   }
 
   @media all and (max-width: $app-mobile-max-width) {

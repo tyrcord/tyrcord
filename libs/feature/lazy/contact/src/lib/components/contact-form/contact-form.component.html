@@ -1,0 +1,63 @@
+<form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+  <ng-container *ngIf="!messageStatus.sent; else confirmation">
+    <div class="form-header">
+      <tyrcord-ui-typography-body>
+        {{ 'TITLES.WRITE_US_MESSAGE' | translate }}
+      </tyrcord-ui-typography-body>
+      <i
+        class="fal fa-eraser"
+        (click)="onReset()"
+        [class.disabled]="
+          !(contactForm.dirty || contactForm.touched) || messageStatus.sending
+        "
+      ></i>
+    </div>
+
+    <tyrcord-ui-layout-form-field label="LABELS.NAME">
+      <input
+        tyrcordFormField
+        type="text"
+        formControlName="name"
+        maxlength="{{ nameMaxLength }}"
+      />
+      <tyrcord-ui-layout-form-error
+        [visible]="name.invalid && (name.dirty || name.touched)"
+      >
+        {{ (nameErrorMessage | async) ?? '' }}
+      </tyrcord-ui-layout-form-error>
+    </tyrcord-ui-layout-form-field>
+
+    <tyrcord-ui-layout-form-field label="LABELS.EMAIL">
+      <input tyrcordFormField type="text" formControlName="email" />
+      <tyrcord-ui-layout-form-error
+        [visible]="email.invalid && (email.dirty || email.touched)"
+      >
+        {{ emailErrorMessage | async }}
+      </tyrcord-ui-layout-form-error>
+    </tyrcord-ui-layout-form-field>
+
+    <tyrcord-ui-layout-form-field label="LABELS.MESSAGE">
+      <textarea
+        tyrcordFormField
+        formControlName="message"
+        maxlength="{{ messageMaxLength }}"
+      ></textarea>
+      <tyrcord-ui-layout-form-error
+        [visible]="message.invalid && (message.dirty || message.touched)"
+      >
+        {{ messageErrorMessage | async }}
+      </tyrcord-ui-layout-form-error>
+    </tyrcord-ui-layout-form-field>
+
+    <tyrcord-ui-typography-link
+      [disabled]="!contactForm.valid || messageStatus.sending"
+      (click)="onSubmit()"
+    >
+      {{ 'LINKS.SEND' | translate }}
+    </tyrcord-ui-typography-link>
+  </ng-container>
+
+  <ng-template #confirmation>
+    <tyrcord-feature-lazy-contact-form-confirm></tyrcord-feature-lazy-contact-form-confirm>
+  </ng-template>
+</form>
