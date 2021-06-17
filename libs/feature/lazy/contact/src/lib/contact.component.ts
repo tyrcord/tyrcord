@@ -1,6 +1,6 @@
 import { BreakpointObserver, BreakpointState } from '@angular/cdk/layout';
 import { Component, OnDestroy, OnInit } from '@angular/core';
-import { takeUntil, tap } from 'rxjs/operators';
+import { takeUntil } from 'rxjs/operators';
 import { Subject } from 'rxjs';
 
 @Component({
@@ -18,7 +18,7 @@ export class ContactComponent implements OnInit, OnDestroy {
   ngOnInit(): void {
     this.breakpointObserver
       .observe(['(min-width: 769px)'])
-      .pipe(takeUntil(this.unsubscribe$), tap(console.log))
+      .pipe(takeUntil(this.unsubscribe$))
       .subscribe((state: BreakpointState) => {
         if (state.matches) {
           this.mobileView = false;
