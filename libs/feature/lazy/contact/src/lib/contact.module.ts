@@ -1,23 +1,26 @@
+import { LayoutModule as MaterialLayoutModule } from '@angular/cdk/layout';
+import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
+import { AngularFireDatabaseModule } from '@angular/fire/database';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
 
-import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
-import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 
 import { LocalizationModule } from '@tyrcord/feature/shared/localization';
 import { TypographyModule } from '@tyrcord/ui/typography';
-import { ReactiveFormsModule } from '@angular/forms';
 import { LayoutModule } from '@tyrcord/ui/layout';
 import { UICoreModule } from '@tyrcord/ui/core';
-import { LayoutModule as MaterialLayoutModule } from '@angular/cdk/layout';
 
-import { ContactComponent } from './contact.component';
+import { ContactFormConfirmComponent } from './components/contact-form-confirm/contact-form-confirm.component';
 import { ContactItemComponent } from './components/contact-item/contact-item.component';
 import { ContactFormComponent } from './components/contact-form/contact-form.component';
-import { ContactFormConfirmComponent } from './components/contact-form-confirm/contact-form-confirm.component';
 import { ContactListComponent } from './components/contact-list/contact-list.component';
+import { ContactComponent } from './contact.component';
+import { ContactFormErrorComponent } from './components/contact-form-error/contact-form-error.component';
+import { ContactFormSendingComponent } from './components/contact-form-sending/contact-form-sending.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/contact/', '.json');
@@ -31,6 +34,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     LayoutModule,
     ReactiveFormsModule,
     MaterialLayoutModule,
+    AngularFireDatabaseModule,
     LocalizationModule.forChild({
       defaultLanguage: 'en',
       supportedLanguages: ['en', 'fr'],
@@ -48,6 +52,14 @@ export function HttpLoaderFactory(http: HttpClient) {
       { path: '', pathMatch: 'full', component: ContactComponent },
     ]),
   ],
-  declarations: [ContactComponent, ContactItemComponent, ContactFormComponent, ContactFormConfirmComponent, ContactListComponent],
+  declarations: [
+    ContactComponent,
+    ContactItemComponent,
+    ContactFormComponent,
+    ContactFormConfirmComponent,
+    ContactListComponent,
+    ContactFormErrorComponent,
+    ContactFormSendingComponent,
+  ],
 })
 export class ContactModule {}

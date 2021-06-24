@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_737" data-name="Rectangle 737" width="1024" height="721" transform="translate(0 0)"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <rect id="Rectangle_738" data-name="Rectangle 738" width="384" height="384"/>
+    </clipPath>
+    <clipPath id="clip-path-3">
+      <rect id="Rectangle_742" data-name="Rectangle 742" width="44.968" height="224.842" transform="translate(0 0)"/>
+    </clipPath>
+    <clipPath id="clip-path-4">
+      <rect id="Rectangle_741" data-name="Rectangle 741" width="48.408" height="302.55" transform="translate(0 0)"/>
+    </clipPath>
+    <clipPath id="clip-message-failed">
+      <rect width="1024" height="1024"/>
+    </clipPath>
+  </defs>
+  <g id="message-failed" clip-path="url(#clip-message-failed)">
+    <rect width="1024" height="1024" fill="#fff"/>
+    <g id="Enveloppe" transform="translate(0 152)">
+      <g id="Group_367" data-name="Group 367" transform="translate(0 0)">
+        <g id="Group_366" data-name="Group 366" clip-path="url(#clip-path)">
+          <g id="Group_365" data-name="Group 365" transform="translate(0 -0.146)">
+            <g id="Group_363" data-name="Group 363">
+              <rect id="Rectangle_736" data-name="Rectangle 736" width="994.61" height="691.906" transform="translate(14.696 14.665)" fill="#a1c3fc"/>
+              <path id="Path_851" data-name="Path 851" d="M1009.306,721.237H14.7A14.538,14.538,0,0,1,0,706.571V14.665A14.538,14.538,0,0,1,14.7,0h994.61A14.538,14.538,0,0,1,1024,14.665V706.571A14.538,14.538,0,0,1,1009.306,721.237ZM29.392,691.906H994.61V29.33H29.392Z" fill="#89b3f4"/>
+            </g>
+            <g id="Group_364" data-name="Group 364" transform="translate(0.053 0.053)">
+              <path id="Path_852" data-name="Path 852" d="M511.961,448.423a14.43,14.43,0,0,1-9.405-3.52L5.25,25.771A14.468,14.468,0,0,1,3.487,5.239,14.54,14.54,0,0,1,24.061,3.48l487.9,411.213L999.861,3.48a14.584,14.584,0,1,1,18.811,22.291L521.366,444.9A14.43,14.43,0,0,1,511.961,448.423Z" transform="translate(-0.013 -0.013)" fill="#89b3f4"/>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g id="exclamation" transform="translate(320.04 320.199)">
+      <g id="Group_371" data-name="Group 371" transform="translate(-0.04 -0.199)">
+        <g id="Group_370" data-name="Group 370" transform="translate(0 0)">
+          <g id="Group_369" data-name="Group 369" clip-path="url(#clip-path-2)">
+            <circle id="Ellipse_39" data-name="Ellipse 39" cx="192" cy="192" r="192" fill="#e94a47"/>
+          </g>
+        </g>
+      </g>
+      <g id="Group_374" data-name="Group 374" transform="translate(166.093 82.298)">
+        <g id="Group_373" data-name="Group 373" transform="translate(0 0)" clip-path="url(#clip-path-3)">
+          <g id="Group_372" data-name="Group 372" transform="translate(-0.065 -73.505)" clip-path="url(#clip-path-4)">
+            <rect id="Rectangle_739" data-name="Rectangle 739" width="48.427" height="46.86" transform="translate(0.065 255.665)" fill="#fff"/>
+            <rect id="Rectangle_740" data-name="Rectangle 740" width="48.427" height="224.926" transform="translate(0.065 1.582)" fill="#fff"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

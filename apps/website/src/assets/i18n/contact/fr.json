@@ -20,9 +20,13 @@
   },
   "MESSAGES": {
     "HOORAY": "Hourra\u00a0!",
-    "GET_BACK_TO_YOU": "Nous vous répondrons dans quelques instants."
+    "GET_BACK_TO_YOU": "Nous vous répondrons dans quelques instants.",
+    "OOPS": "Oups\u00a0!"
   },
   "ERRORS": {
+    "MESSAGES": {
+      "SOMETHING_WENT_WRONG": "Quelque chose s'est mal passé\u00a0!"
+    },
     "FIELD": {
       "MIN_LENGTH": "Doit comporter au moins {{ min }} caractères.",
       "MAX_LENGTH": "Ne peut pas comporter plus de {{ max }} caractères.",

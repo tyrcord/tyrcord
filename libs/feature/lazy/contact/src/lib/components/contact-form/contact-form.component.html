@@ -1,5 +1,5 @@
 <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
-  <ng-container *ngIf="!messageStatus.sent; else confirmation">
+  <ng-container *ngIf="!mailStatus; else status">
     <div class="form-header">
       <tyrcord-ui-typography-body>
         {{ 'TITLES.WRITE_US_MESSAGE' | translate }}
@@ -7,9 +7,7 @@
       <i
         class="fal fa-eraser"
         (click)="onReset()"
-        [class.disabled]="
-          !(contactForm.dirty || contactForm.touched) || messageStatus.sending
-        "
+        [class.disabled]="!(contactForm.dirty || contactForm.touched)"
       ></i>
     </div>
 
@@ -28,7 +26,7 @@
     </tyrcord-ui-layout-form-field>
 
     <tyrcord-ui-layout-form-field label="LABELS.EMAIL">
-      <input tyrcordFormField type="text" formControlName="email" />
+      <input tyrcordFormField type="email" formControlName="email" />
       <tyrcord-ui-layout-form-error
         [visible]="email.invalid && (email.dirty || email.touched)"
       >
@@ -50,14 +48,19 @@
     </tyrcord-ui-layout-form-field>
 
     <tyrcord-ui-typography-link
-      [disabled]="!contactForm.valid || messageStatus.sending"
+      [disabled]="!contactForm.valid"
       (click)="onSubmit()"
     >
       {{ 'LINKS.SEND' | translate }}
     </tyrcord-ui-typography-link>
   </ng-container>
-
-  <ng-template #confirmation>
-    <tyrcord-feature-lazy-contact-form-confirm></tyrcord-feature-lazy-contact-form-confirm>
-  </ng-template>
 </form>
+
+<ng-template #status>
+  <tyrcord-feature-lazy-contact-form-confirm *ngIf="mailStatus.sent">
+  </tyrcord-feature-lazy-contact-form-confirm>
+  <tyrcord-feature-lazy-contact-form-error *ngIf="mailStatus.hasError">
+  </tyrcord-feature-lazy-contact-form-error>
+  <tyrcord-feature-lazy-contact-form-sending *ngIf="mailStatus.sending">
+  </tyrcord-feature-lazy-contact-form-sending>
+</ng-template>

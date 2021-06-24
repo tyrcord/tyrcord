@@ -1,6 +1,7 @@
 import { TranslateService } from '@ngx-translate/core';
-import { Component } from '@angular/core';
-import { Observable } from 'rxjs';
+import { Component, OnDestroy, OnInit } from '@angular/core';
+import { Observable, Subject } from 'rxjs';
+import { filter } from 'rxjs/operators';
 
 import {
   FormGroup,
@@ -10,14 +11,18 @@ import {
 } from '@angular/forms';
 
 import { ContactFormErrorOptions } from '../../types';
-import { MessageStatus } from '../../models';
+import { MailDeliveryStatus } from '../../models';
+import { Messenger } from '../../services';
 
 @Component({
   selector: 'tyrcord-feature-lazy-contact-form',
   templateUrl: './contact-form.component.html',
   styleUrls: ['./contact-form.component.scss'],
+  providers: [Messenger],
 })
-export class ContactFormComponent {
+export class ContactFormComponent implements OnInit, OnDestroy {
+  private unsubscribe$ = new Subject<boolean>();
+
   nameMaxLength = 100;
   nameMinLength = 3;
 
@@ -37,8 +42,6 @@ export class ContactFormComponent {
       Validators.required,
     ]),
   });
-
-  messageStatus = new MessageStatus();
 
   get name(): AbstractControl {
     return this.contactForm.get('name');
@@ -70,39 +73,62 @@ export class ContactFormComponent {
     });
   }
 
-  constructor(private translate: TranslateService) {}
+  mailStatus: MailDeliveryStatus;
+  trackerId: string;
 
-  onReset() {
+  constructor(
+    private translate: TranslateService,
+    private messenger: Messenger
+  ) {}
+
+  ngOnInit(): void {
+    this.messenger.open();
+
+    this.messenger.onDelivery
+      .pipe(
+        filter(
+          ({ trackerId }: MailDeliveryStatus) => trackerId === this.trackerId
+        )
+      )
+      .subscribe((status) => (this.mailStatus = status));
+  }
+
+  ngOnDestroy(): void {
+    this.messenger.close();
+    this.unsubscribe$.next(true);
+  }
+
+  onReset(): void {
     this.contactForm.reset();
   }
-  
-  async onSubmit(): Promise<void> {
-    if (this.contactForm.valid && !this.messageStatus.sending) {
-      this.messageStatus.sending = true;
-      this.lockControls();
-      
-      // todo
 
-      this.messageStatus.sent = true;
-      this.unlockControls();
+  async onSubmit(): Promise<void> {
+    if (this.contactForm.valid && !this.mailStatus?.sending) {
+      this.lockControls();
+
+      this.trackerId = this.messenger.send({
+        name: this.name.value,
+        email: this.email.value,
+        body: this.message.value,
+      });
     }
   }
 
-  private lockControls() {
+  private lockControls(): void {
     Object.keys(this.contactForm.controls).forEach((key: string) => {
       this.contactForm.controls[key].disable();
-    })
+    });
   }
 
-  private unlockControls() {
+  private unlockControls(): void {
     Object.keys(this.contactForm.controls).forEach((key: string) => {
       this.contactForm.controls[key].enable();
-    })
+    });
   }
 
   private getErrorMessageForControl(
     control: AbstractControl,
-    options?: ContactFormErrorOptions,
+    options?: ContactFormErrorOptions
   ): Observable<string> {
     if (control.errors?.minlength?.requiredLength) {
       return this.translate.get('ERRORS.FIELD.MIN_LENGTH', {

@@ -20,9 +20,13 @@
   },
   "MESSAGES": {
     "HOORAY": "Hooray!",
-    "GET_BACK_TO_YOU": "We'll get back to you in a while."
+    "GET_BACK_TO_YOU": "We'll get back to you in a while.",
+    "OOPS": "Oops!"
   },
   "ERRORS": {
+    "MESSAGES": {
+      "SOMETHING_WENT_WRONG": "Something went wrong!"
+    },
     "FIELD": {
       "MIN_LENGTH": "Must be at least {{ min }} characters long.",
       "MAX_LENGTH": "Cannot be longer than {{ max }} characters.",
