@@ -1,32 +1,53 @@
-<tyrcord-ui-layout-page headline="{{ app.name }}" [showBackButton]="true" (back)="onBack()">
+<tyrcord-ui-layout-page
+  headline="{{ app.name }}"
+  [showBackButton]="true"
+  (back)="onBack()"
+>
   <div class="app-detail-header">
-      <tyrcord-ui-typography-caption slot-description class="app-detail-subtitle">
-        {{ app.subtitle | translate }}
-      </tyrcord-ui-typography-caption>
-    <div class="app-detail-preview">
-      <picture>
-        <source srcset="{{ webpPreviews }}">
-        <source srcset="{{ pngPreviews }}">
-        <img src="{{app.preview}}" alt="App Preview"/>
-      </picture>
+    <tyrcord-ui-typography-caption slot-description class="app-detail-subtitle">
+      {{ app.subtitle | translate }}
+    </tyrcord-ui-typography-caption>
+    <div class="app-detail-preview-container">
+      <div class="app-detail-preview">
+        <picture>
+          <source srcset="{{ webpPreviews }}" />
+          <source srcset="{{ pngPreviews }}" />
+          <img src="{{ app.preview }}" alt="App Preview" />
+        </picture>
+      </div>
     </div>
   </div>
   <div class="app-detail-actions">
-    <a *ngIf="app.ios" class="app-detail-download" target="_blank" [href]="app.iosUrl" rel="noopener">
+    <a
+      *ngIf="app.ios"
+      class="app-detail-download"
+      target="_blank"
+      [href]="app.iosUrl"
+      rel="noopener"
+    >
       <i class="fab fa-apple"></i>
       {{ 'DOWNLOAD' | translate }}
     </a>
-    <a *ngIf="app.android" class="app-detail-download" target="_blank" [href]="app.androidUrl" rel="noopener">
-    <i class="fab fa-google-play"></i>
+    <a
+      *ngIf="app.android"
+      class="app-detail-download"
+      target="_blank"
+      [href]="app.androidUrl"
+      rel="noopener"
+    >
+      <i class="fab fa-google-play"></i>
       {{ 'DOWNLOAD' | translate }}
     </a>
   </div>
-  <feature-lazy-app-description [description]="app.description" class="app-detail-description"></feature-lazy-app-description>
+  <feature-lazy-app-description
+    [description]="app.description"
+    class="app-detail-description"
+  ></feature-lazy-app-description>
   <div class="app-detail-legal">
-    <tyrcord-ui-typography-link [routerLink]="['/apps/privacy',  app.id]">
+    <tyrcord-ui-typography-link [routerLink]="['/apps/privacy', app.id]">
       {{ 'LINKS.PRIVACY_POLICY' | translate }}
     </tyrcord-ui-typography-link>
-    <tyrcord-ui-typography-link [routerLink]="['/apps/tos',  app.id]">
+    <tyrcord-ui-typography-link [routerLink]="['/apps/tos', app.id]">
       {{ 'LINKS.TERMS_OF_SERVICE' | translate }}
     </tyrcord-ui-typography-link>
   </div>
