@@ -3,7 +3,7 @@
 :host {
   display: flex;
   flex-direction: column;
-  margin: var(--app-padding-large) 0;
+  margin: var(--app-padding-xl) 0;
 
   &.title-center {
     .section-title {
@@ -18,14 +18,15 @@
 
   .section-content {
     display: flex;
-    margin-bottom: var(--app-padding-large);
 
     &:not(:empty) {
-      margin-top: var(--app-padding-xxl);
+      margin-top: var(--app-padding-xxxl);
     }
   }
 
   @media all and (max-width: $app-mobile-max-width) {
+    margin: var(--app-padding-large) 0;
+
     .section-title {
       width: 100%;
       text-align: center;
@@ -34,6 +35,10 @@
     .section-content {
       flex-direction: column;
       align-items: center;
+
+      &:not(:empty) {
+        margin-top: var(--app-padding-xxl);
+      }
     }
   }
 }

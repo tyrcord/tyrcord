@@ -5,11 +5,12 @@
   flex: 1;
 
   tyrcord-ui-typography-link {
-    margin-top: var(--app-padding-large);
+    margin-top: var(--app-padding-xl);
   }
 
   @media all and (max-width: $app-mobile-max-width) {
     tyrcord-ui-typography-link {
+      margin-top: var(--app-padding-large);
       align-self: center;
     }
   }

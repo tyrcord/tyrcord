@@ -4,7 +4,7 @@
   display: flex;
   flex-direction: column;
   flex: 1;
-  padding: var(--app-padding-large);
+  padding: var(--app-padding-xl);
 
   .page-layout-header {
     display: flex;
@@ -39,7 +39,7 @@
 
   .page-layout-header,
   .page-layout-content {
-    margin: var(--app-padding-large) 0px;
+    margin: var(--app-padding-xl) 0;
   }
 
   @supports (padding: max(0px)) {
@@ -48,8 +48,15 @@
   }
 
   @media all and (max-width: $app-mobile-max-width) {
+    padding: var(--app-padding-large);
+
     .page-layout-header {
       min-height: 40px;
+    }
+
+    .page-layout-header,
+    .page-layout-content {
+      margin: var(--app-padding-large) 0;
     }
   }
 

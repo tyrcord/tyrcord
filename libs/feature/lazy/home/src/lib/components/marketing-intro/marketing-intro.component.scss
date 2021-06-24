@@ -12,6 +12,9 @@
     flex: 2;
 
     > .graphic {
+      display: flex;
+      justify-content: center;
+      
       > svg {
         width: 100%;
         height: 100%;
@@ -26,10 +29,6 @@
   .intro-description {
     flex-direction: column;
     flex: 1;
-
-    > .catchphrase {
-      margin-top: var(--app-padding-large);
-    }
   }
 
   @media all and (max-width: $app-mobile-max-width) {

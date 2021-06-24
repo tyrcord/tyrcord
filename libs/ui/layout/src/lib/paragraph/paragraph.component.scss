@@ -5,13 +5,13 @@
   color: var(--app-text-color);
 
   @media all and (max-width: $app-mobile-max-width) {
-    font-size: 18px;
     padding: var(--app-padding-small) 0;
+    font-size: 18px;
   }
 
   @media all and (min-width: $app-desktop-min-width) {
-    font-size: 22px;
     padding: var(--app-padding-medium) 0;
+    font-size: 22px;
   }
 }
 
@@ -19,12 +19,12 @@
   color: var(--app-primary-color);
 
   @media all and (max-width: $app-mobile-max-width) {
-    padding: var(--app-padding-medium) 0;
+    padding: var(--app-padding-large) 0;
     font-size: 22px;
   }
 
   @media all and (min-width: $app-desktop-min-width) {
-    padding: var(--app-padding-large) 0;
+    padding: var(--app-padding-xl) 0;
     font-size: 28px;
   }
 }

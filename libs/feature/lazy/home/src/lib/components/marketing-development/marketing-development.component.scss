@@ -11,14 +11,10 @@
     flex-direction: column;
     padding-right: var(--app-padding-medium);
 
-    > .catchphrase {
-      margin-top: var(--app-padding-large);
-    }
-
     .development-description-caption {
       display: flex;
       align-items: center;
-      margin: var(--app-padding-xxl) 0;
+      margin: var(--app-padding-xl) 0;
 
       > tyrcord-ui-core-counter {
         cursor: pointer;
@@ -32,6 +28,7 @@
     }
 
     > tyrcord-ui-typography-link {
+      margin-top: var(--app-padding-xl);
       align-self: flex-start;
     }
   }
@@ -56,6 +53,14 @@
 
     .development-description {
       padding-right: 0;
+
+      .development-description-caption {
+        margin: var(--app-padding-large) 0;
+      }
+
+      > tyrcord-ui-typography-link {
+        margin-top: var(--app-padding-large);
+      }
     }
   }
 }

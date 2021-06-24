@@ -6,9 +6,10 @@
   flex: 1;
 
   .tyrcord-logo {
-    padding-bottom: var(--app-padding-xxl);
+    margin-top: var(--app-padding-xl);
+    margin-bottom: var(--app-padding-xxxl);
     fill: var(--app-text-color);
-    margin: auto;
+    align-self: center;
   }
 
   .profile-description {
