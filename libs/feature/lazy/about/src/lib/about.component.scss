@@ -51,13 +51,8 @@
     align-items: center;
     flex: 1;
 
-    > .graphic {
-      width: 192px;
-      height: 192px;
-
-      > img {
-        clip-path: circle(50%);
-      }
+    > .graphic > img {
+      clip-path: circle(50%);
     }
   }
 
