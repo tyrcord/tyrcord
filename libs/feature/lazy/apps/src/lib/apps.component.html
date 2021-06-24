@@ -1,9 +1,11 @@
 <tyrcord-ui-layout-page headline="TITLES.APPS">
-  <tyrcord-ui-layout-list-view>
-    <tyrcord-feature-lazy-app-item
-      *ngFor="let app of apps"
-      [app]="app"
-      title="{{ app.name }}"
-    ></tyrcord-feature-lazy-app-item>
-  </tyrcord-ui-layout-list-view>
+  <tyrcord-ui-layout-section sectionTitle="Discover our Apps">
+    <tyrcord-ui-layout-list-view>
+      <tyrcord-feature-lazy-app-item
+        *ngFor="let app of apps"
+        [app]="app"
+        title="{{ app.name }}"
+      ></tyrcord-feature-lazy-app-item>
+    </tyrcord-ui-layout-list-view>
+  </tyrcord-ui-layout-section>
 </tyrcord-ui-layout-page>
