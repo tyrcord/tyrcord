@@ -27,4 +27,4 @@ import { TitleComponent } from './title/title.component';
     TitleComponent,
   ],
 })
-export class TypographyModule {}
+export class UITypographyModule {}

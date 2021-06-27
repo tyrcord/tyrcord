@@ -6,10 +6,10 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AngularFireModule } from '@angular/fire';
 import { NgModule } from '@angular/core';
 
-import { FeatureSharedServicesModule } from '@tyrcord/feature/shared/services';
 import { LocalizationModule } from '@tyrcord/feature/shared/localization';
-import { TypographyModule } from '@tyrcord/ui/typography';
-import { LayoutModule } from '@tyrcord/ui/layout';
+import { UIComponentModule } from '@tyrcord/ui/component';
+import { UITypographyModule } from '@tyrcord/ui/typography';
+import { UILayoutModule } from '@tyrcord/ui/layout';
 import { UICoreModule } from '@tyrcord/ui/core';
 
 import { kDefaultLanguage, kSupportedLanguages } from './constants';
@@ -39,11 +39,11 @@ export function HttpLoaderFactory(http: HttpClient) {
     }),
     AppRoutingModule,
     UICoreModule,
-    LayoutModule,
-    TypographyModule,
+    UILayoutModule,
+    UITypographyModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireAnalyticsModule,
-    FeatureSharedServicesModule,
+    UIComponentModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

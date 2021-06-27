@@ -2,8 +2,8 @@ import { Component, HostListener, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
 import { LocalizationService } from '@tyrcord/feature/shared/localization';
-import { EasterEggService } from '@tyrcord/feature/shared/services';
-import { IMenuOption } from '@tyrcord/ui/core';
+import { EasterEggService } from '@tyrcord/feature/shared/logic/services';
+import { IMenuOption } from '@tyrcord/ui/component';
 
 import {
   kEnglishShortText,

@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'tyrcord-ui-core-tree-bounce',
+  selector: 'tyrcord-ui-component-tree-bounce',
   templateUrl: './tree-bounce.component.html',
   styleUrls: ['./tree-bounce.component.scss'],
 })

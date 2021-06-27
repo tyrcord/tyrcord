@@ -13,10 +13,10 @@ import { NavigationStart, Router } from '@angular/router';
 import { filter } from 'rxjs/operators';
 import { Subscription } from 'rxjs';
 
-import { IMenuOption } from '../interfaces';
+import { IMenuOption } from '../../interfaces';
 
 @Component({
-  selector: 'tyrcord-ui-core-menu',
+  selector: 'tyrcord-ui-component-menu',
   templateUrl: './menu.component.html',
   styleUrls: ['./menu.component.scss'],
 })

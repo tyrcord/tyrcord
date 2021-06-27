@@ -7,8 +7,8 @@ import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 
 import { LocalizationModule } from '@tyrcord/feature/shared/localization';
-import { TypographyModule } from '@tyrcord/ui/typography';
-import { LayoutModule } from '@tyrcord/ui/layout';
+import { UITypographyModule } from '@tyrcord/ui/typography';
+import { UILayoutModule } from '@tyrcord/ui/layout';
 import { UICoreModule } from '@tyrcord/ui/core';
 
 import { AppItemComponent } from './components/app-item/app-item.component';
@@ -21,9 +21,9 @@ export function HttpLoaderFactory(http: HttpClient) {
 @NgModule({
   imports: [
     CommonModule,
-    TypographyModule,
+    UITypographyModule,
     UICoreModule,
-    LayoutModule,
+    UILayoutModule,
     LocalizationModule.forChild({
       defaultLanguage: 'en',
       supportedLanguages: ['en', 'fr'],

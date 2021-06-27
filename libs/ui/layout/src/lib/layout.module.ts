@@ -2,7 +2,7 @@ import { TranslateModule } from '@ngx-translate/core';
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 
-import { TypographyModule } from '@tyrcord/ui/typography';
+import { UITypographyModule } from '@tyrcord/ui/typography';
 import { ReactiveFormsModule } from '@angular/forms';
 
 
@@ -23,7 +23,7 @@ import { FormErrorComponent } from './form-error/form-error.component';
 @NgModule({
   imports: [
     CommonModule,
-    TypographyModule,
+    UITypographyModule,
     TranslateModule,
     ReactiveFormsModule,
   ],
@@ -58,4 +58,4 @@ import { FormErrorComponent } from './form-error/form-error.component';
     FormErrorComponent,
   ],
 })
-export class LayoutModule {}
+export class UILayoutModule {}

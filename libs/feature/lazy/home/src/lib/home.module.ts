@@ -6,8 +6,9 @@ import { RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
 
 import { LocalizationModule } from '@tyrcord/feature/shared/localization';
-import { TypographyModule } from '@tyrcord/ui/typography';
-import { LayoutModule } from '@tyrcord/ui/layout';
+import { UIComponentModule } from '@tyrcord/ui/component';
+import { UITypographyModule } from '@tyrcord/ui/typography';
+import { UILayoutModule } from '@tyrcord/ui/layout';
 import { UICoreModule } from '@tyrcord/ui/core';
 
 import { HomeComponent } from './home.component';
@@ -25,9 +26,10 @@ export function HttpLoaderFactory(http: HttpClient) {
 @NgModule({
   imports: [
     CommonModule,
-    TypographyModule,
+    UITypographyModule,
     UICoreModule,
-    LayoutModule,
+    UILayoutModule,
+    UIComponentModule,
     LocalizationModule.forChild({
       defaultLanguage: 'en',
       supportedLanguages: ['en', 'fr'],

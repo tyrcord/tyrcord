@@ -1,6 +1,6 @@
 module.exports = {
-  displayName: 'feature-shared-services',
-  preset: '../../../../jest.preset.js',
+  displayName: 'feature-shared-logic-services',
+  preset: '../../../../../jest.preset.js',
   setupFilesAfterEnv: ['<rootDir>/src/test-setup.ts'],
   globals: {
     'ts-jest': {
@@ -14,7 +14,7 @@ module.exports = {
       },
     },
   },
-  coverageDirectory: '../../../../coverage/libs/feature/shared/services',
+  coverageDirectory: '../../../../../coverage/libs/feature/shared/logic/services',
   snapshotSerializers: [
     'jest-preset-angular/build/serializers/no-ng-attributes',
     'jest-preset-angular/build/serializers/ng-snapshot',

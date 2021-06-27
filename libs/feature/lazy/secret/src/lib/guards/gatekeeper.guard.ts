@@ -2,7 +2,7 @@ import { CanActivate, UrlTree, Router } from '@angular/router';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 
-import { EasterEggService } from '@tyrcord/feature/shared/services';
+import { EasterEggService } from '@tyrcord/feature/shared/logic/services';
 
 @Injectable()
 export class Gatekeeper implements CanActivate {

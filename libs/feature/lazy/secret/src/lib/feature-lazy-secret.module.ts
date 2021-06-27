@@ -9,8 +9,8 @@ import { SecretComponent } from './components/secret/secret.component';
 import { Gatekeeper } from './guards/gatekeeper.guard';
 
 import { LocalizationModule } from '@tyrcord/feature/shared/localization';
-import { TypographyModule } from '@tyrcord/ui/typography';
-import { LayoutModule } from '@tyrcord/ui/layout';
+import { UITypographyModule } from '@tyrcord/ui/typography';
+import { UILayoutModule } from '@tyrcord/ui/layout';
 import { UICoreModule } from '@tyrcord/ui/core';
 import { AnswerComponent } from './components/answer/answer.component';
 import { QuizzComponent } from './components/quizz/quizz.component';
@@ -22,9 +22,9 @@ export function HttpLoaderFactory(http: HttpClient) {
 @NgModule({
   imports: [
     CommonModule,
-    TypographyModule,
+    UITypographyModule,
     UICoreModule,
-    LayoutModule,
+    UILayoutModule,
     LocalizationModule.forChild({
       defaultLanguage: 'en',
       supportedLanguages: ['en', 'fr'],

@@ -72,11 +72,14 @@
     "feature-shared-logic-persistance": {
       "tags": ["feature-shared-logic-persistance"]
     },
-    "feature-shared-services": {
-      "tags": []
+    "feature-shared-logic-services": {
+      "tags": ["feature-shared-logic-services"]
     },
     "feature-lazy-secret": {
-      "tags": []
+      "tags": ["eature-lazy-secret"]
+    },
+    "ui-component": {
+      "tags": ["ui-component"]
     }
   }
 }

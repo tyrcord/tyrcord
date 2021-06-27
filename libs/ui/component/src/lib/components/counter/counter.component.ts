@@ -3,7 +3,7 @@ import { map, take } from 'rxjs/operators';
 import { Observable, timer } from 'rxjs';
 
 @Component({
-  selector: 'tyrcord-ui-core-counter',
+  selector: 'tyrcord-ui-component-counter',
   templateUrl: './counter.component.html',
   styleUrls: ['./counter.component.scss'],
 })

@@ -5,6 +5,7 @@ import {
   Component,
   ContentChild,
   ElementRef,
+  forwardRef,
   Input,
   Renderer2,
 } from '@angular/core';
@@ -17,7 +18,7 @@ import { FormFieldDirective } from '@tyrcord/ui/core';
   styleUrls: ['./form-field.component.scss'],
 })
 export class FormFieldComponent implements AfterContentInit {
-  @ContentChild(FormFieldDirective, {
+  @ContentChild(forwardRef(() => FormFieldDirective), {
     read: ElementRef,
   })
   control!: ElementRef;

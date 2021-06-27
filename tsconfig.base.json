@@ -45,10 +45,11 @@
       "@tyrcord/feature/shared/logic/persistance": [
         "libs/feature/shared/logic/persistance/src/index.ts"
       ],
-      "@tyrcord/feature/shared/services": [
-        "libs/feature/shared/services/src/index.ts"
+      "@tyrcord/feature/shared/logic/services": [
+        "libs/feature/shared/logic/services/src/index.ts"
       ],
-      "@tyrcord/feature/lazy/secret": ["libs/feature/lazy/secret/src/index.ts"]
+      "@tyrcord/feature/lazy/secret": ["libs/feature/lazy/secret/src/index.ts"],
+      "@tyrcord/ui/component": ["libs/ui/component/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
