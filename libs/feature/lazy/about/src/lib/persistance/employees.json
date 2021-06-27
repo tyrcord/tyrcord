@@ -1,0 +1,10 @@
+{
+    "employees": [
+        {
+            "firstname": "Thibault",
+            "lastname": "Zanini",
+            "startDate": "2013-06-01T00:00:00Z",
+            "job": "JOBS.SOFTWARE_ENGINEER"
+        }
+    ]
+}

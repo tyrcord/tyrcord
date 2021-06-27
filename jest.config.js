@@ -18,5 +18,6 @@ module.exports = {
     '<rootDir>/libs/ui/layout',
     '<rootDir>/libs/ui/component',
     '<rootDir>/libs/ui/typography',
+    '<rootDir>/libs/testing',
   ],
 };

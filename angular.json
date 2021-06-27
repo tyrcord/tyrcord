@@ -767,6 +767,46 @@
           }
         }
       }
+    },
+    "testing": {
+      "projectType": "library",
+      "root": "libs/testing",
+      "sourceRoot": "libs/testing/src",
+      "prefix": "tyrcord",
+      "architect": {
+        "build": {
+          "builder": "@nrwl/angular:ng-packagr-lite",
+          "options": {
+            "project": "libs/testing/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "libs/testing/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "libs/testing/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/testing"],
+          "options": {
+            "jestConfig": "libs/testing/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/testing/src/**/*.ts",
+              "libs/testing/src/**/*.html"
+            ]
+          }
+        }
+      }
     }
   }
 }

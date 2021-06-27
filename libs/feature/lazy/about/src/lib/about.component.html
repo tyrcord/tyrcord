@@ -28,14 +28,14 @@
     {{ 'STORY.ABOUT_PART_5' | translate }}
   </tyrcord-ui-layout-paragraph>
 
-  <tyrcord-ui-layout-section sectionTitle="TITLES.MEET_OUR_TEAM">
+  <tyrcord-ui-layout-section sectionTitle="TITLES.MEET_OUR_TEAM" *ngIf="!!employee">
     <div class="profile-description">
       <div class="profile-description-container">
         <tyrcord-ui-layout-paragraph class="profile-description-name">
-          Thibault Zanini
+          {{ employee.firstname + ' ' + employee.lastname }}
         </tyrcord-ui-layout-paragraph>
         <tyrcord-ui-typography-caption class="profile-description-job">
-          {{ 'PROFILE.JOB' | translate }}
+          {{ employee.job | translate }}
         </tyrcord-ui-typography-caption>
 
         <div class="profile-description-experience">

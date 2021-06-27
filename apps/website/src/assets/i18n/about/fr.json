@@ -11,8 +11,10 @@
     "ABOUT_PART_5": "Réussissons ensemble\u00a0!"
   },
   "PROFILE": {
-    "JOB": "Software Engineer",
     "YEARS_OF": "Années",
     "EXPERIENCE": "d'expérience"
+  },
+  "JOBS": {
+    "SOFTWARE_ENGINEER": "Software Engineer"
   }
 }

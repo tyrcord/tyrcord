@@ -12,6 +12,8 @@ import { UILayoutModule } from '@tyrcord/ui/layout';
 import { UICoreModule } from '@tyrcord/ui/core';
 
 import { AboutComponent } from './about.component';
+import { EmployeeDataProvider } from './persistance';
+import { TeamService } from './services';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/about/', '.json');
@@ -40,5 +42,6 @@ export function HttpLoaderFactory(http: HttpClient) {
     ]),
   ],
   declarations: [AboutComponent],
+  providers: [TeamService, EmployeeDataProvider]
 })
 export class AboutModule {}
