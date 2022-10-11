@@ -1,9 +1,9 @@
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
-import { AngularFireAnalyticsModule } from '@angular/fire/analytics';
+import { AngularFireAnalyticsModule } from '@angular/fire/compat/analytics';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { BrowserModule } from '@angular/platform-browser';
-import { AngularFireModule } from '@angular/fire';
+import { AngularFireModule } from '@angular/fire/compat';
 import { NgModule } from '@angular/core';
 
 import { LocalizationModule } from '@tyrcord/feature/shared/localization';

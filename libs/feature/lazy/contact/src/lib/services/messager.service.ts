@@ -1,5 +1,5 @@
 import { catchError, timeout, take, tap, map } from 'rxjs/operators';
-import { AngularFireDatabase } from '@angular/fire/database';
+import { AngularFireDatabase } from '@angular/fire/compat/database';
 import { Injectable } from '@angular/core';
 import { v4 as uuidv4 } from 'uuid';
 

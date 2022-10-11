@@ -1,6 +1,6 @@
 import { LayoutModule as MaterialLayoutModule } from '@angular/cdk/layout';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
-import { AngularFireDatabaseModule } from '@angular/fire/database';
+import { AngularFireDatabaseModule } from '@angular/fire/compat/database';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
