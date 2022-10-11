@@ -1,37 +1,5 @@
 {
   "version": 1,
-  "cli": {
-    "analytics": "51db4f0c-64cb-4a03-b260-45cfc610e7a2",
-    "defaultCollection": "@nrwl/angular"
-  },
-  "defaultProject": "website",
-  "schematics": {
-    "@nrwl/angular": {
-      "application": {
-        "linter": "eslint"
-      },
-      "library": {
-        "linter": "eslint"
-      },
-      "storybook-configuration": {
-        "linter": "eslint"
-      }
-    },
-    "@nrwl/angular:application": {
-      "style": "scss",
-      "linter": "eslint",
-      "unitTestRunner": "jest",
-      "e2eTestRunner": "cypress"
-    },
-    "@nrwl/angular:library": {
-      "style": "scss",
-      "linter": "eslint",
-      "unitTestRunner": "jest"
-    },
-    "@nrwl/angular:component": {
-      "style": "scss"
-    }
-  },
   "projects": {
     "feature-lazy-about": {
       "projectType": "library",
@@ -68,7 +36,8 @@
             "passWithNoTests": true
           }
         }
-      }
+      },
+      "tags": ["feature-lazy"]
     },
     "feature-lazy-app-detail": {
       "projectType": "library",
@@ -105,7 +74,8 @@
             "passWithNoTests": true
           }
         }
-      }
+      },
+      "tags": ["feature-lazy"]
     },
     "feature-lazy-app-privacy-policy": {
       "projectType": "library",
@@ -142,7 +112,8 @@
             "passWithNoTests": true
           }
         }
-      }
+      },
+      "tags": ["feature-lazy"]
     },
     "feature-lazy-app-terms-of-service": {
       "projectType": "library",
@@ -179,7 +150,8 @@
             "passWithNoTests": true
           }
         }
-      }
+      },
+      "tags": ["feature-lazy"]
     },
     "feature-lazy-apps": {
       "projectType": "library",
@@ -216,7 +188,8 @@
             "passWithNoTests": true
           }
         }
-      }
+      },
+      "tags": ["feature-lazy"]
     },
     "feature-lazy-contact": {
       "projectType": "library",
@@ -253,7 +226,8 @@
             "passWithNoTests": true
           }
         }
-      }
+      },
+      "tags": ["feature-lazy"]
     },
     "feature-lazy-home": {
       "projectType": "library",
@@ -290,7 +264,8 @@
             "passWithNoTests": true
           }
         }
-      }
+      },
+      "tags": ["feature-lazy"]
     },
     "feature-lazy-secret": {
       "projectType": "library",
@@ -330,7 +305,8 @@
             ]
           }
         }
-      }
+      },
+      "tags": ["eature-lazy-secret"]
     },
     "feature-shared-localization": {
       "projectType": "library",
@@ -367,7 +343,8 @@
             "passWithNoTests": true
           }
         }
-      }
+      },
+      "tags": ["feature-shared"]
     },
     "feature-shared-logic-models": {
       "projectType": "library",
@@ -404,7 +381,8 @@
             "passWithNoTests": true
           }
         }
-      }
+      },
+      "tags": ["feature-shared-logic-models"]
     },
     "feature-shared-logic-persistance": {
       "projectType": "library",
@@ -441,7 +419,8 @@
             "passWithNoTests": true
           }
         }
-      }
+      },
+      "tags": ["feature-shared-logic-persistance"]
     },
     "feature-shared-logic-services": {
       "projectType": "library",
@@ -481,7 +460,8 @@
             ]
           }
         }
-      }
+      },
+      "tags": ["feature-shared-logic-services"]
     },
     "testing": {
       "projectType": "library",
@@ -521,7 +501,8 @@
             ]
           }
         }
-      }
+      },
+      "tags": []
     },
     "ui-component": {
       "projectType": "library",
@@ -561,7 +542,8 @@
             ]
           }
         }
-      }
+      },
+      "tags": ["ui-component"]
     },
     "ui-core": {
       "projectType": "library",
@@ -598,7 +580,8 @@
             "passWithNoTests": true
           }
         }
-      }
+      },
+      "tags": ["ui-core"]
     },
     "ui-layout": {
       "projectType": "library",
@@ -635,7 +618,8 @@
             "passWithNoTests": true
           }
         }
-      }
+      },
+      "tags": ["ui-layout"]
     },
     "ui-typography": {
       "projectType": "library",
@@ -672,7 +656,8 @@
             "passWithNoTests": true
           }
         }
-      }
+      },
+      "tags": ["ui-typography"]
     },
     "website": {
       "projectType": "application",
@@ -780,7 +765,8 @@
             "passWithNoTests": true
           }
         }
-      }
+      },
+      "tags": []
     },
     "website-e2e": {
       "root": "apps/website-e2e",
@@ -806,7 +792,9 @@
             "lintFilePatterns": ["apps/website-e2e/**/*.{js,ts}"]
           }
         }
-      }
+      },
+      "tags": [],
+      "implicitDependencies": ["website"]
     }
   }
 }

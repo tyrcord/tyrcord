@@ -25,64 +25,36 @@
       }
     }
   },
-  "projects": {
-    "feature-lazy-about": {
-      "tags": ["feature-lazy"]
+  "cli": {
+    "analytics": "51db4f0c-64cb-4a03-b260-45cfc610e7a2",
+    "defaultCollection": "@nrwl/angular"
+  },
+  "defaultProject": "website",
+  "generators": {
+    "@nrwl/angular": {
+      "application": {
+        "linter": "eslint"
+      },
+      "library": {
+        "linter": "eslint"
+      },
+      "storybook-configuration": {
+        "linter": "eslint"
+      }
     },
-    "feature-lazy-app-detail": {
-      "tags": ["feature-lazy"]
+    "@nrwl/angular:application": {
+      "style": "scss",
+      "linter": "eslint",
+      "unitTestRunner": "jest",
+      "e2eTestRunner": "cypress"
     },
-    "feature-lazy-app-privacy-policy": {
-      "tags": ["feature-lazy"]
+    "@nrwl/angular:library": {
+      "style": "scss",
+      "linter": "eslint",
+      "unitTestRunner": "jest"
     },
-    "feature-lazy-app-terms-of-service": {
-      "tags": ["feature-lazy"]
-    },
-    "feature-lazy-apps": {
-      "tags": ["feature-lazy"]
-    },
-    "feature-lazy-contact": {
-      "tags": ["feature-lazy"]
-    },
-    "feature-lazy-home": {
-      "tags": ["feature-lazy"]
-    },
-    "feature-lazy-secret": {
-      "tags": ["eature-lazy-secret"]
-    },
-    "feature-shared-localization": {
-      "tags": ["feature-shared"]
-    },
-    "feature-shared-logic-models": {
-      "tags": ["feature-shared-logic-models"]
-    },
-    "feature-shared-logic-persistance": {
-      "tags": ["feature-shared-logic-persistance"]
-    },
-    "feature-shared-logic-services": {
-      "tags": ["feature-shared-logic-services"]
-    },
-    "testing": {
-      "tags": []
-    },
-    "ui-component": {
-      "tags": ["ui-component"]
-    },
-    "ui-core": {
-      "tags": ["ui-core"]
-    },
-    "ui-layout": {
-      "tags": ["ui-layout"]
-    },
-    "ui-typography": {
-      "tags": ["ui-typography"]
-    },
-    "website": {
-      "tags": []
-    },
-    "website-e2e": {
-      "tags": [],
-      "implicitDependencies": ["website"]
+    "@nrwl/angular:component": {
+      "style": "scss"
     }
   }
 }
