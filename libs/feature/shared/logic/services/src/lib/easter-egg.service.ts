@@ -10,7 +10,7 @@ export class EasterEggService {
   private keylogger = '';
 
   constructor(private router: Router) {}
-  
+
   static getAppSecret(): string {
     return this.secret;
   }

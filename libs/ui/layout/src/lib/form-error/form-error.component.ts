@@ -6,7 +6,6 @@ import { Component, HostBinding, Input } from '@angular/core';
   styleUrls: ['./form-error.component.scss'],
 })
 export class FormErrorComponent {
-
   @HostBinding('class.visible')
   @Input()
   visible = false;

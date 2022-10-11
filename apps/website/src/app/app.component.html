@@ -2,16 +2,27 @@
   <tyrcord-ui-layout-app-bar slot-header>
     <div slot-leading class="app-logo" routerLink="/home">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 47.66 39.6">
-          <path d="M20.38,39.6h-5.2V0h5.2ZM47.66,0V5.19H15.18V0ZM7.54,7.64h5.19v32H7.54ZM12.73,0V5.19H0V0Z" />
+        <path
+          d="M20.38,39.6h-5.2V0h5.2ZM47.66,0V5.19H15.18V0ZM7.54,7.64h5.19v32H7.54ZM12.73,0V5.19H0V0Z"
+        />
       </svg>
     </div>
     <div slot-actions class="app-menu">
-      <a href="https://github.com/tyrcord" target="_blank" class="app-menu-github-option" aria-label="Github" rel="noopener">
+      <a
+        href="https://github.com/tyrcord"
+        target="_blank"
+        class="app-menu-github-option"
+        aria-label="Github"
+        rel="noopener"
+      >
         <tyrcord-ui-layout-menu-option>
           <i class="fab fa-github"></i>
         </tyrcord-ui-layout-menu-option>
       </a>
-      <tyrcord-ui-component-menu [options]="menuOptions" (optionChange)="onOptionChange($event)"></tyrcord-ui-component-menu>
+      <tyrcord-ui-component-menu
+        [options]="menuOptions"
+        (optionChange)="onOptionChange($event)"
+      ></tyrcord-ui-component-menu>
     </div>
   </tyrcord-ui-layout-app-bar>
 

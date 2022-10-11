@@ -26,45 +26,32 @@
     }
   },
   "projects": {
-    "website": {
-      "tags": []
-    },
-    "website-e2e": {
-      "tags": [],
-      "implicitDependencies": ["website"]
-    },
-    "feature-lazy-contact": {
-      "tags": ["feature-lazy"]
-    },
-    "feature-lazy-apps": {
-      "tags": ["feature-lazy"]
-    },
     "feature-lazy-about": {
       "tags": ["feature-lazy"]
     },
-    "feature-lazy-home": {
+    "feature-lazy-app-detail": {
       "tags": ["feature-lazy"]
     },
-    "ui-layout": {
-      "tags": ["ui-layout"]
-    },
-    "ui-core": {
-      "tags": ["ui-core"]
-    },
-    "ui-typography": {
-      "tags": ["ui-typography"]
-    },
-    "feature-shared-localization": {
-      "tags": ["feature-shared"]
-    },
-    "feature-lazy-app-detail": {
+    "feature-lazy-app-privacy-policy": {
       "tags": ["feature-lazy"]
     },
     "feature-lazy-app-terms-of-service": {
       "tags": ["feature-lazy"]
     },
-    "feature-lazy-app-privacy-policy": {
+    "feature-lazy-apps": {
       "tags": ["feature-lazy"]
+    },
+    "feature-lazy-contact": {
+      "tags": ["feature-lazy"]
+    },
+    "feature-lazy-home": {
+      "tags": ["feature-lazy"]
+    },
+    "feature-lazy-secret": {
+      "tags": ["eature-lazy-secret"]
+    },
+    "feature-shared-localization": {
+      "tags": ["feature-shared"]
     },
     "feature-shared-logic-models": {
       "tags": ["feature-shared-logic-models"]
@@ -75,14 +62,27 @@
     "feature-shared-logic-services": {
       "tags": ["feature-shared-logic-services"]
     },
-    "feature-lazy-secret": {
-      "tags": ["eature-lazy-secret"]
+    "testing": {
+      "tags": []
     },
     "ui-component": {
       "tags": ["ui-component"]
     },
-    "testing": {
+    "ui-core": {
+      "tags": ["ui-core"]
+    },
+    "ui-layout": {
+      "tags": ["ui-layout"]
+    },
+    "ui-typography": {
+      "tags": ["ui-typography"]
+    },
+    "website": {
       "tags": []
+    },
+    "website-e2e": {
+      "tags": [],
+      "implicitDependencies": ["website"]
     }
   }
 }

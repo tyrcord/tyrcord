@@ -1,7 +1,8 @@
 <div *ngIf="!!sectionTitle" class="section-title">
-    <tyrcord-ui-typography-title>{{ sectionTitle | translate }}</tyrcord-ui-typography-title>
-  </div>
-  <div class="section-content">
-    <ng-content></ng-content>
-  </div>
-  
+  <tyrcord-ui-typography-title>{{
+    sectionTitle | translate
+  }}</tyrcord-ui-typography-title>
+</div>
+<div class="section-content">
+  <ng-content></ng-content>
+</div>

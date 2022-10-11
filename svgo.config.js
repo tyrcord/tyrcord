@@ -16,6 +16,6 @@ module.exports = {
     'removeUnusedNS',
     'removeNonInheritableGroupAttrs',
     'convertPathData',
-    'convertColors'
+    'convertColors',
   ],
 };

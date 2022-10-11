@@ -5,7 +5,6 @@ import { NgModule } from '@angular/core';
 import { UITypographyModule } from '@tyrcord/ui/typography';
 import { ReactiveFormsModule } from '@angular/forms';
 
-
 import { AppFooterComponent } from './app-footer/app-footer.component';
 import { ListItemComponent } from './list-item/list-item.component';
 import { AppBarComponent } from './app-bar/app-bar.component';

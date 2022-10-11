@@ -22,7 +22,11 @@
         ],
         "@angular-eslint/component-selector": [
           "error",
-          { "type": "element", "prefix": "tyrcord-feature-lazy", "style": "kebab-case" }
+          {
+            "type": "element",
+            "prefix": "tyrcord-feature-lazy",
+            "style": "kebab-case"
+          }
         ]
       }
     },

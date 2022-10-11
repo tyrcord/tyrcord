@@ -68,7 +68,7 @@ export class AppComponent implements OnInit {
 
   @HostListener('window:keyup', ['$event'])
   keyEvent(event: KeyboardEvent): void {
-     this.easterEggService.registerKeyEvent(event);
+    this.easterEggService.registerKeyEvent(event);
   }
 
   private toggleLanguage(): void {

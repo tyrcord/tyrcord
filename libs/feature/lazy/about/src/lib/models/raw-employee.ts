@@ -1,4 +1,3 @@
-
 export interface RawEmployee {
   startDate: string;
   firstname: string;

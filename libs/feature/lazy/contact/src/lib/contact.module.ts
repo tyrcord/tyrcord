@@ -8,7 +8,6 @@ import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
 
-
 import { LocalizationModule } from '@tyrcord/feature/shared/localization';
 import { UIComponentModule } from '@tyrcord/ui/component';
 import { UITypographyModule } from '@tyrcord/ui/typography';

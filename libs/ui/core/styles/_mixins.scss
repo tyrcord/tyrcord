@@ -8,7 +8,7 @@
 }
 
 @mixin boxShadow($radius: 8px, $padding: var(--app-padding-medium)) {
- @include containerShadow;
+  @include containerShadow;
   padding: $padding;
   border-radius: $radius;
 }

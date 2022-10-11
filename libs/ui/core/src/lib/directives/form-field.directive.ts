@@ -6,7 +6,7 @@ import { Directive } from '@angular/core';
   selector: 'input[tyrcordFormField], textarea[tyrcordFormField]',
   exportAs: 'tyrcordFormField',
   host: {
-    'class': 'tyrcord-input-element',
+    class: 'tyrcord-input-element',
   },
 })
 export class FormFieldDirective {}

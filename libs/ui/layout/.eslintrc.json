@@ -12,11 +12,19 @@
       "rules": {
         "@angular-eslint/directive-selector": [
           "error",
-          { "type": "attribute", "prefix": "tyrcord-ui-layout", "style": "camelCase" }
+          {
+            "type": "attribute",
+            "prefix": "tyrcord-ui-layout",
+            "style": "camelCase"
+          }
         ],
         "@angular-eslint/component-selector": [
           "error",
-          { "type": "element", "prefix": "tyrcord-ui-layout", "style": "kebab-case" }
+          {
+            "type": "element",
+            "prefix": "tyrcord-ui-layout",
+            "style": "kebab-case"
+          }
         ]
       }
     },

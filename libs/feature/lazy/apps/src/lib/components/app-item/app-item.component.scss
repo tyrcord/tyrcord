@@ -5,7 +5,7 @@
   flex: 1;
   cursor: pointer;
 
-  .app-icon {   
+  .app-icon {
     > img {
       @include defaultShadow;
       height: var(--app-icon-size-xxl);

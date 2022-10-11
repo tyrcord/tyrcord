@@ -42,6 +42,6 @@ export function HttpLoaderFactory(http: HttpClient) {
     ]),
   ],
   declarations: [AboutComponent],
-  providers: [TeamService, EmployeeDataProvider]
+  providers: [TeamService, EmployeeDataProvider],
 })
 export class AboutModule {}
