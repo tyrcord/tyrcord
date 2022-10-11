@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   projects: [
     '<rootDir>/apps/website',
     '<rootDir>/libs/feature/lazy/home',

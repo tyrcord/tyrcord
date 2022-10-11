@@ -18,12 +18,7 @@
     "default": {
       "runner": "@nrwl/nx-cloud",
       "options": {
-        "cacheableOperations": [
-          "build",
-          "lint",
-          "test",
-          "e2e"
-        ],
+        "cacheableOperations": ["build", "lint", "test", "e2e"],
         "accessToken": "MTAxY2MxZDktNzQ0MC00Y2M4LWE4YTQtZDQxZTBhZjUyNmIxfHJlYWQtd3JpdGU=",
         "canTrackAnalytics": false,
         "showUsageWarnings": true,
@@ -32,8 +27,7 @@
     }
   },
   "cli": {
-    "analytics": "51db4f0c-64cb-4a03-b260-45cfc610e7a2",
-    "defaultCollection": "@nrwl/angular"
+    "analytics": "51db4f0c-64cb-4a03-b260-45cfc610e7a2"
   },
   "defaultProject": "website",
   "generators": {
@@ -61,5 +55,6 @@
     "@nrwl/angular:component": {
       "style": "scss"
     }
-  }
+  },
+  "$schema": "./node_modules/nx/schemas/nx-schema.json"
 }

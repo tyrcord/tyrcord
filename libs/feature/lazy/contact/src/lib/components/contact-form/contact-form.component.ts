@@ -4,8 +4,8 @@ import { Observable, Subject } from 'rxjs';
 import { filter } from 'rxjs/operators';
 
 import {
-  FormGroup,
-  FormControl,
+  UntypedFormGroup,
+  UntypedFormControl,
   Validators,
   AbstractControl,
 } from '@angular/forms';
@@ -29,14 +29,14 @@ export class ContactFormComponent implements OnInit, OnDestroy {
   messageMaxLength = 1_000;
   messageMinLength = 60;
 
-  contactForm = new FormGroup({
-    email: new FormControl('', [Validators.required, Validators.email]),
-    name: new FormControl('', [
+  contactForm = new UntypedFormGroup({
+    email: new UntypedFormControl('', [Validators.required, Validators.email]),
+    name: new UntypedFormControl('', [
       Validators.maxLength(this.nameMaxLength),
       Validators.minLength(this.nameMinLength),
       Validators.required,
     ]),
-    message: new FormControl('', [
+    message: new UntypedFormControl('', [
       Validators.maxLength(this.messageMaxLength),
       Validators.minLength(this.messageMinLength),
       Validators.required,

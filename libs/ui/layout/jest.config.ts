@@ -1,5 +1,6 @@
-module.exports = {
-  displayName: 'ui-typography',
+/* eslint-disable */
+export default {
+  displayName: 'ui-layout',
   preset: '../../../jest.preset.js',
   setupFilesAfterEnv: ['<rootDir>/src/test-setup.ts'],
   globals: {
@@ -14,7 +15,7 @@ module.exports = {
       },
     },
   },
-  coverageDirectory: '../../../coverage/libs/ui/typography',
+  coverageDirectory: '../../../coverage/libs/ui/layout',
   snapshotSerializers: [
     'jest-preset-angular/build/AngularNoNgAttributesSnapshotSerializer.js',
     'jest-preset-angular/build/AngularSnapshotSerializer.js',

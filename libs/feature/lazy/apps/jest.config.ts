@@ -1,6 +1,7 @@
-module.exports = {
-  displayName: 'website',
-  preset: '../../jest.preset.js',
+/* eslint-disable */
+export default {
+  displayName: 'feature-lazy-apps',
+  preset: '../../../../jest.preset.js',
   setupFilesAfterEnv: ['<rootDir>/src/test-setup.ts'],
   globals: {
     'ts-jest': {
@@ -14,7 +15,7 @@ module.exports = {
       },
     },
   },
-  coverageDirectory: '../../coverage/apps/website',
+  coverageDirectory: '../../../../coverage/libs/feature/lazy/apps',
   snapshotSerializers: [
     'jest-preset-angular/build/AngularNoNgAttributesSnapshotSerializer.js',
     'jest-preset-angular/build/AngularSnapshotSerializer.js',

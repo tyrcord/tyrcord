@@ -1,6 +1,7 @@
-module.exports = {
-  displayName: 'feature-shared-logic-services',
-  preset: '../../../../../jest.preset.js',
+/* eslint-disable */
+export default {
+  displayName: 'feature-lazy-secret',
+  preset: '../../../../jest.preset.js',
   setupFilesAfterEnv: ['<rootDir>/src/test-setup.ts'],
   globals: {
     'ts-jest': {
@@ -14,8 +15,7 @@ module.exports = {
       },
     },
   },
-  coverageDirectory:
-    '../../../../../coverage/libs/feature/shared/logic/services',
+  coverageDirectory: '../../../../coverage/libs/feature/lazy/secret',
   snapshotSerializers: [
     'jest-preset-angular/build/serializers/no-ng-attributes',
     'jest-preset-angular/build/serializers/ng-snapshot',

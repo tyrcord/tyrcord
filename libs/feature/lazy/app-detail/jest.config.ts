@@ -1,6 +1,7 @@
-module.exports = {
-  displayName: 'feature-shared-logic-models',
-  preset: '../../../../../jest.preset.js',
+/* eslint-disable */
+export default {
+  displayName: 'feature-lazy-app-detail',
+  preset: '../../../../jest.preset.js',
   setupFilesAfterEnv: ['<rootDir>/src/test-setup.ts'],
   globals: {
     'ts-jest': {
@@ -14,7 +15,7 @@ module.exports = {
       },
     },
   },
-  coverageDirectory: '../../../../../coverage/libs/feature/shared/logic/models',
+  coverageDirectory: '../../../../coverage/libs/feature/lazy/app-detail',
   snapshotSerializers: [
     'jest-preset-angular/build/AngularNoNgAttributesSnapshotSerializer.js',
     'jest-preset-angular/build/AngularSnapshotSerializer.js',

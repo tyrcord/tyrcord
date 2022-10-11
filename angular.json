@@ -30,18 +30,14 @@
         },
         "test": {
           "builder": "@nrwl/jest:jest",
-          "outputs": [
-            "coverage/libs/feature/lazy/about"
-          ],
+          "outputs": ["coverage/libs/feature/lazy/about"],
           "options": {
-            "jestConfig": "libs/feature/lazy/about/jest.config.js",
+            "jestConfig": "libs/feature/lazy/about/jest.config.ts",
             "passWithNoTests": true
           }
         }
       },
-      "tags": [
-        "feature-lazy"
-      ]
+      "tags": ["feature-lazy"]
     },
     "feature-lazy-app-detail": {
       "projectType": "library",
@@ -72,18 +68,14 @@
         },
         "test": {
           "builder": "@nrwl/jest:jest",
-          "outputs": [
-            "coverage/libs/feature/lazy/app-detail"
-          ],
+          "outputs": ["coverage/libs/feature/lazy/app-detail"],
           "options": {
-            "jestConfig": "libs/feature/lazy/app-detail/jest.config.js",
+            "jestConfig": "libs/feature/lazy/app-detail/jest.config.ts",
             "passWithNoTests": true
           }
         }
       },
-      "tags": [
-        "feature-lazy"
-      ]
+      "tags": ["feature-lazy"]
     },
     "feature-lazy-app-privacy-policy": {
       "projectType": "library",
@@ -114,18 +106,14 @@
         },
         "test": {
           "builder": "@nrwl/jest:jest",
-          "outputs": [
-            "coverage/libs/feature/lazy/app-privacy-policy"
-          ],
+          "outputs": ["coverage/libs/feature/lazy/app-privacy-policy"],
           "options": {
-            "jestConfig": "libs/feature/lazy/app-privacy-policy/jest.config.js",
+            "jestConfig": "libs/feature/lazy/app-privacy-policy/jest.config.ts",
             "passWithNoTests": true
           }
         }
       },
-      "tags": [
-        "feature-lazy"
-      ]
+      "tags": ["feature-lazy"]
     },
     "feature-lazy-app-terms-of-service": {
       "projectType": "library",
@@ -156,18 +144,14 @@
         },
         "test": {
           "builder": "@nrwl/jest:jest",
-          "outputs": [
-            "coverage/libs/feature/lazy/app-terms-of-service"
-          ],
+          "outputs": ["coverage/libs/feature/lazy/app-terms-of-service"],
           "options": {
-            "jestConfig": "libs/feature/lazy/app-terms-of-service/jest.config.js",
+            "jestConfig": "libs/feature/lazy/app-terms-of-service/jest.config.ts",
             "passWithNoTests": true
           }
         }
       },
-      "tags": [
-        "feature-lazy"
-      ]
+      "tags": ["feature-lazy"]
     },
     "feature-lazy-apps": {
       "projectType": "library",
@@ -198,18 +182,14 @@
         },
         "test": {
           "builder": "@nrwl/jest:jest",
-          "outputs": [
-            "coverage/libs/feature/lazy/apps"
-          ],
+          "outputs": ["coverage/libs/feature/lazy/apps"],
           "options": {
-            "jestConfig": "libs/feature/lazy/apps/jest.config.js",
+            "jestConfig": "libs/feature/lazy/apps/jest.config.ts",
             "passWithNoTests": true
           }
         }
       },
-      "tags": [
-        "feature-lazy"
-      ]
+      "tags": ["feature-lazy"]
     },
     "feature-lazy-contact": {
       "projectType": "library",
@@ -240,18 +220,14 @@
         },
         "test": {
           "builder": "@nrwl/jest:jest",
-          "outputs": [
-            "coverage/libs/feature/lazy/contact"
-          ],
+          "outputs": ["coverage/libs/feature/lazy/contact"],
           "options": {
-            "jestConfig": "libs/feature/lazy/contact/jest.config.js",
+            "jestConfig": "libs/feature/lazy/contact/jest.config.ts",
             "passWithNoTests": true
           }
         }
       },
-      "tags": [
-        "feature-lazy"
-      ]
+      "tags": ["feature-lazy"]
     },
     "feature-lazy-home": {
       "projectType": "library",
@@ -282,18 +258,14 @@
         },
         "test": {
           "builder": "@nrwl/jest:jest",
-          "outputs": [
-            "coverage/libs/feature/lazy/home"
-          ],
+          "outputs": ["coverage/libs/feature/lazy/home"],
           "options": {
-            "jestConfig": "libs/feature/lazy/home/jest.config.js",
+            "jestConfig": "libs/feature/lazy/home/jest.config.ts",
             "passWithNoTests": true
           }
         }
       },
-      "tags": [
-        "feature-lazy"
-      ]
+      "tags": ["feature-lazy"]
     },
     "feature-lazy-secret": {
       "projectType": "library",
@@ -318,11 +290,9 @@
         },
         "test": {
           "builder": "@nrwl/jest:jest",
-          "outputs": [
-            "coverage/libs/feature/lazy/secret"
-          ],
+          "outputs": ["coverage/libs/feature/lazy/secret"],
           "options": {
-            "jestConfig": "libs/feature/lazy/secret/jest.config.js",
+            "jestConfig": "libs/feature/lazy/secret/jest.config.ts",
             "passWithNoTests": true
           }
         },
@@ -336,9 +306,7 @@
           }
         }
       },
-      "tags": [
-        "eature-lazy-secret"
-      ]
+      "tags": ["eature-lazy-secret"]
     },
     "feature-shared-localization": {
       "projectType": "library",
@@ -369,18 +337,14 @@
         },
         "test": {
           "builder": "@nrwl/jest:jest",
-          "outputs": [
-            "coverage/libs/feature/shared/localization"
-          ],
+          "outputs": ["coverage/libs/feature/shared/localization"],
           "options": {
-            "jestConfig": "libs/feature/shared/localization/jest.config.js",
+            "jestConfig": "libs/feature/shared/localization/jest.config.ts",
             "passWithNoTests": true
           }
         }
       },
-      "tags": [
-        "feature-shared"
-      ]
+      "tags": ["feature-shared"]
     },
     "feature-shared-logic-models": {
       "projectType": "library",
@@ -411,18 +375,14 @@
         },
         "test": {
           "builder": "@nrwl/jest:jest",
-          "outputs": [
-            "coverage/libs/feature/shared/logic/models"
-          ],
+          "outputs": ["coverage/libs/feature/shared/logic/models"],
           "options": {
-            "jestConfig": "libs/feature/shared/logic/models/jest.config.js",
+            "jestConfig": "libs/feature/shared/logic/models/jest.config.ts",
             "passWithNoTests": true
           }
         }
       },
-      "tags": [
-        "feature-shared-logic-models"
-      ]
+      "tags": ["feature-shared-logic-models"]
     },
     "feature-shared-logic-persistance": {
       "projectType": "library",
@@ -453,18 +413,14 @@
         },
         "test": {
           "builder": "@nrwl/jest:jest",
-          "outputs": [
-            "coverage/libs/feature/shared/logic/persistance"
-          ],
+          "outputs": ["coverage/libs/feature/shared/logic/persistance"],
           "options": {
-            "jestConfig": "libs/feature/shared/logic/persistance/jest.config.js",
+            "jestConfig": "libs/feature/shared/logic/persistance/jest.config.ts",
             "passWithNoTests": true
           }
         }
       },
-      "tags": [
-        "feature-shared-logic-persistance"
-      ]
+      "tags": ["feature-shared-logic-persistance"]
     },
     "feature-shared-logic-services": {
       "projectType": "library",
@@ -489,11 +445,9 @@
         },
         "test": {
           "builder": "@nrwl/jest:jest",
-          "outputs": [
-            "coverage/libs/feature/shared/logic/services"
-          ],
+          "outputs": ["coverage/libs/feature/shared/logic/services"],
           "options": {
-            "jestConfig": "libs/feature/shared/logic/services/jest.config.js",
+            "jestConfig": "libs/feature/shared/logic/services/jest.config.ts",
             "passWithNoTests": true
           }
         },
@@ -507,9 +461,7 @@
           }
         }
       },
-      "tags": [
-        "feature-shared-logic-services"
-      ]
+      "tags": ["feature-shared-logic-services"]
     },
     "testing": {
       "projectType": "library",
@@ -534,11 +486,9 @@
         },
         "test": {
           "builder": "@nrwl/jest:jest",
-          "outputs": [
-            "coverage/libs/testing"
-          ],
+          "outputs": ["coverage/libs/testing"],
           "options": {
-            "jestConfig": "libs/testing/jest.config.js",
+            "jestConfig": "libs/testing/jest.config.ts",
             "passWithNoTests": true
           }
         },
@@ -577,11 +527,9 @@
         },
         "test": {
           "builder": "@nrwl/jest:jest",
-          "outputs": [
-            "coverage/libs/ui/component"
-          ],
+          "outputs": ["coverage/libs/ui/component"],
           "options": {
-            "jestConfig": "libs/ui/component/jest.config.js",
+            "jestConfig": "libs/ui/component/jest.config.ts",
             "passWithNoTests": true
           }
         },
@@ -595,9 +543,7 @@
           }
         }
       },
-      "tags": [
-        "ui-component"
-      ]
+      "tags": ["ui-component"]
     },
     "ui-core": {
       "projectType": "library",
@@ -628,18 +574,14 @@
         },
         "test": {
           "builder": "@nrwl/jest:jest",
-          "outputs": [
-            "coverage/libs/ui/core"
-          ],
+          "outputs": ["coverage/libs/ui/core"],
           "options": {
-            "jestConfig": "libs/ui/core/jest.config.js",
+            "jestConfig": "libs/ui/core/jest.config.ts",
             "passWithNoTests": true
           }
         }
       },
-      "tags": [
-        "ui-core"
-      ]
+      "tags": ["ui-core"]
     },
     "ui-layout": {
       "projectType": "library",
@@ -670,18 +612,14 @@
         },
         "test": {
           "builder": "@nrwl/jest:jest",
-          "outputs": [
-            "coverage/libs/ui/layout"
-          ],
+          "outputs": ["coverage/libs/ui/layout"],
           "options": {
-            "jestConfig": "libs/ui/layout/jest.config.js",
+            "jestConfig": "libs/ui/layout/jest.config.ts",
             "passWithNoTests": true
           }
         }
       },
-      "tags": [
-        "ui-layout"
-      ]
+      "tags": ["ui-layout"]
     },
     "ui-typography": {
       "projectType": "library",
@@ -712,18 +650,14 @@
         },
         "test": {
           "builder": "@nrwl/jest:jest",
-          "outputs": [
-            "coverage/libs/ui/typography"
-          ],
+          "outputs": ["coverage/libs/ui/typography"],
           "options": {
-            "jestConfig": "libs/ui/typography/jest.config.js",
+            "jestConfig": "libs/ui/typography/jest.config.ts",
             "passWithNoTests": true
           }
         }
       },
-      "tags": [
-        "ui-typography"
-      ]
+      "tags": ["ui-typography"]
     },
     "website": {
       "projectType": "application",
@@ -741,9 +675,7 @@
             "tsConfig": "apps/website/tsconfig.app.json",
             "aot": true,
             "stylePreprocessorOptions": {
-              "includePaths": [
-                "libs/ui/core/styles"
-              ]
+              "includePaths": ["libs/ui/core/styles"]
             },
             "assets": [
               "apps/website/src/app-ads.txt",
@@ -826,11 +758,9 @@
         },
         "test": {
           "builder": "@nrwl/jest:jest",
-          "outputs": [
-            "coverage/apps/website"
-          ],
+          "outputs": ["coverage/apps/website"],
           "options": {
-            "jestConfig": "apps/website/jest.config.js",
+            "jestConfig": "apps/website/jest.config.ts",
             "passWithNoTests": true
           }
         }
@@ -858,16 +788,12 @@
         "lint": {
           "builder": "@nrwl/linter:eslint",
           "options": {
-            "lintFilePatterns": [
-              "apps/website-e2e/**/*.{js,ts}"
-            ]
+            "lintFilePatterns": ["apps/website-e2e/**/*.{js,ts}"]
           }
         }
       },
       "tags": [],
-      "implicitDependencies": [
-        "website"
-      ]
+      "implicitDependencies": ["website"]
     }
   }
 }

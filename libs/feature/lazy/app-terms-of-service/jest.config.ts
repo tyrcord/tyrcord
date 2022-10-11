@@ -1,5 +1,6 @@
-module.exports = {
-  displayName: 'feature-shared-localization',
+/* eslint-disable */
+export default {
+  displayName: 'feature-lazy-app-terms-of-service',
   preset: '../../../../jest.preset.js',
   setupFilesAfterEnv: ['<rootDir>/src/test-setup.ts'],
   globals: {
@@ -14,7 +15,8 @@ module.exports = {
       },
     },
   },
-  coverageDirectory: '../../../../coverage/libs/feature/shared/localization',
+  coverageDirectory:
+    '../../../../coverage/libs/feature/lazy/app-terms-of-service',
   snapshotSerializers: [
     'jest-preset-angular/build/AngularNoNgAttributesSnapshotSerializer.js',
     'jest-preset-angular/build/AngularSnapshotSerializer.js',
