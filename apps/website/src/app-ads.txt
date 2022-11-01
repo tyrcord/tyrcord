@@ -214,3 +214,5 @@ opera.com,pub4444433466368,RESELLER,55a0c5fd61378de3
 gothamads.com, 987, RESELLER, d9c86e5dec870222
 
 media.net, 8CU7MX3VS, DIRECT
+
+adingo.jp, 28818, RESELLER
