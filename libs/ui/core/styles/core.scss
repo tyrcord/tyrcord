@@ -243,6 +243,9 @@ body {
   --layout-app-content-text-color: var(--app-text-color);
   --layout-app-footer-background-color: var(--app-primary-color);
 
+  --app-bar-header-zIndex: 1000;
+  --app-bar-header-menu-zIndex: 1001;
+
   .primary-color {
     color: var(--app-primary-color);
   }

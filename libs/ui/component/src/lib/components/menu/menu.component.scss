@@ -25,7 +25,7 @@
       background-color: var(--app-background-tertiary-color);
       transform: translate3d(0, 0, 0);
       position: absolute;
-      z-index: 9999;
+      z-index: var(--app-bar-header-menu-zIndex);
       top: var(--app-bar-height);
       right: 0;
       left: 0;
