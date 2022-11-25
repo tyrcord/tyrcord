@@ -48,3 +48,6 @@ pubsub-debug.log
 
 #snyk
 .dccache
+
+#nx
+migrations.json
