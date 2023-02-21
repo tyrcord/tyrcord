@@ -68,5 +68,19 @@
     "subtitle": "APPS.SUBTILES.EXPRESSIONS_QUEBECOISES",
     "supportEmail": "contact@tyrcord.com",
     "thumbnail": "assets/pngs/apps/expressions-quebecoises/icon.png"
+  },
+  {
+    "android": false,
+    "androidUrl": "TODO",
+    "author": "Tyrcord, Inc",
+    "description": "APPS.DESCRIPTIONS.FX_POS_QAL",
+    "id": "fx-pos-qal",
+    "ios": false,
+    "iosUrl": "TODO",
+    "name": "FxPosQal",
+    "preview": "assets/pngs/apps/fx-pos-qal/preview.png",
+    "subtitle": "APPS.SUBTILES.FX_POS_QAL",
+    "supportEmail": "contact@tyrcord.com",
+    "thumbnail": "assets/pngs/apps/fx-pos-qal/icon.png"
   }
 ]
