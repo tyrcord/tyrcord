@@ -1,0 +1,41 @@
+{
+  "name": "feature-shared-logic-persistance",
+  "$schema": "../../../../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "library",
+  "sourceRoot": "libs/feature/shared/logic/persistance/src",
+  "prefix": "feature-shared-logic-persistance",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/angular:ng-packagr-lite",
+      "options": {
+        "tsConfig": "libs/feature/shared/logic/persistance/tsconfig.lib.json",
+        "project": "libs/feature/shared/logic/persistance/ng-package.json"
+      },
+      "configurations": {
+        "production": {
+          "tsConfig": "libs/feature/shared/logic/persistance/tsconfig.lib.prod.json"
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/feature/shared/logic/persistance/src/**/*.ts",
+          "libs/feature/shared/logic/persistance/src/**/*.html"
+        ]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": [
+        "{workspaceRoot}/coverage/libs/feature/shared/logic/persistance"
+      ],
+      "options": {
+        "jestConfig": "libs/feature/shared/logic/persistance/jest.config.ts",
+        "passWithNoTests": true
+      }
+    }
+  },
+  "tags": ["feature-shared-logic-persistance"]
+}

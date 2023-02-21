@@ -1,0 +1,42 @@
+{
+  "name": "ui-component",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "library",
+  "sourceRoot": "libs/ui/component/src",
+  "prefix": "tyrcord-ui-component",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/angular:ng-packagr-lite",
+      "options": {
+        "project": "libs/ui/component/ng-package.json"
+      },
+      "configurations": {
+        "production": {
+          "tsConfig": "libs/ui/component/tsconfig.lib.prod.json"
+        },
+        "development": {
+          "tsConfig": "libs/ui/component/tsconfig.lib.json"
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/libs/ui/component"],
+      "options": {
+        "jestConfig": "libs/ui/component/jest.config.ts",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/ui/component/src/**/*.ts",
+          "libs/ui/component/src/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": ["ui-component"]
+}

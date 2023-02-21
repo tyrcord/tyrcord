@@ -1,0 +1,39 @@
+{
+  "name": "feature-shared-logic-models",
+  "$schema": "../../../../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "library",
+  "sourceRoot": "libs/feature/shared/logic/models/src",
+  "prefix": "feature-shared-logic-model",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/angular:ng-packagr-lite",
+      "options": {
+        "tsConfig": "libs/feature/shared/logic/models/tsconfig.lib.json",
+        "project": "libs/feature/shared/logic/models/ng-package.json"
+      },
+      "configurations": {
+        "production": {
+          "tsConfig": "libs/feature/shared/logic/models/tsconfig.lib.prod.json"
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/feature/shared/logic/models/src/**/*.ts",
+          "libs/feature/shared/logic/models/src/**/*.html"
+        ]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/libs/feature/shared/logic/models"],
+      "options": {
+        "jestConfig": "libs/feature/shared/logic/models/jest.config.ts",
+        "passWithNoTests": true
+      }
+    }
+  },
+  "tags": ["feature-shared-logic-models"]
+}

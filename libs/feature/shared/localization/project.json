@@ -1,0 +1,39 @@
+{
+  "name": "feature-shared-localization",
+  "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "library",
+  "sourceRoot": "libs/feature/shared/localization/src",
+  "prefix": "feature-shared",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/angular:ng-packagr-lite",
+      "options": {
+        "tsConfig": "libs/feature/shared/localization/tsconfig.lib.json",
+        "project": "libs/feature/shared/localization/ng-package.json"
+      },
+      "configurations": {
+        "production": {
+          "tsConfig": "libs/feature/shared/localization/tsconfig.lib.prod.json"
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/feature/shared/localization/src/**/*.ts",
+          "libs/feature/shared/localization/src/**/*.html"
+        ]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/libs/feature/shared/localization"],
+      "options": {
+        "jestConfig": "libs/feature/shared/localization/jest.config.ts",
+        "passWithNoTests": true
+      }
+    }
+  },
+  "tags": ["feature-shared"]
+}

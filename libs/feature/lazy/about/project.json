@@ -1,0 +1,39 @@
+{
+  "name": "feature-lazy-about",
+  "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "library",
+  "sourceRoot": "libs/feature/lazy/about/src",
+  "prefix": "tyrcord-feature-lazy",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/angular:ng-packagr-lite",
+      "options": {
+        "tsConfig": "libs/feature/lazy/about/tsconfig.lib.json",
+        "project": "libs/feature/lazy/about/ng-package.json"
+      },
+      "configurations": {
+        "production": {
+          "tsConfig": "libs/feature/lazy/about/tsconfig.lib.prod.json"
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/feature/lazy/about/src/**/*.ts",
+          "libs/feature/lazy/about/src/**/*.html"
+        ]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/libs/feature/lazy/about"],
+      "options": {
+        "jestConfig": "libs/feature/lazy/about/jest.config.ts",
+        "passWithNoTests": true
+      }
+    }
+  },
+  "tags": ["feature-lazy"]
+}

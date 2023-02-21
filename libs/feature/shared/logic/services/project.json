@@ -1,0 +1,44 @@
+{
+  "name": "feature-shared-logic-services",
+  "$schema": "../../../../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "library",
+  "sourceRoot": "libs/feature/shared/logic/services/src",
+  "prefix": "tyrcord",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/angular:ng-packagr-lite",
+      "options": {
+        "project": "libs/feature/shared/logic/services/ng-package.json"
+      },
+      "configurations": {
+        "production": {
+          "tsConfig": "libs/feature/shared/logic/services/tsconfig.lib.prod.json"
+        },
+        "development": {
+          "tsConfig": "libs/feature/shared/logic/services/tsconfig.lib.json"
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": [
+        "{workspaceRoot}/coverage/libs/feature/shared/logic/services"
+      ],
+      "options": {
+        "jestConfig": "libs/feature/shared/logic/services/jest.config.ts",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/feature/shared/logic/services/src/**/*.ts",
+          "libs/feature/shared/logic/services/src/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": ["feature-shared-logic-services"]
+}

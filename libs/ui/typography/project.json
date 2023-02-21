@@ -1,0 +1,39 @@
+{
+  "name": "ui-typography",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "library",
+  "sourceRoot": "libs/ui/typography/src",
+  "prefix": "tyrcord-ui-typography",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/angular:ng-packagr-lite",
+      "options": {
+        "tsConfig": "libs/ui/typography/tsconfig.lib.json",
+        "project": "libs/ui/typography/ng-package.json"
+      },
+      "configurations": {
+        "production": {
+          "tsConfig": "libs/ui/typography/tsconfig.lib.prod.json"
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/ui/typography/src/**/*.ts",
+          "libs/ui/typography/src/**/*.html"
+        ]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/libs/ui/typography"],
+      "options": {
+        "jestConfig": "libs/ui/typography/jest.config.ts",
+        "passWithNoTests": true
+      }
+    }
+  },
+  "tags": ["ui-typography"]
+}

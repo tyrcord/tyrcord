@@ -1,0 +1,109 @@
+{
+  "name": "website",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "application",
+  "sourceRoot": "apps/website/src",
+  "prefix": "tyrcord",
+  "targets": {
+    "build": {
+      "executor": "@angular-devkit/build-angular:browser",
+      "options": {
+        "outputPath": "dist/apps/website",
+        "index": "apps/website/src/index.html",
+        "main": "apps/website/src/main.ts",
+        "polyfills": "apps/website/src/polyfills.ts",
+        "tsConfig": "apps/website/tsconfig.app.json",
+        "aot": true,
+        "stylePreprocessorOptions": {
+          "includePaths": ["libs/ui/core/styles"]
+        },
+        "assets": [
+          "apps/website/src/app-ads.txt",
+          "apps/website/src/android-chrome-192x192.png",
+          "apps/website/src/android-chrome-512x512.png",
+          "apps/website/src/apple-touch-icon.png",
+          "apps/website/src/apple-touch-icon.png",
+          "apps/website/src/favicon-16x16.png",
+          "apps/website/src/favicon-32x32.png",
+          "apps/website/src/browserconfig.xml",
+          "apps/website/src/mstile-150x150.png",
+          "apps/website/src/safari-pinned-tab.svg",
+          "apps/website/src/site.webmanifest",
+          "apps/website/src/favicon.ico",
+          "apps/website/src/assets",
+          "apps/website/src/robots.txt",
+          "apps/website/src/sitemap.xml"
+        ],
+        "styles": [
+          "libs/ui/core/styles/core.scss",
+          "libs/ui/core/styles/input.scss"
+        ],
+        "scripts": []
+      },
+      "configurations": {
+        "production": {
+          "fileReplacements": [
+            {
+              "replace": "apps/website/src/environments/environment.ts",
+              "with": "apps/website/src/environments/environment.prod.ts"
+            }
+          ],
+          "optimization": true,
+          "outputHashing": "all",
+          "sourceMap": false,
+          "namedChunks": false,
+          "extractLicenses": true,
+          "vendorChunk": false,
+          "buildOptimizer": true,
+          "budgets": [
+            {
+              "type": "initial",
+              "maximumWarning": "2mb",
+              "maximumError": "5mb"
+            },
+            {
+              "type": "anyComponentStyle",
+              "maximumWarning": "6kb",
+              "maximumError": "10kb"
+            }
+          ]
+        }
+      }
+    },
+    "serve": {
+      "executor": "@angular-devkit/build-angular:dev-server",
+      "options": {
+        "browserTarget": "website:build"
+      },
+      "configurations": {
+        "production": {
+          "browserTarget": "website:build:production"
+        }
+      }
+    },
+    "extract-i18n": {
+      "executor": "@angular-devkit/build-angular:extract-i18n",
+      "options": {
+        "browserTarget": "website:build"
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "apps/website/src/**/*.ts",
+          "apps/website/src/**/*.html"
+        ]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/apps/website"],
+      "options": {
+        "jestConfig": "apps/website/jest.config.ts",
+        "passWithNoTests": true
+      }
+    }
+  },
+  "tags": []
+}

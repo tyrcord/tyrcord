@@ -1,0 +1,39 @@
+{
+  "name": "ui-core",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "library",
+  "sourceRoot": "libs/ui/core/src",
+  "prefix": "tyrcord-ui-core",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/angular:ng-packagr-lite",
+      "options": {
+        "tsConfig": "libs/ui/core/tsconfig.lib.json",
+        "project": "libs/ui/core/ng-package.json"
+      },
+      "configurations": {
+        "production": {
+          "tsConfig": "libs/ui/core/tsconfig.lib.prod.json"
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/ui/core/src/**/*.ts",
+          "libs/ui/core/src/**/*.html"
+        ]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/libs/ui/core"],
+      "options": {
+        "jestConfig": "libs/ui/core/jest.config.ts",
+        "passWithNoTests": true
+      }
+    }
+  },
+  "tags": ["ui-core"]
+}
