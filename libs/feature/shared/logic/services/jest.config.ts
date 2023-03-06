@@ -3,18 +3,7 @@ export default {
   displayName: 'feature-shared-logic-services',
   preset: '../../../../../jest.preset.js',
   setupFilesAfterEnv: ['<rootDir>/src/test-setup.ts'],
-  globals: {
-    'ts-jest': {
-      tsconfig: '<rootDir>/tsconfig.spec.json',
-      stringifyContentPathRegex: '\\.(html|svg)$',
-      astTransformers: {
-        before: [
-          'jest-preset-angular/build/InlineFilesTransformer',
-          'jest-preset-angular/build/StripStylesTransformer',
-        ],
-      },
-    },
-  },
+  globals: {},
   coverageDirectory:
     '../../../../../coverage/libs/feature/shared/logic/services',
   snapshotSerializers: [

@@ -3,18 +3,7 @@ export default {
   displayName: 'feature-shared-logic-persistance',
   preset: '../../../../../jest.preset.js',
   setupFilesAfterEnv: ['<rootDir>/src/test-setup.ts'],
-  globals: {
-    'ts-jest': {
-      tsConfig: '<rootDir>/tsconfig.spec.json',
-      stringifyContentPathRegex: '\\.(html|svg)$',
-      astTransformers: {
-        before: [
-          'jest-preset-angular/build/InlineFilesTransformer',
-          'jest-preset-angular/build/StripStylesTransformer',
-        ],
-      },
-    },
-  },
+  globals: {},
   coverageDirectory:
     '../../../../../coverage/libs/feature/shared/logic/persistance',
   snapshotSerializers: [

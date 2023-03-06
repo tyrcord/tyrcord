@@ -3,18 +3,7 @@ export default {
   displayName: 'testing',
   preset: '../../jest.preset.js',
   setupFilesAfterEnv: ['<rootDir>/src/test-setup.ts'],
-  globals: {
-    'ts-jest': {
-      tsconfig: '<rootDir>/tsconfig.spec.json',
-      stringifyContentPathRegex: '\\.(html|svg)$',
-      astTransformers: {
-        before: [
-          'jest-preset-angular/build/InlineFilesTransformer',
-          'jest-preset-angular/build/StripStylesTransformer',
-        ],
-      },
-    },
-  },
+  globals: {},
   coverageDirectory: '../../coverage/libs/testing',
   snapshotSerializers: [
     'jest-preset-angular/build/serializers/no-ng-attributes',
