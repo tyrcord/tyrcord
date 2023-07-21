@@ -10,7 +10,10 @@
     "importHelpers": true,
     "target": "es2015",
     "module": "esnext",
-    "lib": ["es2017", "dom"],
+    "lib": [
+      "es2017",
+      "dom"
+    ],
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "resolveJsonModule": true,
@@ -18,7 +21,9 @@
     "noImplicitAny": false,
     "baseUrl": ".",
     "paths": {
-      "@tyrcord/feature/lazy/about": ["libs/feature/lazy/about/src/index.ts"],
+      "@tyrcord/feature/lazy/about": [
+        "libs/feature/lazy/about/src/index.ts"
+      ],
       "@tyrcord/feature/lazy/app-detail": [
         "libs/feature/lazy/app-detail/src/index.ts"
       ],
@@ -28,12 +33,18 @@
       "@tyrcord/feature/lazy/app-terms-of-service": [
         "libs/feature/lazy/app-terms-of-service/src/index.ts"
       ],
-      "@tyrcord/feature/lazy/apps": ["libs/feature/lazy/apps/src/index.ts"],
+      "@tyrcord/feature/lazy/apps": [
+        "libs/feature/lazy/apps/src/index.ts"
+      ],
       "@tyrcord/feature/lazy/contact": [
         "libs/feature/lazy/contact/src/index.ts"
       ],
-      "@tyrcord/feature/lazy/home": ["libs/feature/lazy/home/src/index.ts"],
-      "@tyrcord/feature/lazy/secret": ["libs/feature/lazy/secret/src/index.ts"],
+      "@tyrcord/feature/lazy/home": [
+        "libs/feature/lazy/home/src/index.ts"
+      ],
+      "@tyrcord/feature/lazy/secret": [
+        "libs/feature/lazy/secret/src/index.ts"
+      ],
       "@tyrcord/feature/shared/localization": [
         "libs/feature/shared/localization/src/index.ts"
       ],
@@ -46,12 +57,25 @@
       "@tyrcord/feature/shared/logic/services": [
         "libs/feature/shared/logic/services/src/index.ts"
       ],
-      "@tyrcord/testing": ["libs/testing/src/index.ts"],
-      "@tyrcord/ui/component": ["libs/ui/component/src/index.ts"],
-      "@tyrcord/ui/core": ["libs/ui/core/src/index.ts"],
-      "@tyrcord/ui/layout": ["libs/ui/layout/src/index.ts"],
-      "@tyrcord/ui/typography": ["libs/ui/typography/src/index.ts"]
+      "@tyrcord/testing": [
+        "libs/testing/src/index.ts"
+      ],
+      "@tyrcord/ui/component": [
+        "libs/ui/component/src/index.ts"
+      ],
+      "@tyrcord/ui/core": [
+        "libs/ui/core/src/index.ts"
+      ],
+      "@tyrcord/ui/layout": [
+        "libs/ui/layout/src/index.ts"
+      ],
+      "@tyrcord/ui/typography": [
+        "libs/ui/typography/src/index.ts"
+      ]
     }
   },
-  "exclude": ["node_modules", "tmp"]
+  "exclude": [
+    "node_modules",
+    "tmp"
+  ]
 }

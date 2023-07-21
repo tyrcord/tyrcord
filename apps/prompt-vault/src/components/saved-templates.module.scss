@@ -1,0 +1,41 @@
+.container {
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.heading {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.template {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  padding: 8px;
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
+  border-radius: 4px;
+}
+
+.templateName {
+  font-size: 16px;
+  margin-right: 16px;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+}
+
+.loadButton {
+  background-color: #4caf50;
+  color: #ffffff;
+  margin-right: 8px;
+}
+
+.deleteButton {
+  background-color: #f44336;
+  color: #ffffff;
+}
