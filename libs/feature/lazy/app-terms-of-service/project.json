@@ -6,7 +6,7 @@
   "prefix": "feature-lazy",
   "targets": {
     "build": {
-      "executor": "@nrwl/angular:ng-packagr-lite",
+      "executor": "@nx/angular:ng-packagr-lite",
       "options": {
         "tsConfig": "libs/feature/lazy/app-terms-of-service/tsconfig.lib.json",
         "project": "libs/feature/lazy/app-terms-of-service/ng-package.json"
@@ -18,7 +18,7 @@
       }
     },
     "lint": {
-      "executor": "@nrwl/linter:eslint",
+      "executor": "@nx/linter:eslint",
       "options": {
         "lintFilePatterns": [
           "libs/feature/lazy/app-terms-of-service/src/**/*.ts",
@@ -27,7 +27,7 @@
       }
     },
     "test": {
-      "executor": "@nrwl/jest:jest",
+      "executor": "@nx/jest:jest",
       "outputs": [
         "{workspaceRoot}/coverage/libs/feature/lazy/app-terms-of-service"
       ],

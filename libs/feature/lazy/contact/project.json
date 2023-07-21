@@ -6,7 +6,7 @@
   "prefix": "tyrcord-feature-lazy",
   "targets": {
     "build": {
-      "executor": "@nrwl/angular:ng-packagr-lite",
+      "executor": "@nx/angular:ng-packagr-lite",
       "options": {
         "tsConfig": "libs/feature/lazy/contact/tsconfig.lib.json",
         "project": "libs/feature/lazy/contact/ng-package.json"
@@ -18,7 +18,7 @@
       }
     },
     "lint": {
-      "executor": "@nrwl/linter:eslint",
+      "executor": "@nx/linter:eslint",
       "options": {
         "lintFilePatterns": [
           "libs/feature/lazy/contact/src/**/*.ts",
@@ -27,7 +27,7 @@
       }
     },
     "test": {
-      "executor": "@nrwl/jest:jest",
+      "executor": "@nx/jest:jest",
       "outputs": ["{workspaceRoot}/coverage/libs/feature/lazy/contact"],
       "options": {
         "jestConfig": "libs/feature/lazy/contact/jest.config.ts",

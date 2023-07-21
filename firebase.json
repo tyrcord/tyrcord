@@ -1,49 +1,51 @@
 {
-  "hosting": {
-    "site": "tyrcord-816d7",
-    "public": "dist/apps/website",
-    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
-    "appAssociation": "AUTO",
-    "rewrites": [
-      {
-        "source": "/promo/**",
-        "dynamicLinks": true
-      },
-      {
-        "source": "**",
-        "destination": "/index.html"
-      }
-    ],
-    "headers": [
-      {
-        "source": "/**",
-        "headers": [
-          {
-            "key": "Cache-Control",
-            "value": "no-cache, no-store, must-revalidate"
-          }
-        ]
-      },
-      {
-        "source": "**/*.@(json)",
-        "headers": [
-          {
-            "key": "Cache-Control",
-            "value": "max-age=600, must-revalidate"
-          }
-        ]
-      },
-      {
-        "source": "**/*.@(jpg|jpeg|gif|png|svg|webp|avif|js|css|eot|otf|ttf|ttc|woff|woff2|ico|webmanifest)",
-        "headers": [
-          {
-            "key": "Cache-Control",
-            "value": "max-age=604800, must-revalidate"
-          }
-        ]
-      }
-    ]
-  },
+  "hosting": [
+    {
+      "target": "tyrcord-816d7",
+      "public": "dist/apps/website",
+      "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+      "appAssociation": "AUTO",
+      "rewrites": [
+        {
+          "source": "/promo/**",
+          "dynamicLinks": true
+        },
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ],
+      "headers": [
+        {
+          "source": "/**",
+          "headers": [
+            {
+              "key": "Cache-Control",
+              "value": "no-cache, no-store, must-revalidate"
+            }
+          ]
+        },
+        {
+          "source": "**/*.@(json)",
+          "headers": [
+            {
+              "key": "Cache-Control",
+              "value": "max-age=600, must-revalidate"
+            }
+          ]
+        },
+        {
+          "source": "**/*.@(jpg|jpeg|gif|png|svg|webp|avif|js|css|eot|otf|ttf|ttc|woff|woff2|ico|webmanifest)",
+          "headers": [
+            {
+              "key": "Cache-Control",
+              "value": "max-age=604800, must-revalidate"
+            }
+          ]
+        }
+      ]
+    }
+  ],
   "emulators": {
     "database": {
       "port": 9000

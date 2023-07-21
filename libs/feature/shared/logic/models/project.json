@@ -6,7 +6,7 @@
   "prefix": "feature-shared-logic-model",
   "targets": {
     "build": {
-      "executor": "@nrwl/angular:ng-packagr-lite",
+      "executor": "@nx/angular:ng-packagr-lite",
       "options": {
         "tsConfig": "libs/feature/shared/logic/models/tsconfig.lib.json",
         "project": "libs/feature/shared/logic/models/ng-package.json"
@@ -18,7 +18,7 @@
       }
     },
     "lint": {
-      "executor": "@nrwl/linter:eslint",
+      "executor": "@nx/linter:eslint",
       "options": {
         "lintFilePatterns": [
           "libs/feature/shared/logic/models/src/**/*.ts",
@@ -27,7 +27,7 @@
       }
     },
     "test": {
-      "executor": "@nrwl/jest:jest",
+      "executor": "@nx/jest:jest",
       "outputs": ["{workspaceRoot}/coverage/libs/feature/shared/logic/models"],
       "options": {
         "jestConfig": "libs/feature/shared/logic/models/jest.config.ts",
