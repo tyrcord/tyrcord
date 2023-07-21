@@ -1,7 +1,7 @@
 {
   "hosting": [
     {
-      "target": "tyrcord-816d7",
+      "site": "tyrcord-816d7",
       "public": "dist/apps/website",
       "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
       "appAssociation": "AUTO",

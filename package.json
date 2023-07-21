@@ -28,7 +28,7 @@
     "dep-graph": "nx dep-graph",
     "help": "nx help",
     "build:website:prod": "nx run website:build:production",
-    "deploy:website": "npm run build:website:prod && firebase deploy --only hosting"
+    "deploy:tyrcord": "npm run build:website:prod && firebase deploy --only hosting:tyrcord-816d7"
   },
   "private": true,
   "dependencies": {
