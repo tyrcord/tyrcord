@@ -1,15 +1,15 @@
 /* eslint-disable @typescript-eslint/ban-types */
-import { PureComponent } from "react";
-import TemplateInput from "../components/template-input";
-import TemplateVariables from "../components/template-variables";
-import TemplateOutput from "../components/template-output";
-import { v4 as uuidv4 } from "uuid";
+import { PureComponent } from 'react';
+import TemplateInput from '../components/template-input';
+import TemplateVariables from '../components/template-variables';
+import TemplateOutput from '../components/template-output';
+import { v4 as uuidv4 } from 'uuid';
 
-import styles from "./App.module.scss";
-import { parseAndInterpolateString } from "../logic/string.helper";
-import Button from "../components/button";
-import SavedTemplates from "../components/saved-templates";
-import { Template } from "../logic/template.interface";
+import styles from './App.module.scss';
+import { parseAndInterpolateString } from '../logic/string.helper';
+import Button from '../components/button';
+import SavedTemplates from '../components/saved-templates';
+import { Template } from '../logic/template.interface';
 
 interface AppState {
   texts: string[];
@@ -17,6 +17,7 @@ interface AppState {
   output: string;
   template: string;
   templateName: string;
+  templateId: string;
   savedTemplates: Template[];
 }
 
@@ -26,9 +27,10 @@ class App extends PureComponent<{}, AppState> {
     this.state = {
       texts: [],
       dictionary: {},
-      output: "",
-      template: "",
-      templateName: "",
+      output: '',
+      template: '',
+      templateName: '',
+      templateId: uuidv4(),
       savedTemplates: [],
     };
   }
@@ -51,7 +53,7 @@ class App extends PureComponent<{}, AppState> {
 
     const output = parseAndInterpolateString(
       this.state.template,
-      newDictionary
+      newDictionary,
     );
 
     this.setState({
@@ -80,20 +82,24 @@ class App extends PureComponent<{}, AppState> {
     this.setState({
       texts: [],
       dictionary: {},
-      output: "",
-      template: "",
+      output: '',
+      template: '',
+      templateName: '',
+      templateId: uuidv4(),
     });
   };
 
   handleSave = () => {
-    let {  savedTemplates } = this.state;
-    const {template, templateName} = this.state;
-
-    const existingTemplate = this.findTemplateById(templateName);
+    let { savedTemplates } = this.state;
+    const { template, templateName, templateId } = this.state;
+    const existingTemplate = this.findTemplateById(templateId);
+    savedTemplates = [...savedTemplates];
 
     if (existingTemplate) {
       // Update existing template
       existingTemplate.content = template;
+      existingTemplate.name = templateName;
+      console.log('will update existing template');
     } else {
       // Save new template
       const newTemplate = {
@@ -102,16 +108,16 @@ class App extends PureComponent<{}, AppState> {
         content: template,
       };
 
-      savedTemplates = [...savedTemplates];
       savedTemplates.push(newTemplate);
+      console.log('will save new template');
     }
 
     try {
-      localStorage.setItem("templates", JSON.stringify(savedTemplates));
+      localStorage.setItem('templates', JSON.stringify(savedTemplates));
       this.setState({ savedTemplates });
-      console.log("Template saved successfully");
+      console.log('Template saved successfully');
     } catch (error) {
-      console.error("Failed to save template: ", error);
+      console.error('Failed to save template: ', error);
     }
   };
 
@@ -121,12 +127,12 @@ class App extends PureComponent<{}, AppState> {
     newSavedTemplates.splice(templateIndex, 1);
 
     try {
-      localStorage.setItem("templates", JSON.stringify(newSavedTemplates));
+      localStorage.setItem('templates', JSON.stringify(newSavedTemplates));
       this.setState({ savedTemplates: newSavedTemplates });
       this.loadTemplates();
-      console.log("Template deleted successfully");
+      console.log('Template deleted successfully');
     } catch (error) {
-      console.error("Failed to delete template: ", error);
+      console.error('Failed to delete template: ', error);
     }
   };
 
@@ -140,22 +146,27 @@ class App extends PureComponent<{}, AppState> {
     const foundTemplate = this.findTemplateById(id);
 
     if (foundTemplate) {
-      this.handleTemplateNameChange(foundTemplate.name);
       this.handleTemplateChange(foundTemplate.content);
+
+      this.setState({
+        templateId: foundTemplate.id,
+        templateName: foundTemplate.name,
+        template: foundTemplate.content,
+      });
     }
   };
 
   handleCopyToClipboard = async () => {
     try {
       await navigator.clipboard.writeText(this.state.output);
-      console.log("Content copied to clipboard");
+      console.log('Content copied to clipboard');
     } catch (err) {
-      console.error("Failed to copy: ", err);
+      console.error('Failed to copy: ', err);
     }
   };
 
   getSavedTemplatesFromLocalStorage = () => {
-    const savedTemplatesString = localStorage.getItem("templates");
+    const savedTemplatesString = localStorage.getItem('templates');
 
     if (savedTemplatesString) {
       return JSON.parse(savedTemplatesString);
