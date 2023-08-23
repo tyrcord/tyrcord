@@ -82,5 +82,19 @@
     "subtitle": "APPS.SUBTILES.FX_POS_QAL",
     "supportEmail": "contact@tyrcord.com",
     "thumbnail": "assets/pngs/apps/fx-pos-qal/icon.png"
+  },
+  {
+    "android": false,
+    "androidUrl": "TODO",
+    "author": "Tyrcord, Inc",
+    "description": "APPS.DESCRIPTIONS.STOCK_POS_QAL",
+    "id": "stock-pos-qal",
+    "ios": false,
+    "iosUrl": "TODO",
+    "name": "StockPosQal",
+    "preview": "assets/pngs/apps/stock-pos-qal/preview.png",
+    "subtitle": "APPS.SUBTILES.STOCK_POS_QAL",
+    "supportEmail": "contact@tyrcord.com",
+    "thumbnail": "assets/pngs/apps/stock-pos-qal/icon.svg"
   }
 ]
