@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./marketing-development.component.scss'],
 })
 export class MarketingDevelopmentComponent {
-  projectCounter = 5;
+  projectCounter = 7;
 }
