@@ -8,7 +8,8 @@
     "build": {
       "executor": "@nx/angular:ng-packagr-lite",
       "options": {
-        "project": "libs/feature/shared/logic/services/ng-package.json"
+        "project": "libs/feature/shared/logic/services/ng-package.json",
+        "updateBuildableProjectDepsInPackageJson": true
       },
       "configurations": {
         "production": {
@@ -26,18 +27,11 @@
         "{workspaceRoot}/coverage/libs/feature/shared/logic/services"
       ],
       "options": {
-        "jestConfig": "libs/feature/shared/logic/services/jest.config.ts",
-        "passWithNoTests": true
+        "jestConfig": "libs/feature/shared/logic/services/jest.config.ts"
       }
     },
     "lint": {
-      "executor": "@nx/linter:eslint",
-      "options": {
-        "lintFilePatterns": [
-          "libs/feature/shared/logic/services/src/**/*.ts",
-          "libs/feature/shared/logic/services/src/**/*.html"
-        ]
-      }
+      "executor": "@nx/eslint:lint"
     }
   },
   "tags": ["feature-shared-logic-services"]

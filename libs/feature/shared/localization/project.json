@@ -9,7 +9,8 @@
       "executor": "@nx/angular:ng-packagr-lite",
       "options": {
         "tsConfig": "libs/feature/shared/localization/tsconfig.lib.json",
-        "project": "libs/feature/shared/localization/ng-package.json"
+        "project": "libs/feature/shared/localization/ng-package.json",
+        "updateBuildableProjectDepsInPackageJson": true
       },
       "configurations": {
         "production": {
@@ -18,20 +19,13 @@
       }
     },
     "lint": {
-      "executor": "@nx/linter:eslint",
-      "options": {
-        "lintFilePatterns": [
-          "libs/feature/shared/localization/src/**/*.ts",
-          "libs/feature/shared/localization/src/**/*.html"
-        ]
-      }
+      "executor": "@nx/eslint:lint"
     },
     "test": {
       "executor": "@nx/jest:jest",
       "outputs": ["{workspaceRoot}/coverage/libs/feature/shared/localization"],
       "options": {
-        "jestConfig": "libs/feature/shared/localization/jest.config.ts",
-        "passWithNoTests": true
+        "jestConfig": "libs/feature/shared/localization/jest.config.ts"
       }
     }
   },

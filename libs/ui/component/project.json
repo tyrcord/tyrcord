@@ -8,7 +8,8 @@
     "build": {
       "executor": "@nx/angular:ng-packagr-lite",
       "options": {
-        "project": "libs/ui/component/ng-package.json"
+        "project": "libs/ui/component/ng-package.json",
+        "updateBuildableProjectDepsInPackageJson": true
       },
       "configurations": {
         "production": {
@@ -24,18 +25,11 @@
       "executor": "@nx/jest:jest",
       "outputs": ["{workspaceRoot}/coverage/libs/ui/component"],
       "options": {
-        "jestConfig": "libs/ui/component/jest.config.ts",
-        "passWithNoTests": true
+        "jestConfig": "libs/ui/component/jest.config.ts"
       }
     },
     "lint": {
-      "executor": "@nx/linter:eslint",
-      "options": {
-        "lintFilePatterns": [
-          "libs/ui/component/src/**/*.ts",
-          "libs/ui/component/src/**/*.html"
-        ]
-      }
+      "executor": "@nx/eslint:lint"
     }
   },
   "tags": ["ui-component"]

@@ -9,7 +9,8 @@
       "executor": "@nx/angular:ng-packagr-lite",
       "options": {
         "tsConfig": "libs/feature/lazy/app-terms-of-service/tsconfig.lib.json",
-        "project": "libs/feature/lazy/app-terms-of-service/ng-package.json"
+        "project": "libs/feature/lazy/app-terms-of-service/ng-package.json",
+        "updateBuildableProjectDepsInPackageJson": true
       },
       "configurations": {
         "production": {
@@ -18,13 +19,7 @@
       }
     },
     "lint": {
-      "executor": "@nx/linter:eslint",
-      "options": {
-        "lintFilePatterns": [
-          "libs/feature/lazy/app-terms-of-service/src/**/*.ts",
-          "libs/feature/lazy/app-terms-of-service/src/**/*.html"
-        ]
-      }
+      "executor": "@nx/eslint:lint"
     },
     "test": {
       "executor": "@nx/jest:jest",
@@ -32,8 +27,7 @@
         "{workspaceRoot}/coverage/libs/feature/lazy/app-terms-of-service"
       ],
       "options": {
-        "jestConfig": "libs/feature/lazy/app-terms-of-service/jest.config.ts",
-        "passWithNoTests": true
+        "jestConfig": "libs/feature/lazy/app-terms-of-service/jest.config.ts"
       }
     }
   },
