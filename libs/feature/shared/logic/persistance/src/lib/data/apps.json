@@ -77,7 +77,7 @@
     "id": "fx-pos-qal",
     "ios": true,
     "iosUrl": "https://apple.co/3EbpzHW",
-    "name": "FxPosQal",
+    "name": "FX Position Calculator",
     "preview": "assets/pngs/apps/fx-pos-qal/preview.png",
     "subtitle": "APPS.SUBTILES.FX_POS_QAL",
     "supportEmail": "contact@tyrcord.com",
@@ -91,10 +91,24 @@
     "id": "stock-pos-qal",
     "ios": true,
     "iosUrl": "https://apple.co/3Eej2fM",
-    "name": "StockPosQal",
+    "name": "Stock Position Calculator",
     "preview": "assets/pngs/apps/stock-pos-qal/preview.png",
     "subtitle": "APPS.SUBTILES.STOCK_POS_QAL",
     "supportEmail": "contact@tyrcord.com",
     "thumbnail": "assets/pngs/apps/stock-pos-qal/icon.svg"
+  },
+  {
+    "android": true,
+    "androidUrl": "https://play.google.com/store/apps/details?id=com.tyrcord.apps.vatqal",
+    "author": "Tyrcord, Inc",
+    "description": "APPS.DESCRIPTIONS.INSTANT_VAT",
+    "id": "instant-vat",
+    "ios": false,
+    "iosUrl": "",
+    "name": "Instant Vat",
+    "preview": "assets/pngs/apps/instant-vat/preview.png",
+    "subtitle": "APPS.SUBTILES.INSTANT_VAT",
+    "supportEmail": "contact@tyrcord.com",
+    "thumbnail": "assets/pngs/apps/instant-vat/icon.svg"
   }
 ]

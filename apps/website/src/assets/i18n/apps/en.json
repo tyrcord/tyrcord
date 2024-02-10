@@ -7,7 +7,8 @@
       "PIP_CALCULATOR": "<p>In order to manage risk with more accuracy, it is important for you to know the pip value of each of your trades.</p><p>The Pip Calculator app does this for you. All you have to do is enter your account currency, the currency pair you are trading on, and the trade size. Then the Pip Calculator app will automatically determine how much each pip is worth.</p>",
       "PROFIT_AND_LOSS_CALCULATORS": "<p>Our app will help you quickly find out if your income is able to cover your costs.</p>",
       "FX_POS_QAL": "<p>The success of your future trades will largely depend on your ability to effectively manage risk. Indeed, it is essential not to risk all your capital on a single transaction. For this, it is important to calculate the size of your position before each trade.</p><p>In order to help you not to relax your vigilance in risk management, our calculator is there to accompany you!</p><p>Simply fill in the fields in our tool and it will suggest for you an optimal amount to invest in order to maximize your gains and minimize your losses.</p><p>Financial markets carry significant risks to your invested capital. The information and results provided by this application should only be considered as an indication and do not constitute advice or recommendations. Tyrcord declines all responsibility for losses incurred by any person acting on the basis of this information or results.</p>",
-      "STOCK_POS_QAL": "<p>This application is a tool that is both powerful and user-friendly, suitable for both novice and seasoned investors. It assists investors in determining the ideal number of shares to purchase, taking into account their risk tolerance and the size of their capital. By inputting key variables such as their account balance, desired risk percentage, share price, and stop-loss level, they can easily define the position size most suited to their investment strategy.</p>"
+      "STOCK_POS_QAL": "<p>This application is a tool that is both powerful and user-friendly, suitable for both novice and seasoned investors. It assists investors in determining the ideal number of shares to purchase, taking into account their risk tolerance and the size of their capital. By inputting key variables such as their account balance, desired risk percentage, share price, and stop-loss level, they can easily define the position size most suited to their investment strategy.</p>",
+      "INSTANT_VAT": "<p>Instant Vat is a user-friendly mobile app designed to simplify financial calculations for both individuals and businesses. With just a few taps, you can effortlessly calculate the total price before and after Value Added Tax (VAT).</p><p>But Instant Vat doesn't stop there; it offers versatile functionality by allowing users to incorporate additional taxes, apply discounts, and even calculate tips.</p><p>Whether you're managing invoices, shopping, or dining out, Instant Vat provides clear, instant calculations, making it an indispensable tool for anyone looking to navigate their finances with ease and accuracy.</p>"
     },
     "SUBTILES": {
       "DIVIDEND_CALCULATORS": "A collection of tools to help you choose your dividend-paying stocks.",
@@ -16,7 +17,8 @@
       "PIP_CALCULATOR": "Determining the value per pip in your account currency has never been easier!",
       "PROFIT_AND_LOSS_CALCULATORS": "A simple profit and loss calculator.",
       "FX_POS_QAL": "Determining the size of your positions has never been easier!",
-      "STOCK_POS_QAL": "Determine the optimal size of your positions"
+      "STOCK_POS_QAL": "Determine the optimal size of your positions",
+      "INSTANT_VAT": "Calculate VAT, taxes, discounts, and tips with ease using Instant Vat"
     }
   },
   "DOWNLOAD": "Download",
