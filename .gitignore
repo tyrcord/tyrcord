@@ -53,3 +53,4 @@ pubsub-debug.log
 migrations.json
 
 .nx/cache
+.nx/workspace-data

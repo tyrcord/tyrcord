@@ -1,7 +1,4 @@
 {
-  "affected": {
-    "defaultBase": "master"
-  },
   "tasksRunnerOptions": {
     "default": {
       "options": {
@@ -101,5 +98,7 @@
     }
   },
   "nxCloudAccessToken": "MTAxY2MxZDktNzQ0MC00Y2M4LWE4YTQtZDQxZTBhZjUyNmIxfHJlYWQtd3JpdGU=",
-  "parallel": 1
+  "parallel": 1,
+  "defaultBase": "master",
+  "useLegacyCache": true
 }

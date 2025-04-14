@@ -27,7 +27,8 @@
             "prefix": "tyrcord-ui-core",
             "style": "kebab-case"
           }
-        ]
+        ],
+        "@angular-eslint/prefer-standalone": "off"
       }
     },
     {

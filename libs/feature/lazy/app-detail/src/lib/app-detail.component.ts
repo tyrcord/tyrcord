@@ -5,9 +5,10 @@ import { IAppModel } from '@tyrcord/feature/shared/logic/models';
 import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
-  selector: 'feature-lazy-app-detail',
-  templateUrl: './app-detail.component.html',
-  styleUrls: ['./app-detail.component.scss'],
+    selector: 'feature-lazy-app-detail',
+    templateUrl: './app-detail.component.html',
+    styleUrls: ['./app-detail.component.scss'],
+    standalone: false
 })
 export class AppDetailComponent implements OnInit {
   webpPreviews: string;

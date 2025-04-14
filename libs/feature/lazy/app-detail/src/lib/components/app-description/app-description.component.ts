@@ -6,10 +6,11 @@ import {
 } from '@angular/core';
 
 @Component({
-  selector: 'feature-lazy-app-description',
-  templateUrl: './app-description.component.html',
-  styleUrls: ['./app-description.component.scss'],
-  encapsulation: ViewEncapsulation.None,
+    selector: 'feature-lazy-app-description',
+    templateUrl: './app-description.component.html',
+    styleUrls: ['./app-description.component.scss'],
+    encapsulation: ViewEncapsulation.None,
+    standalone: false
 })
 export class AppDescriptionComponent {
   @Input()

@@ -5,9 +5,10 @@ import { IAppModel } from '@tyrcord/feature/shared/logic/models';
 import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
-  selector: 'feature-lazy-app-privacy-policy',
-  templateUrl: './app-privacy-policy.component.html',
-  styleUrls: ['./app-privacy-policy.component.scss'],
+    selector: 'feature-lazy-app-privacy-policy',
+    templateUrl: './app-privacy-policy.component.html',
+    styleUrls: ['./app-privacy-policy.component.scss'],
+    standalone: false
 })
 export class AppPrivacyPolicyComponent {
   app: IAppModel;

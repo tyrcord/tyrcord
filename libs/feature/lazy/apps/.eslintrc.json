@@ -27,7 +27,8 @@
             "prefix": "tyrcord-feature-lazy",
             "style": "kebab-case"
           }
-        ]
+        ],
+        "@angular-eslint/prefer-standalone": "off"
       }
     },
     {

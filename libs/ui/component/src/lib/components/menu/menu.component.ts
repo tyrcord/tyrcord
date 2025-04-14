@@ -16,9 +16,10 @@ import { Subscription } from 'rxjs';
 import { IMenuOption } from '../../interfaces';
 
 @Component({
-  selector: 'tyrcord-ui-component-menu',
-  templateUrl: './menu.component.html',
-  styleUrls: ['./menu.component.scss'],
+    selector: 'tyrcord-ui-component-menu',
+    templateUrl: './menu.component.html',
+    styleUrls: ['./menu.component.scss'],
+    standalone: false
 })
 export class MenuComponent implements OnDestroy {
   private subscription: Subscription;

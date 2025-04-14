@@ -27,7 +27,8 @@
             "prefix": "feature-shared-logic-persistance",
             "style": "kebab-case"
           }
-        ]
+        ],
+        "@angular-eslint/prefer-standalone": "off"
       }
     },
     {

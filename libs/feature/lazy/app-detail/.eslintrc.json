@@ -27,7 +27,8 @@
             "prefix": "feature-lazy",
             "style": "kebab-case"
           }
-        ]
+        ],
+        "@angular-eslint/prefer-standalone": "off"
       }
     },
     {

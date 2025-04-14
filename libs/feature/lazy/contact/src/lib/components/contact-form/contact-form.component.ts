@@ -15,10 +15,11 @@ import { MailDeliveryStatus } from '../../models';
 import { Messenger } from '../../services';
 
 @Component({
-  selector: 'tyrcord-feature-lazy-contact-form',
-  templateUrl: './contact-form.component.html',
-  styleUrls: ['./contact-form.component.scss'],
-  providers: [Messenger],
+    selector: 'tyrcord-feature-lazy-contact-form',
+    templateUrl: './contact-form.component.html',
+    styleUrls: ['./contact-form.component.scss'],
+    providers: [Messenger],
+    standalone: false
 })
 export class ContactFormComponent implements OnInit, OnDestroy {
   private unsubscribe$ = new Subject<boolean>();

@@ -13,9 +13,10 @@ import {
 import { FormFieldDirective } from '@tyrcord/ui/core';
 
 @Component({
-  selector: 'tyrcord-ui-layout-form-field',
-  templateUrl: './form-field.component.html',
-  styleUrls: ['./form-field.component.scss'],
+    selector: 'tyrcord-ui-layout-form-field',
+    templateUrl: './form-field.component.html',
+    styleUrls: ['./form-field.component.scss'],
+    standalone: false
 })
 export class FormFieldComponent implements AfterContentInit {
   @ContentChild(forwardRef(() => FormFieldDirective), {

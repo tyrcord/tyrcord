@@ -3,9 +3,10 @@ import { Component, OnInit, Input } from '@angular/core';
 import { IAppModel } from '@tyrcord/feature/shared/logic/models';
 
 @Component({
-  selector: 'tyrcord-feature-lazy-app-item',
-  templateUrl: './app-item.component.html',
-  styleUrls: ['./app-item.component.scss'],
+    selector: 'tyrcord-feature-lazy-app-item',
+    templateUrl: './app-item.component.html',
+    styleUrls: ['./app-item.component.scss'],
+    standalone: false
 })
 export class AppItemComponent implements OnInit {
   @Input()

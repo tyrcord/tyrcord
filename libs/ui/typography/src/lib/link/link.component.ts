@@ -1,9 +1,10 @@
 import { Component, HostBinding, Input } from '@angular/core';
 
 @Component({
-  selector: 'tyrcord-ui-typography-link',
-  templateUrl: './link.component.html',
-  styleUrls: ['./link.component.scss'],
+    selector: 'tyrcord-ui-typography-link',
+    templateUrl: './link.component.html',
+    styleUrls: ['./link.component.scss'],
+    standalone: false
 })
 export class LinkComponent {
   @Input()

@@ -5,9 +5,10 @@ import { AppDataProvider } from '@tyrcord/feature/shared/logic/persistance';
 import { IAppModel } from '@tyrcord/feature/shared/logic/models';
 
 @Component({
-  selector: 'feature-lazy-app-terms-of-service',
-  templateUrl: './app-terms-of-service.component.html',
-  styleUrls: ['./app-terms-of-service.component.scss'],
+    selector: 'feature-lazy-app-terms-of-service',
+    templateUrl: './app-terms-of-service.component.html',
+    styleUrls: ['./app-terms-of-service.component.scss'],
+    standalone: false
 })
 export class AppTermsOfServiceComponent {
   app: IAppModel;

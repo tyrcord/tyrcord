@@ -3,9 +3,10 @@ import { map, take } from 'rxjs/operators';
 import { Observable, timer } from 'rxjs';
 
 @Component({
-  selector: 'tyrcord-ui-component-counter',
-  templateUrl: './counter.component.html',
-  styleUrls: ['./counter.component.scss'],
+    selector: 'tyrcord-ui-component-counter',
+    templateUrl: './counter.component.html',
+    styleUrls: ['./counter.component.scss'],
+    standalone: false
 })
 export class CounterComponent implements OnInit {
   @Input()

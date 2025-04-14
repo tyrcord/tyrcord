@@ -5,10 +5,11 @@ import { TeamService } from './services';
 import { Employee } from './models';
 
 @Component({
-  selector: 'tyrcord-feature-lazy-about',
-  templateUrl: './about.component.html',
-  styleUrls: ['./about.component.scss'],
-  providers: [TeamService],
+    selector: 'tyrcord-feature-lazy-about',
+    templateUrl: './about.component.html',
+    styleUrls: ['./about.component.scss'],
+    providers: [TeamService],
+    standalone: false
 })
 export class AboutComponent implements OnInit {
   @Input()

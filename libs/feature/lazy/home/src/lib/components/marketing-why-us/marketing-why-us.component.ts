@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'tyrcord-feature-lazy-marketing-why-us',
-  templateUrl: './marketing-why-us.component.html',
-  styleUrls: ['./marketing-why-us.component.scss'],
+    selector: 'tyrcord-feature-lazy-marketing-why-us',
+    templateUrl: './marketing-why-us.component.html',
+    styleUrls: ['./marketing-why-us.component.scss'],
+    standalone: false
 })
 export class MarketingWhyUsComponent {}
