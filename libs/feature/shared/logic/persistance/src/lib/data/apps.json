@@ -2,7 +2,7 @@
   {
     "android": true,
     "androidUrl": "https://play.google.com/store/apps/details?id=com.tyrcord.apps.fxcalculators",
-    "author": "Tyrcord, Inc",
+    "author": "Alpinetic",
     "description": "APPS.DESCRIPTIONS.FX_CALCULATORS",
     "id": "fx-calculators",
     "ios": true,
@@ -10,13 +10,13 @@
     "name": "FX Calculators",
     "preview": "assets/pngs/apps/fx-calculators/preview.png",
     "subtitle": "APPS.SUBTILES.FX_CALCULATORS",
-    "supportEmail": "contact@tyrcord.com",
+    "supportEmail": "contact@alpinetic.com",
     "thumbnail": "assets/pngs/apps/fx-calculators/icon.png"
   },
   {
     "android": true,
     "androidUrl": "https://play.google.com/store/apps/details?id=com.tyrcord.apps.dividendcalculators",
-    "author": "Tyrcord, Inc",
+    "author": "Alpinetic",
     "description": "APPS.DESCRIPTIONS.DIVIDEND_CALCULATORS",
     "id": "dividend-calculators",
     "ios": true,
@@ -24,13 +24,13 @@
     "name": "Dividend Calculators",
     "preview": "assets/pngs/apps/dividend-calculators/preview.png",
     "subtitle": "APPS.SUBTILES.DIVIDEND_CALCULATORS",
-    "supportEmail": "contact@tyrcord.com",
+    "supportEmail": "contact@alpinetic.com",
     "thumbnail": "assets/pngs/apps/dividend-calculators/icon.png"
   },
   {
     "android": true,
     "androidUrl": "https://play.google.com/store/apps/details?id=com.tyrcord.apps.pipcalculator",
-    "author": "Tyrcord, Inc",
+    "author": "Alpinetic",
     "description": "APPS.DESCRIPTIONS.PIP_CALCULATOR",
     "id": "pip-calculator",
     "ios": true,
@@ -38,13 +38,13 @@
     "name": "Pip Calculator",
     "preview": "assets/pngs/apps/pip-calculator/preview.png",
     "subtitle": "APPS.SUBTILES.PIP_CALCULATOR",
-    "supportEmail": "contact@tyrcord.com",
+    "supportEmail": "contact@alpinetic.com",
     "thumbnail": "assets/pngs/apps/pip-calculator/icon.png"
   },
   {
     "android": true,
     "androidUrl": "https://play.google.com/store/apps/details?id=com.tyrcord.apps.profitandlosscalculator",
-    "author": "Tyrcord, Inc",
+    "author": "Alpinetic",
     "description": "APPS.DESCRIPTIONS.PROFIT_AND_LOSS_CALCULATORS",
     "id": "profit-and-loss-calculator",
     "ios": true,
@@ -52,13 +52,13 @@
     "name": "Profit and Loss Calculator",
     "preview": "assets/pngs/apps/profit-and-loss-calculator/preview.png",
     "subtitle": "APPS.SUBTILES.PROFIT_AND_LOSS_CALCULATORS",
-    "supportEmail": "contact@tyrcord.com",
+    "supportEmail": "contact@alpinetic.com",
     "thumbnail": "assets/pngs/apps/profit-and-loss-calculator/icon.png"
   },
   {
     "android": true,
     "androidUrl": "https://play.google.com/store/apps/details?id=com.tyrcord.apps.expressionsquebecoises",
-    "author": "Tyrcord, Inc",
+    "author": "Alpinetic",
     "description": "APPS.DESCRIPTIONS.EXPRESSIONS_QUEBECOISES",
     "id": "expressions-quebecoises",
     "ios": true,
@@ -66,13 +66,13 @@
     "name": "Expressions Québécoises",
     "preview": "assets/pngs/apps/expressions-quebecoises/preview.png",
     "subtitle": "APPS.SUBTILES.EXPRESSIONS_QUEBECOISES",
-    "supportEmail": "contact@tyrcord.com",
+    "supportEmail": "contact@alpinetic.com",
     "thumbnail": "assets/pngs/apps/expressions-quebecoises/icon.png"
   },
   {
     "android": true,
     "androidUrl": "https://play.google.com/store/apps/details?id=com.tyrcord.apps.fxposqal",
-    "author": "Tyrcord, Inc",
+    "author": "Alpinetic",
     "description": "APPS.DESCRIPTIONS.FX_POS_QAL",
     "id": "fx-pos-qal",
     "ios": true,
@@ -80,13 +80,13 @@
     "name": "FX Position Calculator",
     "preview": "assets/pngs/apps/fx-pos-qal/preview.png",
     "subtitle": "APPS.SUBTILES.FX_POS_QAL",
-    "supportEmail": "contact@tyrcord.com",
+    "supportEmail": "contact@alpinetic.com",
     "thumbnail": "assets/pngs/apps/fx-pos-qal/icon.png"
   },
   {
     "android": true,
     "androidUrl": "https://play.google.com/store/apps/details?id=com.tyrcord.apps.stockposqal",
-    "author": "Tyrcord, Inc",
+    "author": "Alpinetic",
     "description": "APPS.DESCRIPTIONS.STOCK_POS_QAL",
     "id": "stock-pos-qal",
     "ios": true,
@@ -94,13 +94,13 @@
     "name": "Stock Position Calculator",
     "preview": "assets/pngs/apps/stock-pos-qal/preview.png",
     "subtitle": "APPS.SUBTILES.STOCK_POS_QAL",
-    "supportEmail": "contact@tyrcord.com",
+    "supportEmail": "contact@alpinetic.com",
     "thumbnail": "assets/pngs/apps/stock-pos-qal/icon.svg"
   },
   {
     "android": true,
     "androidUrl": "https://play.google.com/store/apps/details?id=com.tyrcord.apps.vatqal",
-    "author": "Tyrcord, Inc",
+    "author": "Alpinetic",
     "description": "APPS.DESCRIPTIONS.INSTANT_VAT",
     "id": "instant-vat",
     "ios": false,
@@ -108,7 +108,7 @@
     "name": "Instant Vat",
     "preview": "assets/pngs/apps/instant-vat/preview.png",
     "subtitle": "APPS.SUBTILES.INSTANT_VAT",
-    "supportEmail": "contact@tyrcord.com",
+    "supportEmail": "contact@alpinetic.com",
     "thumbnail": "assets/pngs/apps/instant-vat/icon.svg"
   }
 ]
