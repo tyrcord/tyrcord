@@ -1,4 +1,4 @@
-google.com, pub-9820758531508330, DIRECT, f08c47fec0942fa0
+google.com, pub-6169089920786589, DIRECT, f08c47fec0942fa0
 
 inmobi.com, dbd01b815270408baa816508b6e1bdf2, DIRECT, 83e75a7ae333ca9d
 engagebdr.com, 16, RESELLER
